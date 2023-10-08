@@ -1,2 +1,5 @@
-# UBB-FMI-Computer_Science
-Here you will find all of the work I've done during my student years at Babeș-Bolyai University, Mathematics &amp; Computer Science Cluj-Napoca
+# Babeș-Bolyai University, Mathematics & Computer Science
+
+### Here you will find the following materials:
+
+- Assignments, bonus projects, hand written notes & courses and many more things I've collected and done during the years as a computer science student.
