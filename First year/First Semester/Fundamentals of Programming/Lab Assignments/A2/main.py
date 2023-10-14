@@ -42,14 +42,13 @@ def bubble_sort(list_of_numbers, step):
     swapped = False
     len_of_list = len(list_of_numbers)
     index_of_step = 0
+    total_of_steps = 0
     # Traverse through all array elements
     for i in range(len_of_list - 1):
         # range(n) also work but outer loop will
         # repeat one time more than needed.
         # Last i elements are already in place
         for j in range(0, len_of_list - i - 1):
-
-            index_of_step += 1
             # traverse the array from 0 to n-i-1
             # Swap if the element found is greater
             # than the next element
@@ -57,8 +56,10 @@ def bubble_sort(list_of_numbers, step):
                 swapped = True
                 list_of_numbers[j], list_of_numbers[j + 1] = list_of_numbers[j + 1], list_of_numbers[j]
 
+                index_of_step += 1
+                total_of_steps += 1
                 if index_of_step == step:
-                    print_list_after_step(list_of_numbers, step)
+                    print_list_after_step(list_of_numbers, total_of_steps)
                     index_of_step = 0
 
         if not swapped:
@@ -108,6 +109,7 @@ def heap_sort(list_of_numbers, step):
     """
     len_of_list = len(list_of_numbers)
     index_of_step = 0
+    total_of_steps = 0
     # Build a maxheap.
     # Since last parent will be at ((n//2)-1) we can start at that location.
     for i in range(len_of_list // 2 - 1, -1, -1):
@@ -119,9 +121,10 @@ def heap_sort(list_of_numbers, step):
         (list_of_numbers[i], list_of_numbers[0]) = (list_of_numbers[0], list_of_numbers[i])  # swap
         heapify(list_of_numbers, i, 0)
 
+        total_of_steps += 1
         index_of_step += 1
         if index_of_step == step:
-            print_list_after_step(list_of_numbers, step)
+            print_list_after_step(list_of_numbers, total_of_steps)
             index_of_step = 0
 
     return list_of_numbers
@@ -133,7 +136,6 @@ def solve_problem():
     """
     print_menu()
     list_of_numbers = []
-    n = 0
     while True:
         option = int(input("Select an option: "))
         if option == 1:
