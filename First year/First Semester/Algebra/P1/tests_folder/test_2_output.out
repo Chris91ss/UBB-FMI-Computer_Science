@@ -1,0 +1,14 @@
+Let Delta = ^
+Let set A = {a1, a2, a3}
+
+{{a1, a2, a3}} => A x A
+
+{{a1, a2}, {a3}} => ^A U {{a1, a2}, {a2, a1}}
+
+{{a1, a3}, {a2}} => ^A U {{a1, a3}, {a3, a1}}
+
+{{a1}, {a2, a3}} => ^A U {{a2, a3}, {a3, a2}}
+
+{{a1}, {a2}, {a3}} => ^A
+
+The number of partitions is 5

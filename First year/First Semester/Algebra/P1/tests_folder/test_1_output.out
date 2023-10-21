@@ -1,0 +1,9 @@
+Let Delta = <>
+
+Let set A = {a1, a2}
+
+{{a1, a2}} ==> A x A
+
+{{a1}, {a2}} ==> <>A
+
+The number of partitions is 2
