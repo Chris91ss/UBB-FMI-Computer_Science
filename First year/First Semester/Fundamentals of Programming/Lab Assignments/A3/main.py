@@ -10,8 +10,8 @@ def print_menu():
     print("2. Sort this list using Bubble Sort")
     print("3. Sort this list using Heap Sort")
     print("4. Display on a table how the algorithms behave during the Best Case")
-    print("5. Display on a table how the algorithms behave during the Worst Case")
-    print("6. Display on a table how the algorithms behave during the Average Case")
+    print("5. Display on a table how the algorithms behave during the Average Case")
+    print("6. Display on a table how the algorithms behave during the Worst Case")
     print("7. Exit the program")
 
 
@@ -255,7 +255,7 @@ def solve_problem():
             print("Program has exited successfully")
             break
         else:
-            print("ERROR. -> You must choose a value from 1 to 4")
+            print("ERROR. -> You must choose a value from 1 to 7")
 
 
 solve_problem()
