@@ -1,0 +1,12 @@
+[
+    {
+        "book_isbn": "125",
+        "book_title": "title",
+        "book_author": "author"
+    },
+    {
+        "book_isbn": "126",
+        "book_title": "title",
+        "book_author": "author"
+    }
+]

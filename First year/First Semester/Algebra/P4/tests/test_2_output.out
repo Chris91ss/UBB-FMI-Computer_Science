@@ -1,0 +1,18 @@
+The number of 2-dimensional subspaces of the vector space (Z2)^3 over Z2 is 7
+
+A basis of each such subspace is :
+
+[[0, 0, 1], [0, 1, 0]]
+
+[[0, 0, 1], [1, 0, 0]]
+
+[[0, 0, 1], [1, 1, 0]]
+
+[[0, 1, 0], [1, 0, 0]]
+
+[[0, 1, 0], [1, 0, 1]]
+
+[[0, 1, 1], [1, 0, 0]]
+
+[[0, 1, 1], [1, 0, 1]]
+

@@ -1,0 +1,52 @@
+[
+    {
+        "book_isbn": "978-3-16-148410-0",
+        "book_title": "The Grapes of Wrath",
+        "book_author": "Agatha Christie"
+    },
+    {
+        "book_isbn": "978-3-16-148411-0",
+        "book_title": "War and Peace",
+        "book_author": "Agatha Christie"
+    },
+    {
+        "book_isbn": "978-3-16-148412-0",
+        "book_title": "The Grapes of Wrath",
+        "book_author": "J.R.R. Tolkien"
+    },
+    {
+        "book_isbn": "978-3-16-148413-0",
+        "book_title": "The Great Gatsby",
+        "book_author": "Stephen King"
+    },
+    {
+        "book_isbn": "978-3-16-148414-0",
+        "book_title": "The Grapes of Wrath",
+        "book_author": "Agatha Christie"
+    },
+    {
+        "book_isbn": "978-3-16-148415-0",
+        "book_title": "War and Peace",
+        "book_author": "Agatha Christie"
+    },
+    {
+        "book_isbn": "978-3-16-148416-0",
+        "book_title": "The Great Gatsby",
+        "book_author": "Agatha Christie"
+    },
+    {
+        "book_isbn": "978-3-16-148417-0",
+        "book_title": "To Kill a Mockingbird",
+        "book_author": "Agatha Christie"
+    },
+    {
+        "book_isbn": "978-3-16-148418-0",
+        "book_title": "The Great Gatsby",
+        "book_author": "Stephen King"
+    },
+    {
+        "book_isbn": "978-3-16-148419-0",
+        "book_title": "East of Eden",
+        "book_author": "Agatha Christie"
+    }
+]

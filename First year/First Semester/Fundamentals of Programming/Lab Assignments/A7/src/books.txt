@@ -1,0 +1,10 @@
+978-3-16-148410-0,   East of Eden,   Stephen King
+978-3-16-148411-0,   East of Eden,   Stephen King
+978-3-16-148412-0,   The Great Gatsby,   J.K. Rowling
+978-3-16-148413-0,   East of Eden,   George R.R. Martin
+978-3-16-148414-0,   The Grapes of Wrath,   George R.R. Martin
+978-3-16-148415-0,   The Grapes of Wrath,   Stephen King
+978-3-16-148416-0,   The Great Gatsby,   Stephen King
+978-3-16-148417-0,   The Grapes of Wrath,   Agatha Christie
+978-3-16-148418-0,   The Grapes of Wrath,   J.R.R. Tolkien
+978-3-16-148419-0,   East of Eden,   George R.R. Martin

@@ -1,0 +1,456 @@
+Let set A = {a1, a2, a3}
+The operation tables of the associative operations on set A are given by the matrices : 
+
+a1 a1 a1 
+a1 a1 a1 
+a1 a1 a1 
+
+a1 a1 a1 
+a1 a1 a1 
+a1 a1 a2 
+
+a1 a1 a1 
+a1 a1 a1 
+a1 a1 a3 
+
+a1 a1 a1 
+a1 a1 a1 
+a1 a2 a3 
+
+a1 a1 a1 
+a1 a1 a1 
+a3 a3 a3 
+
+a1 a1 a1 
+a1 a1 a2 
+a1 a1 a3 
+
+a1 a1 a1 
+a1 a1 a2 
+a1 a2 a3 
+
+a1 a1 a1 
+a1 a2 a1 
+a1 a1 a1 
+
+a1 a1 a1 
+a1 a2 a1 
+a1 a1 a3 
+
+a1 a1 a1 
+a1 a2 a1 
+a1 a3 a1 
+
+a1 a1 a1 
+a1 a2 a1 
+a3 a3 a3 
+
+a1 a1 a1 
+a1 a2 a2 
+a1 a2 a2 
+
+a1 a1 a1 
+a1 a2 a2 
+a1 a2 a3 
+
+a1 a1 a1 
+a1 a2 a2 
+a1 a3 a3 
+
+a1 a1 a1 
+a1 a2 a3 
+a1 a1 a1 
+
+a1 a1 a1 
+a1 a2 a3 
+a1 a2 a3 
+
+a1 a1 a1 
+a1 a2 a3 
+a1 a3 a1 
+
+a1 a1 a1 
+a1 a2 a3 
+a1 a3 a2 
+
+a1 a1 a1 
+a1 a2 a3 
+a1 a3 a3 
+
+a1 a1 a1 
+a1 a2 a3 
+a3 a3 a3 
+
+a1 a1 a1 
+a1 a3 a1 
+a1 a1 a1 
+
+a1 a1 a1 
+a1 a3 a2 
+a1 a2 a3 
+
+a1 a1 a1 
+a1 a3 a3 
+a1 a3 a3 
+
+a1 a1 a1 
+a2 a2 a2 
+a1 a1 a1 
+
+a1 a1 a1 
+a2 a2 a2 
+a1 a1 a3 
+
+a1 a1 a1 
+a2 a2 a2 
+a1 a2 a3 
+
+a1 a1 a1 
+a2 a2 a2 
+a2 a2 a2 
+
+a1 a1 a1 
+a2 a2 a2 
+a2 a2 a3 
+
+a1 a1 a1 
+a2 a2 a2 
+a3 a3 a3 
+
+a1 a1 a1 
+a3 a2 a3 
+a3 a3 a3 
+
+a1 a1 a1 
+a3 a3 a3 
+a3 a3 a3 
+
+a1 a1 a3 
+a1 a1 a3 
+a1 a1 a3 
+
+a1 a1 a3 
+a1 a1 a3 
+a3 a3 a1 
+
+a1 a1 a3 
+a1 a1 a3 
+a3 a3 a3 
+
+a1 a1 a3 
+a1 a2 a3 
+a1 a1 a3 
+
+a1 a1 a3 
+a1 a2 a3 
+a1 a3 a3 
+
+a1 a1 a3 
+a1 a2 a3 
+a3 a3 a1 
+
+a1 a1 a3 
+a1 a2 a3 
+a3 a3 a3 
+
+a1 a1 a3 
+a2 a2 a3 
+a3 a3 a3 
+
+a1 a2 a1 
+a1 a2 a1 
+a1 a2 a1 
+
+a1 a2 a1 
+a1 a2 a1 
+a1 a2 a3 
+
+a1 a2 a1 
+a1 a2 a2 
+a1 a2 a3 
+
+a1 a2 a1 
+a2 a1 a2 
+a1 a2 a1 
+
+a1 a2 a1 
+a2 a1 a2 
+a1 a2 a3 
+
+a1 a2 a1 
+a2 a2 a2 
+a1 a2 a1 
+
+a1 a2 a1 
+a2 a2 a2 
+a1 a2 a3 
+
+a1 a2 a1 
+a2 a2 a2 
+a3 a2 a3 
+
+a1 a2 a2 
+a1 a2 a2 
+a1 a2 a2 
+
+a1 a2 a2 
+a1 a2 a2 
+a1 a2 a3 
+
+a1 a2 a2 
+a2 a1 a1 
+a2 a1 a1 
+
+a1 a2 a2 
+a2 a2 a2 
+a2 a2 a2 
+
+a1 a2 a2 
+a2 a2 a2 
+a2 a2 a3 
+
+a1 a2 a2 
+a2 a2 a2 
+a3 a2 a2 
+
+a1 a2 a2 
+a2 a2 a2 
+a3 a3 a3 
+
+a1 a2 a3 
+a1 a2 a3 
+a1 a2 a3 
+
+a1 a2 a3 
+a1 a2 a3 
+a3 a3 a3 
+
+a1 a2 a3 
+a2 a1 a3 
+a3 a3 a3 
+
+a1 a2 a3 
+a2 a2 a2 
+a1 a2 a3 
+
+a1 a2 a3 
+a2 a2 a2 
+a2 a2 a2 
+
+a1 a2 a3 
+a2 a2 a2 
+a3 a2 a1 
+
+a1 a2 a3 
+a2 a2 a2 
+a3 a2 a2 
+
+a1 a2 a3 
+a2 a2 a2 
+a3 a2 a3 
+
+a1 a2 a3 
+a2 a2 a2 
+a3 a3 a3 
+
+a1 a2 a3 
+a2 a2 a3 
+a2 a2 a3 
+
+a1 a2 a3 
+a2 a2 a3 
+a3 a2 a3 
+
+a1 a2 a3 
+a2 a2 a3 
+a3 a3 a2 
+
+a1 a2 a3 
+a2 a2 a3 
+a3 a3 a3 
+
+a1 a2 a3 
+a2 a3 a1 
+a3 a1 a2 
+
+a1 a2 a3 
+a2 a3 a2 
+a3 a2 a3 
+
+a1 a2 a3 
+a2 a3 a3 
+a3 a3 a3 
+
+a1 a2 a3 
+a3 a2 a3 
+a3 a2 a3 
+
+a1 a2 a3 
+a3 a3 a3 
+a3 a3 a3 
+
+a1 a3 a3 
+a1 a2 a3 
+a1 a3 a3 
+
+a1 a3 a3 
+a1 a3 a3 
+a1 a3 a3 
+
+a1 a3 a3 
+a2 a2 a2 
+a3 a3 a3 
+
+a1 a3 a3 
+a2 a3 a3 
+a3 a3 a3 
+
+a1 a3 a3 
+a3 a1 a1 
+a3 a1 a1 
+
+a1 a3 a3 
+a3 a2 a3 
+a3 a3 a3 
+
+a1 a3 a3 
+a3 a3 a3 
+a3 a3 a3 
+
+a2 a1 a1 
+a1 a2 a2 
+a1 a2 a2 
+
+a2 a1 a1 
+a1 a2 a2 
+a1 a2 a3 
+
+a2 a1 a2 
+a1 a2 a1 
+a2 a1 a2 
+
+a2 a1 a3 
+a1 a2 a3 
+a3 a3 a3 
+
+a2 a2 a1 
+a2 a2 a2 
+a1 a2 a3 
+
+a2 a2 a1 
+a2 a2 a2 
+a2 a2 a3 
+
+a2 a2 a2 
+a2 a2 a2 
+a1 a2 a3 
+
+a2 a2 a2 
+a2 a2 a2 
+a2 a2 a1 
+
+a2 a2 a2 
+a2 a2 a2 
+a2 a2 a2 
+
+a2 a2 a2 
+a2 a2 a2 
+a2 a2 a3 
+
+a2 a2 a2 
+a2 a2 a2 
+a3 a3 a3 
+
+a2 a2 a3 
+a2 a2 a3 
+a2 a2 a3 
+
+a2 a2 a3 
+a2 a2 a3 
+a3 a3 a2 
+
+a2 a2 a3 
+a2 a2 a3 
+a3 a3 a3 
+
+a2 a3 a1 
+a3 a1 a2 
+a1 a2 a3 
+
+a2 a3 a2 
+a3 a2 a3 
+a2 a3 a2 
+
+a2 a3 a3 
+a3 a3 a3 
+a3 a3 a3 
+
+a3 a1 a1 
+a1 a2 a3 
+a1 a3 a3 
+
+a3 a1 a1 
+a1 a3 a3 
+a1 a3 a3 
+
+a3 a1 a2 
+a1 a2 a3 
+a2 a3 a1 
+
+a3 a1 a3 
+a1 a2 a3 
+a3 a3 a3 
+
+a3 a1 a3 
+a3 a2 a3 
+a3 a3 a3 
+
+a3 a2 a1 
+a2 a2 a2 
+a1 a2 a3 
+
+a3 a2 a2 
+a2 a2 a2 
+a2 a2 a2 
+
+a3 a2 a3 
+a2 a2 a2 
+a3 a2 a3 
+
+a3 a2 a3 
+a2 a3 a2 
+a3 a2 a3 
+
+a3 a2 a3 
+a3 a2 a3 
+a3 a2 a3 
+
+a3 a3 a1 
+a3 a3 a1 
+a1 a1 a3 
+
+a3 a3 a2 
+a3 a3 a2 
+a2 a2 a3 
+
+a3 a3 a3 
+a1 a2 a3 
+a3 a3 a3 
+
+a3 a3 a3 
+a2 a2 a2 
+a3 a3 a3 
+
+a3 a3 a3 
+a3 a1 a3 
+a3 a3 a3 
+
+a3 a3 a3 
+a3 a2 a3 
+a3 a3 a3 
+
+a3 a3 a3 
+a3 a3 a3 
+a3 a3 a3 
+
+The number of associative operations on set A is : 113
