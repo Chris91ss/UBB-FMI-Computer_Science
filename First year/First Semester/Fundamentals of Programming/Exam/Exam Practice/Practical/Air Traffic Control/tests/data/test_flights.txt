@@ -1,0 +1,3 @@
+RO650,Cluj,05:45,Bucuresti,06:40
+0B3302,Cluj,07:15,Bucuresti,08:15
+SLD322,Timisoara,09:05,Cluj,10:00
