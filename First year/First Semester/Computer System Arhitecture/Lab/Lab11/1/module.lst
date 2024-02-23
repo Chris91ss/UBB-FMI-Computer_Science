@@ -1,0 +1,78 @@
+     1                                  bits 32
+     2                                  
+     3                                  global read_from_file
+     4                                  
+     5                                  extern exit
+     6                                  extern printf
+     7                                  extern fopen
+     8                                  extern fscanf
+     9                                  extern fclose
+    10                                  
+    11                                  import exit msvcrt.dll
+    12                                  import printf msvcrt.dll
+    13                                  import fopen msvcrt.dll
+    14                                  import fscanf msvcrt.dll
+    15                                  import fclose msvcrt.dll
+    16                                  
+    17                                  section data use32 class=data
+    18 00000000 6E756D626572732E74-         file_name       db "numbers.txt", 0
+    18 00000009 787400             
+    19 0000000C 7200                        file_access_mode db "r", 0
+    20 0000000E <res 00000004>              file_descriptor resd 1
+    21                                      
+    22 00000012 <res 00000028>              text resd 10  
+    23 0000003A <res 00000028>              reversed_doubled_text resd 10
+    24 00000062 256400                      input_format db "%d", 0
+    25 00000065 526576657273656420-         output_format db "Reversed double numbers are: ", 10, 0
+    25 0000006E 646F75626C65206E75-
+    25 00000077 6D6265727320617265-
+    25 00000080 3A200A00           
+    26 00000084 2564200A00                  output_format_with_comma db "%d ", 10, 0
+    27 00000089 00                          number_of_elements db 0
+    28                                  
+    29                                  section code use32 class=code
+    30                                      read_from_file:
+    31                                          ; Open the file
+    32 00000000 68[0C000000]                    push dword file_access_mode
+    33 00000005 68[00000000]                    push dword file_name
+    34 0000000A FF15[00000000]                  call [fopen]
+    35 00000010 83C408                          add ESP, 4 * 2
+    36                                  
+    37 00000013 A3[0E000000]                    mov [file_descriptor], EAX
+    38 00000018 83F800                          cmp EAX, 0
+    39 0000001B 743D                            je done_processing
+    40                                  
+    41                                          ; Initialize reversed_doubled_text to 0
+    42 0000001D C705[3A000000]0000-             mov dword [reversed_doubled_text], 0
+    42 00000025 0000               
+    43 00000027 BE00000000                      mov esi, 0
+    44 0000002C B900000000                      mov ecx, 0 ; Initialize ecx to zero (to store number_of_elements)
+    45                                  
+    46                                          ; Read characters from the file
+    47                                          process_characters:
+    48 00000031 68[12000000]                        push dword text
+    49 00000036 68[62000000]                        push dword input_format
+    50 0000003B FF35[0E000000]                      push dword [file_descriptor]
+    51 00000041 FF15[00000000]                      call [fscanf]
+    52 00000047 83C40C                              add ESP, 4 * 3
+    53                                  
+    54                                              ; Check if fscanf successful
+    55 0000004A 83F801                              cmp eax, 1
+    56 0000004D 7C0B                                jl  done_processing
+    57                                  
+    58 0000004F A1[12000000]                        mov eax, [text]
+    59 00000054 01C0                                add eax, eax      ; double the number
+    60                                  
+    61                                              ; Save values on the stack for later use
+    62 00000056 50                                  push eax  ; Save the doubled number (reversed_doubled_text)
+    63 00000057 41                                  inc ecx   ; Increment the count of numbers (number_of_elements)
+    64                                              
+    65 00000058 EBD7                                jmp process_characters
+    66                                  
+    67                                          done_processing:
+    68                                              ; Close the file
+    69 0000005A FF35[0E000000]                      push dword [file_descriptor]
+    70 00000060 FF15[00000000]                      call [fclose]
+    71 00000066 83C404                              add ESP, 4 * 1
+    72                                  
+    73 00000069 C3                                  ret ; Return without manually adjusting the stack

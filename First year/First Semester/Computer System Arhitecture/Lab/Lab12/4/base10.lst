@@ -1,0 +1,30 @@
+     1                                  bits 32
+     2                                  
+     3                                  global _base10
+     4                                  
+     5                                  segment data public data use32
+     6                                      
+     7                                  segment code public code use32
+     8                                  
+     9                                  _base10:
+    10                                      ; Multiple numbers in base 2 are read from the keyboard. Display these numbers in the base 16.
+    11 00000000 55                          push ebp
+    12 00000001 89E5                        mov ebp, esp
+    13 00000003 8B7508                      mov esi, [ebp + 8]
+    14 00000006 FC                      	cld
+    15 00000007 BA00000000              	mov edx, 0
+    16 0000000C B800000000              	mov eax, 0
+    17                                  	compute_nr:
+    18 00000011 AC                      		LODSB
+    19 00000012 3C00                    		cmp al, 0
+    20 00000014 7408                    		jz final
+    21 00000016 2C30                    		sub al, '0'
+    22 00000018 D1E2                    		shl edx, 1
+    23 0000001A 01C2                    		add edx, eax
+    24 0000001C EBF3                    		jmp compute_nr		
+    25                                  	final:
+    26 0000001E 89D0                    	mov eax, edx
+    27 00000020 89EC                    	mov esp, ebp
+    28 00000022 5D                          pop ebp
+    29 00000023 C3                          ret
+    30                                      

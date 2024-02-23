@@ -1,0 +1,69 @@
+     1                                  bits 32
+     2                                  
+     3                                  
+     4                                  global start
+     5                                  
+     6                                  extern exit, gets, printf
+     7                                  import exit msvcrt.dll
+     8                                  import gets msvcrt.dll
+     9                                  import printf msvcrt.dll
+    10                                  
+    11                                  extern get_numbers
+    12                                  
+    13                                  
+    14                                  segment data use32 class=data
+    15 00000000 257300                      format db "%s", 0
+    16                                      
+    17 00000003 456E74657220746865-         message_input db "Enter the string (mustn't be longer than 100 characters): ", 0
+    17 0000000C 20737472696E672028-
+    17 00000015 6D7573746E27742062-
+    17 0000001E 65206C6F6E67657220-
+    17 00000027 7468616E2031303020-
+    17 00000030 636861726163746572-
+    17 00000039 73293A2000         
+    18 0000003E 546865206469676974-         message_output db "The digit string is: ", 0
+    18 00000047 20737472696E672069-
+    18 00000050 733A2000           
+    19                                      
+    20 00000054 <res 00000064>              string resb 100
+    21 000000B8 00000000                    digit_string_address dd 0
+    22                                  
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                  		
+    26                                          ; print the input message
+    27 00000000 68[03000000]                    push message_input
+    28 00000005 68[00000000]                    push format
+    29 0000000A FF15[00000000]                  call [printf]
+    30 00000010 83C408                          add esp, 4 * 2
+    31                                          
+    32                                          ; read the input string
+    33 00000013 68[54000000]            		push string
+    34 00000018 FF15[00000000]          		call [gets]
+    35 0000001E 83C404                  		add esp, 4 * 1
+    36                                  		
+    37                                          ; get the digit string
+    38 00000021 68[54000000]            		push string
+    39 00000026 E8(00000000)            		call get_numbers
+    40 0000002B 83C404                  		add esp, 4 * 1
+    41 0000002E A3[B8000000]                    mov [digit_string_address], eax  ; move the returned string address into digit_string_address
+    42                                          
+    43                                          ; print the output message
+    44 00000033 68[3E000000]                    push message_output
+    45 00000038 68[00000000]                    push format
+    46 0000003D FF15[00000000]                  call [printf]
+    47 00000043 83C408                          add esp, 4 * 2
+    48                                          
+    49                                          ; print the digit string
+    50 00000046 FF35[B8000000]                  push dword [digit_string_address]
+    51 0000004C 68[00000000]                    push format
+    52 00000051 FF15[00000000]                  call [printf]
+    53 00000057 83C408                          add esp, 4 * 2
+    54                                          
+    55                                          ; this is just so the program doesn't close immediately
+    56 0000005A 68[54000000]                    push string
+    57 0000005F FF15[00000000]          		call [gets]
+    58 00000065 83C404                  		add esp, 4 * 1
+    59                                  		
+    60 00000068 6A00                    		push 0
+    61 0000006A FF15[00000000]          		call [exit]

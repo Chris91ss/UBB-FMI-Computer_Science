@@ -1,0 +1,23 @@
+     1                                  bits 32
+     2                                  
+     3                                  
+     4                                  global _read_input
+     5                                  
+     6                                  extern _gets
+     7                                  
+     8                                  
+     9                                  segment data use32 class=data
+    10                                  
+    11                                  
+    12                                  segment code use32 class=code
+    13                                      _read_input:
+    14 00000000 55                              push ebp
+    15 00000001 89E5                            mov ebp, esp
+    16                                              
+    17 00000003 FF7508                              push dword [ebp + 8] ; read_input receives as a parameter a string
+    18 00000006 E8(00000000)                        call _gets
+    19 0000000B 83C404                              add esp, 4 * 1
+    20                                          
+    21 0000000E 89EC                            mov esp, ebp
+    22 00000010 5D                              pop ebp
+    23 00000011 C3                              ret

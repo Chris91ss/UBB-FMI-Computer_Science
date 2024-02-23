@@ -1,0 +1,121 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  extern printf             ; printf is used for displaying formatted output
+     9                                  extern fopen              ; fopen is used to open a file
+    10                                  extern fscanf             ; fscanf is used to read from a file
+    11                                  extern fclose             ; fclose is used to close a file
+    12                                  
+    13                                  import exit msvcrt.dll
+    14                                  import printf msvcrt.dll
+    15                                  import fopen msvcrt.dll
+    16                                  import fscanf msvcrt.dll
+    17                                  import fclose msvcrt.dll
+    18                                  
+    19                                  ; our data is declared here (the variables needed by our program)
+    20                                  section data use32 class=data
+    21 00000000 6E756D626572732E74-         file_name       db "numbers.txt", 0
+    21 00000009 787400             
+    22 0000000C 7200                        file_access_mode db "r", 0
+    23 0000000E <res 00000004>              file_descriptor resd 1
+    24                                      
+    25 00000012 <res 00000028>              text resd 10  
+    26 0000003A <res 00000028>              reversed_doubled_text   resd 10
+    27 00000062 256400                      input_format    db "%d", 0
+    28 00000065 526576657273656420-         output_format   db "Reversed double numbers are: ", 10, 0
+    28 0000006E 646F75626C65206E75-
+    28 00000077 6D6265727320617265-
+    28 00000080 3A200A00           
+    29 00000084 2564200A00                  output_format_with_comma db "%d ", 10, 0
+    30 00000089 00                          number_of_elements db 0
+    31 0000008A 00                          copy_of_number_of_elements db 0
+    32                                      
+    33                                  
+    34                                  ; our code starts here
+    35                                  section code use32 class=code
+    36                                      start:
+    37                                          ; Open the file
+    38 00000000 68[0C000000]                    push dword file_access_mode
+    39 00000005 68[00000000]                    push dword file_name
+    40 0000000A FF15[00000000]                  call [fopen]
+    41 00000010 83C408                          add ESP, 4 * 2
+    42                                  
+    43 00000013 A3[0E000000]                    mov [file_descriptor], EAX
+    44 00000018 83F800                          cmp EAX, 0
+    45 0000001B 7445                            je done_processing
+    46                                  
+    47                                          ; Initialize reversed_doubled_text to 0
+    48 0000001D C705[3A000000]0000-             mov dword [reversed_doubled_text], 0
+    48 00000025 0000               
+    49 00000027 BE00000000                      mov esi, 0
+    50                                  
+    51                                          ; Read characters from the file
+    52                                          process_characters:
+    53 0000002C 68[12000000]                        push dword text
+    54 00000031 68[62000000]                        push dword input_format
+    55 00000036 FF35[0E000000]                      push dword [file_descriptor]
+    56 0000003C FF15[00000000]                      call [fscanf]
+    57 00000042 83C40C                              add ESP, 4 * 3
+    58                                  
+    59                                              ; Check if fscanf successful
+    60 00000045 83F801                              cmp eax, 1
+    61 00000048 7C18                                jl  done_processing
+    62                                  
+    63 0000004A A1[12000000]                        mov eax, [text]
+    64 0000004F 01C0                                add eax, eax      ; double the number
+    65 00000051 8986[3A000000]                      mov [reversed_doubled_text + esi], eax        ; add the number to the result string
+    66 00000057 FE05[89000000]                      inc byte [number_of_elements]
+    67 0000005D 83C604                              add esi, 4
+    68                                              
+    69 00000060 EBCA                                jmp process_characters
+    70                                  
+    71                                  
+    72                                          done_processing:
+    73                                              ; Close the file
+    74 00000062 FF35[0E000000]                      push dword [file_descriptor]
+    75 00000068 FF15[00000000]                      call [fclose]
+    76 0000006E 83C404                              add ESP, 4 * 1
+    77                                              
+    78 00000071 BE00000000                          mov esi, 0
+    79 00000076 A1[89000000]                        mov eax, [number_of_elements]
+    80 0000007B 0105[8A000000]                      add [copy_of_number_of_elements], eax
+    81                                              
+    82                                              ; Display the result on the screen
+    83 00000081 68[65000000]                        push dword output_format
+    84 00000086 FF15[00000000]                      call [printf]
+    85 0000008C 83C404                              add ESP, 4 * 1
+    86                                              
+    87                                              get_to_end_of_string:
+    88 0000008F 803D[8A000000]00                        cmp byte [copy_of_number_of_elements], 0
+    89 00000096 740B                                    je dec_once
+    90 00000098 FE0D[8A000000]                          dec byte [copy_of_number_of_elements]
+    91                                                  
+    92 0000009E 83C604                                  add esi, 4
+    93 000000A1 EBEC                                    jmp get_to_end_of_string
+    94                                              
+    95                                              dec_once:
+    96 000000A3 83EE04                              sub esi, 4
+    97                                              
+    98                                              print_loop:
+    99 000000A6 803D[89000000]00                        cmp byte [number_of_elements], 0
+   100 000000AD 741F                                    je end_of_string
+   101 000000AF FE0D[89000000]                          dec byte [number_of_elements]
+   102                                              
+   103 000000B5 FFB6[3A000000]                          push dword [reversed_doubled_text + esi]
+   104 000000BB 68[84000000]                            push dword output_format_with_comma
+   105 000000C0 FF15[00000000]                          call [printf]
+   106 000000C6 83C408                                  add ESP, 4 * 2
+   107 000000C9 83EE04                                  sub esi, 4
+   108 000000CC EBD8                                    jmp print_loop
+   109                                              
+   110                                          end_of_string:
+   111                                          ; Exit the program
+   112 000000CE 6A00                            push dword 0
+   113 000000D0 FF15[00000000]                  call [exit]
+   114                                  
+   115                                  
+   116                                  
