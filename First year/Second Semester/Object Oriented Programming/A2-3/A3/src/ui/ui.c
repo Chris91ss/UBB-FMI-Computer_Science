@@ -49,6 +49,12 @@ void RunApp(UI *ui)
             DisplayEstatesOfGivenTypeUI(ui);
             break;
         case 7:
+            UndoUI(ui);
+            break;
+        case 8:
+            RedoUI(ui);
+            break;
+        case 9:
             printf("Exiting...\n");
             exit(0);
         default:
@@ -66,7 +72,9 @@ void PrintMenu()
     printf("4. Display Estates.\n");
     printf("5. Display Estates sorted by their price or surface, by a given string.\n");
     printf("6. Display Estates of a given type, having the surface greater than a provided value, in descending or ascending order.\n");
-    printf("7. Exit...\n");
+    printf("7. Undo last operation.\n");
+    printf("8. Redo last operation.\n");
+    printf("9. Exit...\n");
 }
 
 void PrintTitle()
@@ -311,5 +319,31 @@ void DisplayEstatesOfGivenTypeUI(UI *ui)
         DisplayEstate(*estate);
     }
     DestroyDynamicArray(estates);
+}
+
+void UndoUI(UI *ui)
+{
+    int result = Undo(ui->service);
+    if (result)
+    {
+        printf("Undo successful!\n");
+    }
+    else
+    {
+        printf("Undo failed!\n");
+    }
+}
+
+void RedoUI(UI *ui)
+{
+    int result = Redo(ui->service);
+    if (result)
+    {
+        printf("Redo successful!\n");
+    }
+    else
+    {
+        printf("Redo failed!\n");
+    }
 }
 

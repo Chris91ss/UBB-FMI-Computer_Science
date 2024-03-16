@@ -9,6 +9,8 @@ typedef struct {
 
 Repository *CreateRepository();
 void DestroyRepository(Repository *repository);
+Repository *CopyRepository(Repository *repository);
+
 int Add(Repository *repository, Estate *estate);
 int Delete(Repository *repository, const char* address);
 int Update(Repository *repository,const char* address, EstateType new_type, double new_surface, double new_price);

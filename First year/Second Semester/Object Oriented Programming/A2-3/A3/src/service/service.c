@@ -6,31 +6,46 @@
 
 #pragma once
 
-Service* CreateService(Repository *repository)
+Service* CreateService(Repository *repository, Stack *undoStack, Stack *redoStack)
 {
     Service *service = (Service *) malloc(sizeof(Service));
     service->repository = repository;
+    service->undoStack = undoStack;
+    service->redoStack = redoStack;
     return service;
 }
 
 void DestroyService(Service *service)
 {
     DestroyRepository(service->repository);
+    DestroyStack(service->undoStack);
+    DestroyStack(service->redoStack);
     free(service);
+}
+
+void SaveBeforeOperation(Service *service){
+    Repository *repositoryCopy = CopyRepository(service->repository);
+    PushStack(service->undoStack, repositoryCopy);
 }
 
 int AddEstate(Service *service, Estate *estate) {
     if(GetEstate(service->repository, GetEstateAddress(estate)) != NULL)
         return 0;
 
+    SaveBeforeOperation(service);
+
     return Add(service->repository, estate);
 }
 
 int DeleteEstate(Service *service, const char* address) {
+    SaveBeforeOperation(service);
+
     return Delete(service->repository, address);
 }
 
 int UpdateEstate(Service *service, const char* address, EstateType new_type, double new_surface, double new_price) {
+    SaveBeforeOperation(service);
+
     return Update(service->repository, address, new_type, new_surface, new_price);
 }
 
@@ -87,6 +102,26 @@ void SortEstatesBySurface(DynamicArray *estates, CompareEstate CompareFunction)
             }
         }
     }
+}
+
+int Undo(Service *service) {
+    Repository *tempRepository = PopStack(service->undoStack);
+    if(tempRepository == NULL)
+        return 0;
+
+    PushStack(service->redoStack, CopyRepository(service->repository));
+    service->repository = tempRepository;
+    return 1;
+}
+
+int Redo(Service *service) {
+    Repository *tempRepository = PopStack(service->redoStack);
+    if(tempRepository == NULL)
+        return 0;
+
+    PushStack(service->undoStack, CopyRepository(service->repository));
+    service->repository = tempRepository;
+    return 1;
 }
 
 

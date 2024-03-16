@@ -12,9 +12,14 @@ void RunApp(UI *ui);
 void GenerateRandomData(UI *ui);
 void PrintMenu();
 void PrintTitle();
+
 void AddEstateUI(UI *ui);
 void DeleteEstateUI(UI *ui);
 void UpdateEstateUI(UI *ui);
+
 void DisplayEstatesUI(UI *ui);
 void DisplayEstatesContainingStringUI(UI *ui);
 void DisplayEstatesOfGivenTypeUI(UI *ui);
+
+void UndoUI(UI *ui);
+void RedoUI(UI *ui);

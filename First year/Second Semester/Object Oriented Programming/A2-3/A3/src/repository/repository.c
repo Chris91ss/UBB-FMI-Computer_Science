@@ -15,6 +15,16 @@ void DestroyRepository(Repository *repository) {
     free(repository);
 }
 
+Repository *CopyRepository(Repository *repository) {
+    Repository *newRepository = CreateRepository();
+    for (int i = 0; i < repository->estates->length; i++) {
+        Estate *estate = (Estate *) repository->estates->elems[i];
+        Estate *newEstate = CopyEstate(estate);
+        AddElementToDynamicArray(newRepository->estates, newEstate);
+    }
+    return newRepository;
+}
+
 int Add(Repository *repository, Estate *estate) {
     return AddElementToDynamicArray(repository->estates, estate);
 }
