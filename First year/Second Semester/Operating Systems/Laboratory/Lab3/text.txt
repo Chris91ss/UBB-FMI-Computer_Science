@@ -1,0 +1,9 @@
+hello aafafn jf 
+ana are mere
+Hello WorLD!
+anamaria
+
+// search for word "ana" - grep "ana" text.txt
+// grep "Ana" text.txt - does not find anything
+// grep -i "Ana" text.txt - disables case sensitive so we get the same result as the first
+// sed 's/ / /' 
