@@ -87,8 +87,8 @@ class UI:
     def __get_in_degree_and_out_degree_of_a_vertex(self):
         vertex = int(input("Enter the vertex: "))
         try:
-            in_degree = len(self.__graph.inbound_edges[vertex])
-            out_degree = len(self.__graph.outbound_edges[vertex])
+            in_degree = self.__graph.get_inbound_edges_degree(vertex)
+            out_degree = self.__graph.get_outbound_edges_degree(vertex)
             print(f"The in degree of {vertex} is {in_degree} and the out degree of {vertex} is {out_degree}")
         except KeyError:
             print(f"The vertex {vertex} is not in the current graph.")

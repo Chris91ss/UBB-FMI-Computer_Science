@@ -78,6 +78,12 @@ class DirectedGraph:
         """
         return list(self.inbound_edges.keys())
 
+    def get_inbound_edges_degree(self, vertex):
+        len(self.inbound_edges[vertex])
+
+    def get_outbound_edges_degree(self, vertex):
+        len(self.outbound_edges[vertex])
+
     def check_if_edge_exists(self, source, destination) -> bool:
         """
         Checks if an edge exists between two vertices
@@ -85,7 +91,9 @@ class DirectedGraph:
         :param destination: the destination vertex
         :return: True if the edge exists, False otherwise
         """
-        return (source, destination) in self.costs
+        if source in self.inbound_edges and destination in self.outbound_edges[source]:
+            return True
+        return False
 
     def add_vertex(self, vertex):
         """
