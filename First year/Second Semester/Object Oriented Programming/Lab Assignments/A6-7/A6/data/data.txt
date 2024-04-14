@@ -1,0 +1,10 @@
+S,Black,125.99,2,photo1
+M,White,99.99,5,photo2
+L,Red,100.99,7,photo3
+XL,Blue,450.99,1,photo4
+L,Green,570.99,3,photo5
+S,Yellow,333.99,5,photo6
+M,Orange,999.99,10,photo7
+L,Purple,128.99,15,photo8
+L,Pink,357.99,11,photo9
+XXL,Brown,246.99,5,photo10
