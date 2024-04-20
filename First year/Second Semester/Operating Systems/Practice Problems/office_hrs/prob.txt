@@ -1,0 +1,4 @@
+
+. m.txt 1
+d1 h.txt 2
+. aaa 0

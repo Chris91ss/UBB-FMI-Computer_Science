@@ -1,0 +1,26 @@
+grep "economica.*Sun" last | awk '{print $1}' | sort | uniq
+
+awk '{split($7, a, ":"); if (a[1] >= 23) print $1}' last | sort | uniq | head -n -1
+
+grep "^m" passwd | awk -F: '{if($3 % 7 == 0)print $5}'
+
+grep "root" ps | awk '{print $6}' | sort | uniq
+
+grep "^......88" passwd | awk -F: '{print $5}'     or grep "^88:" passwd | awk -F: '{print $5}'
+
+awk -F: '{if ( $3 >= 230 &&  $3 <= 239) print $5}' passwd
+
+grep "^t.*" pts/9 last | awk '{print $1}' | sort | uniq     or grep "pts/9 " last.fake | awk '$1 ~ /^[t]/ {print $1}' | sort | uniq
+
+grep "^r" ps | awk '{print $1}' | sort | uniq | sed 's/\([aeiou]\)/\1\1/g'
+
+sed 's/[A-Za-z0-9\s]//g' passwd | sort | uniq
+or sed "s/[ a-zA-Z0-9-]//g" passwd.fake | sort | uniq
+
+sed 's/[^r]//g' passwd | sort | uniq
+
+awk 'BEGIN{sum = 0; cnt = 0}{sum += $1; cnt++}END{print sum / cnt}' ps
+
+exam photo no. 1:
+ awk -F' ' '$1 % 2 == 0{print $1 " " $2 " " $3 " " $4} {for(i = 5; i <= NF; i++){if($1 % 2 == 0 && $i ~ /^[aeiouAEIOU].*[aeiouAEIOU]$/){print $i}}}' a.txt | sed "s/[aeiouAEIOU]/\?/g"
+ 
