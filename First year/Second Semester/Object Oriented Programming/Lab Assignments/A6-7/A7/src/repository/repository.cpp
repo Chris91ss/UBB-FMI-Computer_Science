@@ -52,6 +52,10 @@ void Repository::WriteToFile() {
     throw RepositoryException("Not implemented!");
 }
 
+void Repository::ReadFromFile() {
+    throw RepositoryException("Not implemented!");
+}
+
 void Repository::OpenInApplication() {
     throw RepositoryException("Not implemented!");
 }

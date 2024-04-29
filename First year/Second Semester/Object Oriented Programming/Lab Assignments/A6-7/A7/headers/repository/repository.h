@@ -28,5 +28,6 @@ public:
     double GetTotalBasketPrice() const;
     void SetTotalBasketPrice(double newTotalBasketPrice);
     virtual void WriteToFile();
+    virtual void ReadFromFile();
     virtual void OpenInApplication();
 };

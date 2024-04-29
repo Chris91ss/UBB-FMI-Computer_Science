@@ -9,5 +9,6 @@ private:
 public:
     explicit CSVRepository(string fileName);
     void WriteToFile() override;
+    void ReadFromFile() override;
     void OpenInApplication() override;
 };

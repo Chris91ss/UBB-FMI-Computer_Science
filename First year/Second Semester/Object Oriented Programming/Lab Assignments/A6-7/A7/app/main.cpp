@@ -60,6 +60,7 @@ int main()
             if (shoppingBasketType == "csv") {
                 isValid = true;
                 CSVRepository shoppingBasket("../data/shoppingBasket.csv");
+                shoppingBasket.ReadFromFile();
                 if (repositoryType == "memory") {
                     Service service(repository);
                     service.Generate10Entities();
