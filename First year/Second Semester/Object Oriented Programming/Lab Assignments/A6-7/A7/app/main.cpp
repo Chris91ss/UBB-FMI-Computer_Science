@@ -3,6 +3,7 @@
 #include "test.h"
 #include "textRepository.h"
 #include "htmlRepository.h"
+#include "dataBaseRepository.h"
 
 //reads the repository type from a file settings.properties
 string getRepositoryType()
@@ -45,7 +46,9 @@ int main()
     string repositoryType = getRepositoryType();
     Repository repository;
     TextRepository textRepository("../data/data.txt");
+    DataBaseRepository databaseRepository("../data/trenchCoats.db");
     textRepository.readFromFile();
+    databaseRepository.readFromFile();
 
     string shoppingBasketType;
     bool isValid = false;
@@ -69,6 +72,12 @@ int main()
                     UI ui(service, shoppingBasketService);
                     ui.Run();
                     textRepository.WriteToFile();
+                }
+                else if (repositoryType == "database") {
+                    Service service(databaseRepository);
+                    Service shoppingBasketService(shoppingBasket);
+                    UI ui(service, shoppingBasketService);
+                    ui.Run();
                 } else
                     throw RepositoryException("Invalid repository type");
             } else if (shoppingBasketType == "html") {
@@ -86,7 +95,13 @@ int main()
                     UI ui(service, shoppingBasketService);
                     ui.Run();
                     textRepository.WriteToFile();
-                } else
+                }
+                else if (repositoryType == "database") {
+                    Service service(databaseRepository);
+                    Service shoppingBasketService(shoppingBasket);
+                    UI ui(service, shoppingBasketService);
+                    ui.Run();
+                }else
                     throw RepositoryException("Invalid repository type");
             } else
                 throw RepositoryException("Invalid shopping basket type");
