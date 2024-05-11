@@ -10,6 +10,7 @@
 #include "headers/utilities/exceptions.h"
 #include <qlayout.h>
 #include <QPushButton>
+#include <QPainter>
 
 #include "gui.h"
 
@@ -158,6 +159,9 @@ private:
     void userAddToBasket();
     void userEmptyBasket();
     void userOpen();
+
+protected:
+    void paintEvent(QPaintEvent *event) override;
 };
 
 

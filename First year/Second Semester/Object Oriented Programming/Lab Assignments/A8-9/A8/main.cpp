@@ -11,5 +11,6 @@ int main(int argc, char* argv[])
     textRepository.readFromFile();
     Service service(textRepository);
     GUI gui(nullptr, service);
+    gui.show();
     return QApplication::exec();
 }

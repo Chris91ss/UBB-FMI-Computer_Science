@@ -485,3 +485,35 @@ void GUI::userOpen() {
     }
 }
 
+void GUI::paintEvent(QPaintEvent *event) {
+    QPainter painter(this);
+
+    int coatsUnder200DolarsCount = 0;
+    int coatsOver200DolarsCount = 0;
+    for (auto &coat : this->service.getAllTrenchCoats()) {
+        if (coat.GetPrice() < 200) {
+            coatsUnder200DolarsCount++;
+        } else {
+            coatsOver200DolarsCount++;
+        }
+    }
+    int coatsUnder200DolarsAngle = coatsUnder200DolarsCount * 360 / this->service.getAllTrenchCoats().size();
+    int coatsOver200DolarsAngle = 360 - coatsUnder200DolarsAngle;
+
+    QRectF size = QRectF(82, 50, this->width() - 160, this->width() - 160);
+
+    painter.setBrush(Qt::red);
+    painter.drawPie(size, 0, coatsUnder200DolarsAngle * 16);
+    painter.setBrush(Qt::blue);
+    painter.drawPie(size, coatsUnder200DolarsAngle * 16, coatsOver200DolarsAngle * 16);
+
+    /// Draw legend
+    painter.setBrush(Qt::red);
+    painter.drawRect(10, 20, 20, 20);
+    painter.setBrush(Qt::blue);
+    painter.drawRect(10, 50, 20, 20);
+    painter.setBrush(Qt::black);
+    painter.drawText(40, 35, "Coats under 200$");
+    painter.drawText(40, 65, "Coats over 200$");
+}
+
