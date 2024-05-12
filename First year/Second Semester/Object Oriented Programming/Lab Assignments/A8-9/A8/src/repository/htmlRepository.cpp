@@ -1,5 +1,6 @@
 #include "../../headers/repository/htmlRepository.h"
 //#include <Windows.h>
+#include <regex>
 
 HTMLRepository::HTMLRepository(string fileName) : fileName(std::move(fileName)) {}
 
@@ -44,6 +45,37 @@ void HTMLRepository::WriteToFile() {
     file << R"(</html>)" << std::endl;
 
     file.close();
+}
+
+void HTMLRepository::ReadFromFile() {
+    ifstream HTMLInputFile(this->fileName.c_str());
+
+    if (!HTMLInputFile.is_open())
+        throw FileException("The HTML file could not be opened!");
+
+    std::string line;
+    std::string html_content;
+    while (getline(HTMLInputFile, line)) {
+        html_content += line + "\n";
+    }
+
+    regex row_pattern(R"lit(<tr>\s*<td>([^<]*)</td>\s*<td>([^<]*)</td>\s*<td>([^<]*)</td>\s*<td>([^<]*)</td>\s*<td><a href="([^"]*)">[^<]*</a></td>\s*</tr>)lit");
+    smatch match;
+
+    while (std::regex_search(html_content, match, row_pattern) && match.size() > 5) {
+        string size = match.str(1);
+        string color = match.str(2);
+        string price = match.str(3);
+        string quantity = match.str(4);
+        string photo = match.str(5);
+
+        TrenchCoat trenchCoat(size, color, stod(price), stoi(quantity), photo);
+        Repository::Add(trenchCoat);
+
+        html_content = match.suffix().str();
+    }
+
+    HTMLInputFile.close();
 }
 
 void HTMLRepository::OpenInApplication() {

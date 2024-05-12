@@ -409,7 +409,7 @@ void GUI::setBasketToCSV() {
 void GUI::setBasketToHTML() {
     Service user(htmlRepo);
     if(htmlRepo.GetSize() == 0)
-        user.Generate10Entities();
+        htmlRepo.ReadFromFile();
     userService = user;
 
     this->showUserWindow();
