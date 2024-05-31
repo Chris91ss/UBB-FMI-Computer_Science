@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GUI</class>
+ <widget class="QWidget" name="GUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>919</width>
+    <height>533</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GUI</string>
+  </property>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>256</width>
+     <height>451</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="errorLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>470</y>
+     <width>261</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="symptomsListWidget">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>10</y>
+     <width>256</width>
+     <height>341</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>360</y>
+     <width>251</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Disorder</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="disorderLineEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="showSymptomsPushButton">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>450</y>
+     <width>121</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Show Symptoms</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>20</y>
+     <width>291</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Search -&gt; Input category or name</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="searchLineEdit"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,11 @@
+M,White,99.99,5,https://www.hugoboss.com/ro/en/oversized-fit-trench-coat-in-water-repellent-cotton/hbeu50505640_357.html?gad_source=1&gclid=EAIaIQobChMIzLe3uYnlhQMV6K2DBx3hCAO-EAQYBCABEgIMmfD_BwE
+L,Red,100.99,7,https://www.aboutyou.ro/p/influencer/palton-de-primavara-toamna-14112677
+XL,Blue,450.99,1,https://uk.tommy.com/double-breasted-relaxed-trench-coat-ww0ww41900dw5
+L,Green,570.99,3,https://eu.akris.com/products/silk-organza-trenchcoat-leaf?gad_source=1&gclid=EAIaIQobChMIjNXQ34rlhQMVmK6DBx1HnQWuEAQYASABEgL4LvD_BwE
+S,Yellow,333.99,5,https://ro.marinarinaldi.com/p-7011014106001-bolivia-lemon?gad_source=1&gclid=EAIaIQobChMIqLuJ6IrlhQMVmLKDBx02QAPTEAQYBSABEgIKN_D_BwE&gclsrc=aw.ds
+L,Purple,128.99,15,https://www.aboutyou.ro/p/lauren-ralph-lauren/palton-de-primavara-toamna-14589144
+L,Pink,357.99,11,https://www.aboutyou.ro/p/lascana/palton-de-vara-16358348
+XXL,Brown,246.99,3,https://www.hugoboss.com/ro/en/belted-trench-coat-with-hardware-trims/hbeu50521406_220.html?gad_source=1&gclid=EAIaIQobChMIzpqhsIvlhQMVrJaDBx0VhgNpEAQYEiABEgKSfvD_BwE
+S,Black,129,12,url
+L,Cyan,1000,1,Cyan Hoodie URL
+S,Red,100,1,1
