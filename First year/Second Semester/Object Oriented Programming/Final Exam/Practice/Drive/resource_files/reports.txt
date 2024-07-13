@@ -1,0 +1,5 @@
+Santier;Ion;10;-10;false
+Masina;Ion;10;-9;false
+Groapa;Ion;0;0;true;Dorin;Ana
+copil in drum;Ion;0;5;false;Dorin;Ana;Dorin
+santier;Dorin;0;5;false

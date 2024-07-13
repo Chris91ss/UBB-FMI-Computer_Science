@@ -1,0 +1,11 @@
+UI not responsive;closed;Alice Johnson;Eve
+Database connection failed;closed;Charlie Brown;Bob Smith
+Login button not working;closed;Eve Davis;Eve
+Performance issues on mobile;closed;Bob Smith;Alice Johnson
+Incorrect error messages;closed;David Wilson;Eve
+Crashing;open;Eve;
+fg;closed;Eve;Eve
+gh;closed;Eve;Eve
+ghj;closed;Eve;Eve
+ghjjfy;closed;Eve;Eve
+jbhwvbhwv;open;Eve;

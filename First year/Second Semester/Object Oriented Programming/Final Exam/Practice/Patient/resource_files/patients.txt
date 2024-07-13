@@ -1,0 +1,3 @@
+Dorian;moare;Ginecologie;Andrei;26;6;2023
+Luca;undiagnosed;;Ion;25;6;2023
+Cristi;moare;Dermatologie;Ana;27;6;2023

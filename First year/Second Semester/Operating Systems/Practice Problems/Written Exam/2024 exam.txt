@@ -1,0 +1,208 @@
+RO: Daţi o expresie regulară care acceptă orice secvenţă de cuvinte formate exclusiv din litere mici, conţinând cel puţin două vocale, separate printr-un singur spaţiu şi fără niciun alt caracter la începutul sau la sfârşitul secvenţei.
+EN: Give a regular expression that matches any sequence of lower-case words, containing at least two vowels, separated by a single space and without any other character at the beginning or at the end of the sequence
+
+Answer:
+grep -E '^[a-z]*[aeiou][a-z]*[aeiou][a-z]*( [a-z]*[aeiou][a-z]*[aeiou][a-z]*)*$'
+
+RO: Daţi două comenzi GREP care afişează dintr-un fişier liniile a căror lungime nu e multiplu de 3.
+EN: Give two GREP commands that display the lines of a file whose length is not a multiple of 3.
+
+Answer:
+grep -E '.{1,2}($|.{3}*$)' file.txt
+grep -Pv '^(.{3})*$' file.txt
+grep '.' file.txt | awk 'length % 3 != 0'
+
+
+RO: Scrieţi o comandă SED care afişează liniile unui fişier interschimbând pe fiecare linie primul A mare cu primul B mare.
+EN: Write a SED command that displays a file's lines swapping on each line the first capital A with the first capital B.
+
+Answer:
+sed -E 's/(.*?)(A)(.*?)(B)/\1B\3A/' filename
+
+RO: Scrieţi o comandă AWK care afişează numărul de linii pe care primul şi ultimul câmp sunt identice, iar penultimul câmp are lungime pară.
+EN: Write an AWK command that displays the number of lines that have the first and last fields identical, and the next to last field is of even length.
+
+Answer:
+awk '{
+    if ($1 == $NF && length($(NF-1)) % 2 == 0) 
+        count++
+} 
+END { 
+    print count 
+}' filename
+
+
+RO: Daţi trei linii de comandă Linux care fiecare crează un fişier gol.
+EN: Give three Linux command lines that each create an empty file.
+
+Answer:
+touch filename
+> filename
+echo -n > filename
+cat /dev/null > filename
+
+RO: Scrieţi cinci condiţii Shell UNIX care verifică dacă un string e gol.
+EN: Write five UNIX Shell conditions that check that a string is empty.
+
+Answer:
+if test -z "$string"; then
+    echo "String is empty"
+fi
+
+if [ -z "$string" ]; then
+    echo "String is empty"
+fi
+
+if [[ -z "$string" ]]; then
+    echo "String is empty"
+fi
+
+if [ "$string" = "" ]; then
+    echo "String is empty"
+fi
+
+if test "$string" == ""; then
+    echo "String is empty"
+fi
+
+
+
+RO: Desenati ierarhia proceselor create de coduld e mai jos, incluzand procesul parinte.
+EN: Draw the hierarchy of processes created by the code below, including the parent process.
+
+    for(i=0; i<3; i++) {
+        if(fork() > 0) {
+            wait(0);
+        }
+    }
+
+Answer:
+P
+|
++-- C1
+    |
+    +-- C1.1
+        |
+        +-- C1.1.1
+
+
+RO: Ce va tipări fragmentul de cod de mai jos? Justificaţi răspunsul.
+EN: What will the fragment below print? Justify your answer.
+
+    execlp("expr", "expr", "a", "+", "1", NULL);
+    printf("xyz\n");
+
+Answer: Nothing, execlp replaces the current process with expr
+
+RO: Schiţaţi o implementare a funcţiilor popen şi pclose, doar pentru cazul în care outputul comenzii e scris din codul C.
+EN: Sketch an implementation of the popen and pclose functions, only for the case when the command output should be writen from the C code.
+
+Answer:
+
+RO: Câte FIFO-uri poate deschide pentru scriere un process, dacă FIFO-urile sunt şi vor fi întotdeauna folosite de alte procese doar pentru citire?
+EN: How many FIFOs can a process open for writing if the FIFOs are and will ever be used by other processes only for reading?
+
+Answer:
+A process can open as many FIFOs for writing as allowed by its file descriptor limit, typically 1024 by default, provided each FIFO is also opened for reading by another process to avoid blocking
+
+RO: Când aţi folosi execl în locul de execv?
+EN: When would you use execl instead of execv?
+
+Answer: Use execl when you know the exact number of arguments at compile time and can list them explicitly, and use execv when the arguments are stored in an array
+
+RO: Ce este o "secţiune critică"?
+EN: What is a "critical section"?
+
+Answer: 
+A "critical section" is a part of a program where shared resources are accessed and modified, requiring exclusive access to prevent race conditions and ensure data consistency
+
+RO: Daţi trei apeluri de funcţii care asigură excludere mutuală.
+EN: Give three function calls that ensure mutual exclusion.
+
+Answer:
+pthread_mutex_lock(&mutex);
+sem_wait(&semaphore);
+pthread_rwlock_wrlock(&rwlock);
+
+
+RO: Care va fi efectul înlocuirii apelurilor la pthread_mutex_lock cu apeluri la sem_post?
+EN: What will be the effect of replacing calls to pthread_mutex_lock with calls to sem_post?
+
+Answer:
+Replacing pthread_mutex_lock with sem_post will incorrectly signal a semaphore increment instead of locking a mutex, leading to undefined behavior and potential race conditions.
+
+RO: Definiţi ce e un semafor binar şi explicaţii funcţionarea.
+EN: Define what a binary semaphore is and explain its functioning.
+
+Answer: 
+A binary semaphore is a synchronization primitive that only takes values 0 and 1, used to control access to a shared resource by ensuring mutual exclusion.
+
+RO: Daţi un exemplu de valori distincte şi mai mari ca 0 pentru T, N1, N2 şi N3 pentru care programul de mai jos se incheie.
+EN: Give an example of distinct values greater than 0 for T, N1, N2, and N3 for which the program below finishes execution.
+
+pthread_barrier_t b1, b2, b3;
+
+void* f1(void* a) {
+    pthread_barrier_wait(&b1);
+    return NULL;
+}
+
+void* f2(void* a) {
+    pthread_barrier_wait(&b2);
+    return NULL;
+}
+
+void* f3(void* a) {
+    pthread_barrier_wait(&b3);
+    return NULL;
+}
+
+int main() {
+    int i;
+    pthread_t t[T][3];
+
+    pthread_barrier_init(&b1, NULL, N1);
+    pthread_barrier_init(&b2, NULL, N2);
+    pthread_barrier_init(&b3, NULL, N3);
+    for(i=0; i<T; i++) {
+        pthread_create(&t[i][0], NULL, f1, NULL);
+        pthread_create(&t[i][1], NULL, f2, NULL);
+        pthread_create(&t[i][2], NULL, f3, NULL);
+    }
+    for(i=0; i<T; i++) {
+        pthread_join(t[i][0], NULL);
+        pthread_join(t[i][1], NULL);
+        pthread_join(t[i][2], NULL);
+    }
+    pthread_barrier_destroy(&b1);
+    pthread_barrier_destroy(&b2);
+    pthread_barrier_destroy(&b3);
+    return NULL;
+}
+
+Answer:
+T = 3
+N1 = 3
+N2 = 2
+N3 = 1
+
+RO: Ce puteţi face ca programator pentru a preveni deadlock-urile?
+EN: What can you do as a software developer to prevent deadlocks?
+
+Answer: Locking resources in a predetermined, consistent order
+
+RO: Prin ce tranziţie de stare va trece un process când apelează pthread_join şi în ce condiţii? Justificaţi răspunsul.
+EN: What state transition will a process undergo when it calls pthread_join and under what conditions? Justify your answer.
+
+Answer: When a thread calls pthread_join, it transitions to the WAIT state if the target thread has not yet finished execution; it remains waiting until the target thread terminates.
+
+RO: Considerand ca dimensiunea unui bloc este B si dimensiunea unei adrese este A, cate blocuri de date sunt adresate de indirectarea dubla a unui i-nod?
+EN: Considering that the size of a block is B and the size of and address is A, how many data blocks are addressed by the double indirect addressing of an i-node?
+
+Answer: (B/A)^2
+
+RO: Ce se întâmplă cu conţinutul unui director în care e montată o partiţie?
+EN: What happens to the content of a directory in which a partition is mounted?
+
+Answer:
+When a partition is mounted on a directory, the original contents of that directory become hidden and inaccessible. The directory then serves as the mount point for the root of the mounted partition, displaying the contents of the partition instead. The original contents will reappear and become accessible again once the partition is unmounted.

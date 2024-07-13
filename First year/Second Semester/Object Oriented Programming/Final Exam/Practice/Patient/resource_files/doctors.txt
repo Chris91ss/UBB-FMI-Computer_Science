@@ -1,0 +1,3 @@
+Andrei;Ortopedie
+Ana;Ginecologie
+Ion;Dermatologie

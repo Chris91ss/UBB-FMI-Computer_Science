@@ -1,0 +1,165 @@
+1. Write a UNIX Shell command that displays all the lines in file a.txt that contain at least a distance in kilometers (i.e. 5 km).
+
+Answer: grep -E '[0-9]+ km' a.txt
+
+
+2. Write a UNIX Shell command that displays the lines of file a.txt swapping any pairs of upper case vowel followed by even digit (i.e. a23E?I2BU4 -> a23E?2I84U)
+
+Answer: sed -E 's/([AEIOU])([02468])/\2\1/g' a.txt
+
+
+3. Write a UNIX Shell command that displays a list of all unique appearances of SCS usernames belonging to the English or Romanian sections (e.g. abie1234, cdir5678) that appear in a text file a.txt
+
+Answer: grep -oE '\b[a-z]{4}[0-9]{4}\b' a.txt | sort | uniq
+
+
+4. Given directiory and all its hierarchy, write a UNIX Shell command that displays all sub-directories containing .c files.
+
+Answer:
+find . -name "*.c" | grep -o '.*/' | sort | uniq
+
+
+5. Write a Unix Shell script that calculates the average number of lines of code in all the files with extension ".sh" in the current directory, ignoring comment lines, empty lines, and the lines containing only spaces and tabs.
+
+Answer:
+
+#!/bin/bash
+
+# Initialize variables
+total_lines=0
+file_count=0
+
+# Iterate over all .sh files in the current directory
+for file in *.sh; do
+  # Check if there are any .sh files
+  if [ -f "$file" ]; then
+    # Count non-empty, non-comment lines
+    lines=$(grep -vE '^\s*#|^\s*$' "$file" | wc -l)
+    total_lines=$((total_lines + lines))
+    file_count=$((file_count + 1))
+  fi
+done
+
+# Calculate average
+if [ $file_count -ne 0 ]; then
+  average=$((total_lines / file_count"))
+  echo "Average number of lines of code: $average"
+else
+  echo "No .sh files found in the current directory."
+fi
+
+
+6.How many processes will the code below create, excluding the initial parent process?
+
+if(fork() || fork()) {
+	fork();
+}
+
+Answer: 7 
+
+
+7. How many processes are created by the code fragment below, when the parent process P calls f(3)?
+
+void f(int n) {
+	if(n > 0 || fork() == 0) {
+		f(n - 1);
+		exit(0);
+	}
+	wait(0);
+}
+
+Answer: fork bomb, keeps creating new processes until there is no more memory
+
+
+8. What will the code fragment below print to the console?
+
+char *s[3] = {"A", "B", "C"};
+for(i = 0; i < 3; i++) {
+	if(fork() == 0) {
+		execl("/bin/echo", "/bin/echo", s[i], NULL);
+	}
+}
+
+Answer: A, B, C
+
+
+9. What does the system call "read" do when the pipe contains less data than it is required to read, but it is not empty?
+
+Answer: it reads the available data and returns
+
+
+10. What will the code fragment below print to the console?
+
+int p[2];
+char buf[10];
+int n;
+pipe(p);
+n = read(p[0], buf, 10);
+printf("%d\n", n);
+
+Answer: Deadlock - the writing end is not closed 
+
+
+11. Why are zombie processes problematic?
+
+Answer:  Each zombie process holds an entry in the process table, leading to resource consumption. If zombie processes accumulate, they can exhaust the available slots in the process table, which can cause system resource starvation and prevent new processes from being created. This accumulation can also lead to poor system performance and complicate process management
+
+12. Consider that function f is executed simultaneously by 10 threads. Add the necessary lines of code to ensure that the value of n is 10 after the threads have completed?
+
+int n = 0;
+pthread_mutex_t m;
+
+void *f(void *p) {
+	pthread_mutex_lock(&m);
+	n++;
+	pthread_mutex_unlock(&m);
+	return NULL;
+}
+
+
+13. Schedule the following jobs (given as Name/Duration/Deadline) so that the sum of their delays is minimal: A/7/13, B/5/9, C/2/4
+
+Answer: C,B,A
+
+
+14. Give an advantage and a disadvantage of the set-associative caches versus the direct caches/
+
+Answer:
+advantage: Reduced Conflict Misses
+disadvantage: Increased Complexity and Cost
+advantage: collisions do not occur as often
+disadvantage: the search is slower
+
+
+15. What page has the highest priority in the LRU replacement policy, when choosing a victim page?
+
+Answer: the page that has not been accessed for the longest time (the least recently used page)
+
+
+16. Given two set-associative caches, one with 2 sets of 4 pages and one with 4 sets of 2 pages, which would perform better for the following sequence of page requests:
+20, 9, 19, 27, 20, 9, 18, 27. Why?
+
+Answer: 4 sets of 2 pages because search is faster
+
+
+17. How many data blocks can be referenced to by the triple-indirection of an i-node, if a block contains N addresses to other blocks?
+
+Answer: N^3
+
+
+18. Consider the producer-consumer problem with a buffer of capacity N. How many semaphores would you use to insure operation correctness and what would be the semaphores initial values?
+
+Answer:
+
+
+19. Give a method for preventing the apparition of deadlock, in a situation when you cannot avoid modifying resources concurrently.
+
+Answer:  Locking resources in a predetermined, consistent order
+
+
+20. What is a binary semaphone, and what is the effect of its P method, when called by multiple concurrent processes/threads?
+
+
+Answer:
+
+A binary semaphore ensures that only one process/thread can access the shared resource at a time by using the P method to decrement the semaphore value. If multiple processes/threads attempt to call the P method concurrently, only one will succeed and proceed, while the others will be blocked (wait) until the semaphore is signaled

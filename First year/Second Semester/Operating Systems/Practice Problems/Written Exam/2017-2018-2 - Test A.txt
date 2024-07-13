@@ -1,0 +1,148 @@
+1. Write a Unix Shell command that displays the lines in file a.txt that containts words starting with capital letters.
+
+Answer: grep '\b[A-Z][a-zA-Z]*\b' a.txt
+
+
+2. Write a Unix Shell command that inverts in file a.txt all pairs of neighboring digits (ex a3972b -> a9327b)
+
+Answer: sed -E 's/([0-9])([0-9])/\2\1/g' a.txt
+
+
+3. File a.txt contains on each line two numbers separated by space. Write a UNIX Shell command that displays for each line the sum of its numbers.
+
+Answer: awk '{print $1 + $2}' a.txt
+
+
+4. Display only the lines of file a.txt that appear only once (not duplicated).
+
+Answer: sort a.txt | uniq -u
+
+
+5. Write a UNIX Shell Script that displays the name of each .txt file in the current directory that contains the word "cat".
+
+Answer:
+
+#!/bin/bash
+
+# Loop through each .txt file in the current directory
+for file in *.txt; do
+  # Check if the file contains the word "cat"
+  if grep -q "cat" "$file"; then
+    # Print the filename
+    echo "$file"
+  fi
+done
+
+
+6. In the program fragment below, mark which process executes each line: the Parent, the Child, or both.
+
+P   C
+x       k = fork();
+x   x   if(k == 0) {
+    x	    printf("A\n");
+	}
+x   	else {
+x	    printf("B\n");
+	}
+x   x	printf("C\n");
+
+
+7. How many processes will be created by the code fragment below, excluding the initial parent process?
+
+fork(); wait(0); fork(); wait(0); fork();
+
+Answer: 3
+
+
+8. What are the possible console outputs of the following code fragment (ignoring any output that execl might generate), and when will they happen?
+
+printf("A\n");
+execl(....);
+printf("B\n");
+
+Answer: A\n if execl executes 
+A\nB\n if execl does not execute correctly, fails
+
+
+9. What does the system call "read" do when the pipe is empty?
+
+Answer: - If another process has the end open for writing, it waits.
+ 	- If no one can write, it returns 0 (stops).
+
+
+10. What does the system call "open" do before returning from opening a FIFO?
+
+Answer: It is also waiting to open for the complementary operation (if I open it for reading, it is waiting to be opened for writing or vice versa).
+
+
+11. Give a reason for choosing threads over processes.
+
+Answer: the communication between threads is easier and faster
+
+
+12. Considering that functions "fa" and "fb" are run in concurrent threads, what will the value of "n" be after the threads are finished? Why?
+
+pthread_mutex_t a,b;
+int n = 0;
+void *fa(void *p) {
+	pthread_mutex_lock(&a);
+	n++;
+	pthread_mutex_unlock(&a);
+}
+void *fb(void *p) {
+	pthread_mutex_lock(&b);
+	n++;
+	pthread_mutex_unlock(&b);
+}
+
+Answer: from 0 to the number of threads. Because the mutexes are different, they dont do anything
+
+
+13. Schedule the following jobs (given as Name/Duration/Deadline) so that they all meet their deadlines: A/5/9, B/7/13, C/1/10
+
+Answer: A, C, B
+
+
+14. Give one advantage and one disadvantage of the segmented allocation method over the paged allocation method.
+
+Answer:
+advantage: Security
+disadvantage: memory fragmentation
+
+
+15. When would you load into memory the pages of a program that is being started?
+
+Answer: Load when necessary and use the principle of locality
+
+
+16. When does a process change state from RUN to READY?
+
+Answer: When it loses the processor
+
+
+17. Given a UNIX file system configured with a block size of B bytes that can contain A addresses, and i-nodes having S direct link, one simple indirection link, one double indirection link, and one triple indirection link, give the formula for the maximum file size possible.
+
+Answer:
+
+Direct links: S * B
+Simple Idirection link: A * B
+Double Indirection link: A^2 * B
+Triple Indirection link: A^3 * B
+
+M = (S * B) + (A * B) + (A^2 * B) + (A^3 * B)
+
+
+18. What happens with the data when you delete a file that has a hard link pointing to it?
+
+Answer: Nothing. As long as there is at least one hard link pointing to the file, the data remains accessible. If all hard links are deleted, the data is also deleted.
+
+
+19. Give a method for preventing deadlocks.
+
+Answer: Locking resources in a predetermined, consistent order
+
+
+20. What is a binary semaphone, and what is the effect of its P method, when called by multiple concurrent processes/threads?
+
+Answer:
+A binary semaphore ensures that only one process/thread can access the shared resource at a time by using the P method to decrement the semaphore value. If multiple processes/threads attempt to call the P method concurrently, only one will succeed and proceed, while the others will be blocked (wait) until the semaphore is signaled

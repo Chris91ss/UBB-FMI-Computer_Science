@@ -1,0 +1,7 @@
+Doru ; Avram Iancu ; 12 ; 1 ; 1 ; false
+Patricia ; Mihai Viteazu ; 5 ; 10 ; 10 ; true
+Dorian ; Republicii ; 1 ; 20 ; 25 ; false
+Ioana ; Octavian Goga ; 3 ; 45 ; 45 ; false
+Dorian ; Avram Iancu ; 22 ; 0 ; 30 ; true
+Luca ; Transilvaniei ; 250 ; -30 ; 10 ; false
+abc ; abc ; 12 ; 12 ; 12 ; false

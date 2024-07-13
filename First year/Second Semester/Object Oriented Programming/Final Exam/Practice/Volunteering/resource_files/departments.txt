@@ -1,0 +1,4 @@
+HR;Human resources
+Activities;Organizes different activities for volunteers
+Media;Responsible for the website and social media
+Fundraising;Responsible for fundraising

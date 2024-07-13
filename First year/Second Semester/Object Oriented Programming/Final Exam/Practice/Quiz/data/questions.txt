@@ -1,0 +1,5 @@
+1;What is the capital of France?;Paris;10
+2;What is 2 + 2?;4;5
+3;What is the color of the sky?;Blue;3
+4;a;c;10
+5;cbd;3;10

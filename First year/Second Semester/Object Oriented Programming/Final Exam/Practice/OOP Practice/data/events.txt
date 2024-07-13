@@ -1,0 +1,6 @@
+John Doe;Tech Conference;A conference about the latest in technology;37.7749;-122.4194;2024-07-15;Michael Brown;Michael Brown;Jane Smith
+Jane Smith;Art Exhibition;An exhibition showcasing modern art;40.7128;-74.0060;2024-08-20;Michael Brown;Emily Johnson
+Emily Johnson;Music Festival;A festival featuring various music genres;34.0522;-118.2437;2024-09-10;Michael Brown
+Michael Brown;Food Fair;A fair with food from around the world;51.5074;-0.1278;2024-10-05
+Michael Brown;ad;40;51.5074;-0.1278;5
+Michael Brown;1;7;51.5074;-0.1278;10

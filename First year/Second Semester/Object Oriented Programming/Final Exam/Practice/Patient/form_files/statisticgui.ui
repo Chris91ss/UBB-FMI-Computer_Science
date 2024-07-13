@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StatisticGui</class>
+ <widget class="QWidget" name="StatisticGui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>624</width>
+    <height>506</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>StatisticGui</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

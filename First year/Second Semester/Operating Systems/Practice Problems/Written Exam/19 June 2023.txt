@@ -1,0 +1,176 @@
+1.
+RO: Daţi trei expresii regulare care acceptă orice număr ne-negativ multiplu de 5.
+EN: Give three regular expressions that match any non-negative number multiple of 5.
+
+grep -E '^[0-9]*[05]$'
+grep -E '^(0|[1-9][0-9]*)[05]$'
+awk '/^[0-9]*[05]$/'
+
+2.
+RO: Daţi cinci comenzi GREP care afişează toate liniile dintr-un fişier care conţin litera "a" mare sau mic.
+EN: Give five GREP commands that display all the lines in a file that contain letter "a" uppercase or lowercase.
+
+grep -i 'a' example.txt
+grep '[aA]' example.txt
+grep -E '[aA]' example.txt
+grep -e 'a' -e 'A' example.txt
+grep 'a\|A' example.txt
+
+3.
+RO: Scrieţi două comenzi SED care afişează dintr-un fişier doar liniile care nu conţin cifra 7.
+EN: Write two SED commands that display from a file only the lines that do not contain digit 7.
+
+sed -n '/7/!p' example.txt
+sed '/7/d' example.txt
+
+4.
+RO: Scrieţi o comandă AWK care afişează suma penultimului câmp al tuturor liniilor.
+EN: Write an AWK command that displays the sum of the next to last field of all lines.
+
+awk '{sum += $(NF-1)} END {print sum}' example.txt
+
+5.
+RO: Cum puteţi redirecta în linia de comanda ieşirea de eroare prin pipe înspre un alt program?
+EN: How can you redirect on the command line the standard error through pipe to another program?
+
+command 2>&1 | another_program
+
+6.
+RO: Scrieţi un script Shell UNIX care afişează toate argumentele din linia de comandă fără a folosi FOR.
+EN: Write a UNIX Shell script that displays all command line arguments without using FOR
+
+#!/bin/bash
+
+# Initialize a counter
+i=1
+
+# Use a while loop to iterate over the command line arguments
+while [ "$#" -gt 0 ]; do
+  echo "Argument $i: $1"
+  shift # Move to the next argument
+  i=$((i + 1))
+done
+
+
+7.
+RO: Desenati ierarhia proceselor create de coduld e mai jos, incluzand procesul parinte.
+EN: Draw the hierarchy of processes created by the code below, including the parent process.
+
+    for(i=0; i<3; i++) {
+        fork();
+        execlp("ls", "ls", "/", NULL);
+    }
+
+Parent Process (runs `ls`)
+    └── Child Process 1 (runs `ls`)
+
+8.
+RO: Adăugaţi codul C necesar pentru ca fişierul b.txt să fie suprascris cu conţinutul fişierului a.txt din instrucţiunea de mai jos.
+EN: Add the necessary code so that file b.txt is overwritten with the content of file a.txt from the instruction below.
+
+    execlp("cat", "cat", "a.txt", NULL);
+
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+
+int main() {
+    // Open b.txt for writing, creating it if it doesn't exist, and truncate it
+    int fd = open("b.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
+    if (fd < 0) {
+        perror("open");
+        return 1;
+    }
+
+    // Redirect stdout to the file descriptor
+    dup2(fd, STDOUT_FILENO);
+
+    // Close the file descriptor as it's no longer needed
+    close(fd);
+
+    // Execute the cat command to read from a.txt and output to stdout (which is now b.txt)
+    execlp("cat", "cat", "a.txt", NULL);
+
+    // If execlp fails, print an error message
+    perror("execlp failed");
+    return 1;
+}
+
+9.
+RO: De ce nu e recomandat sa comunicaţi bidirecţional printr-un singur FIFO?
+EN: Why is it not advisable to communicate bidirectionally through a single FIFO?
+
+When both processes attempt to read from or write to the same FIFO simultaneously, it can lead to race conditions. This can result in unpredictable behavior and data corruption. If both processes try to read from the FIFO at the same time, they may end up waiting for each other indefinitely, leading to a deadlock situation
+
+10.
+RO: Câte FIFO-uri poate deschide un process dacă nu sunt şi nici nu vor fi folosite vreodată de vreun alt proces?
+EN: How many FIFOs can a process open if they are not and will not ever be used by any other process?
+
+The number of FIFOs a process can open, assuming they are not used by any other process, is determined by the file descriptor limit. By default, with a limit of 1024, a process can open 1021 FIFOs (3 standard descriptors are used already (stdin, stdout, stderr))
+
+11.
+RO: Când aţi folosi un process în locul unui thread?
+EN: When would you prefer using a process instead of a thread?
+
+You would prefer using a process instead of a thread for better isolation, stability, resource management, scalability, handling different technologies or permissions, and simpler synchronization.
+You would prefer using a process instead of a thread when you need complete isolation and independence for reliability and security
+
+12.
+RO: Ce este o "secţiune critică"?
+EN: What is a "critical section"?
+
+A "critical section" is a part of a program where shared resources are accessed and modified, requiring mutual exclusion to prevent race conditions and ensure data consistency
+
+13.
+RO: De ce un thread trebuie să reverifice condiţia la ieşirea din apelul pthread_cond_wait?
+EN: Why should the thread recheck the condition after returning from the pthread_cond_wait call?
+
+A thread should recheck the condition after returning from the pthread_cond_wait call because wakeups can occur, and multiple threads might be waiting on the same condition variable, so the condition might not be true when the thread is awakened. Rechecking ensures the thread proceeds only when the condition is actually met
+
+14.
+RO: Care va fi efectul înlocuirii apelurilor la pthread_mutex_lock cu apeluri la pthread_rwlock_rdlock?
+EN: What will be the effect of replacing calls to pthread_mutex_lock with calls to pthread_rwlock_rdlock?
+
+Answer: Replacing calls to pthread_mutex_lock with calls to pthread_rwlock_rdlock will allow multiple threads to acquire the lock concurrently in read-only mode, improving performance for read-heavy workloads but potentially causing write operations to block longer and leading to data corruption if modifications are attempted in the critical section.
+
+15.
+RO: Care e efectul apelului la pthread_barrier_wait pentru o barieră iniţializată cu 1?
+EN: What is the effect of calling pthread_barrier_wait on a barrier initialized with 1?
+
+Calling pthread_barrier_wait on a barrier initialized with 1 will immediately release the single waiting thread, as the barrier count is already met upon the thread's arrival. This means the thread will not block and will proceed past the barrier without waiting
+
+16.
+RO: Cum puteţi incrementa valoarea unui semafor?
+EN: How can you increment the value of a POSIX semaphore?
+
+To increment the value of a POSIX semaphore, you use the sem_post function. This function increases the semaphore's value by one, allowing other threads or processes waiting on the semaphore to proceed
+
+
+17.
+RO: Ce puteţi face ca programator pentru a preveni deadlock-urile?
+EN: What can you do as a software developer to prevent deadlocks?
+
+Answer: Locking resources in a predetermined, consistent order
+
+
+18.
+RO: Prin ce tranziţie de stare va trece un process când citeşte dintr-un fişier?
+EN: What state transition will a process undergo when reading from a file?
+
+Answer: When a process reads from a file, it moves from Ready to Running, then to Blocked while waiting for the I/O operation to complete, and finally back to Ready once the I/O operation is finished.
+
+19.
+RO: Ce conţinue superblocul unui disc Linux?
+EN: What is the content of the superblock on a Linux disk?
+
+The superblock on a Linux disk contains critical metadata that defines the filesystem on the disk, including the number of inodes, the number of zones on the disk, pointers to the inode allocation bitmap, pointers to the free disk space bitmap, and the sizes of disk areas.
+
+20.RO: Se poate crea un link hard spre un fişier aflat pe o altă partiţie? Justificaţi răspunsul.
+EN: Can you create a hard link towards a file on a different partition? Justify your answer.
+
+No, you cannot create a hard link to a file on a different partition because hard links must reside within the same filesystem as they reference the inode directly, which is unique to each filesystem
+
+
+
+
+

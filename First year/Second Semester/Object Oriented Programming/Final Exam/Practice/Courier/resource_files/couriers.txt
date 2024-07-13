@@ -1,0 +1,4 @@
+Ion ; 0 ; 0 ; 10 ; Avram Iancu ; Republicii
+Ana ; 1 ; 5 ; 15 ; Avram Iancu ; Republicii ; Mihai Viteazu
+Denis ; 50 ; 50 ; 10 ; Republicii
+Admin ; 0 ; 0 ; 1000

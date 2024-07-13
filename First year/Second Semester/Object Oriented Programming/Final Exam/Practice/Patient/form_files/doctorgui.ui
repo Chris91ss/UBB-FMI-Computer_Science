@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DoctorGui</class>
+ <widget class="QWidget" name="DoctorGui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>614</width>
+    <height>496</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DoctorGui</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="mainLayout">
+     <item>
+      <widget class="QListWidget" name="patientsList"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="buttonsLayout">
+       <item>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="text">
+          <string>Show only mine</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="addButton">
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="updateButton">
+         <property name="text">
+          <string>Update</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="inputLayout">
+       <item row="5" column="0">
+        <widget class="QLabel" name="dateLabel">
+         <property name="text">
+          <string>Date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="specializationLabel">
+         <property name="text">
+          <string>Specialization</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="doctorLabel">
+         <property name="text">
+          <string>Doctor</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="nameLabel">
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="diagnosisLabel">
+         <property name="text">
+          <string>Diagnosis</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="nameLineEdit"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="diagnosisLineEdit"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="specializationLineEdit"/>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="doctorLineEdit"/>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="dateLineEdit"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

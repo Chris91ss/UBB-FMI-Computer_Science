@@ -1,0 +1,143 @@
+2. Write a Unix Shell command that eliminates all non-letter characters from the file a.txt.
+
+Answer: sed 's/[^a-zA-Z]//g' a.txt > output.txt
+
+
+3.  Write an AWK program that applied to a file containing words separated by spaces. calculates the average word count per line.
+
+Answer: awk '{ total += NF } END { print total / NR }' file.txt
+
+
+4. Display all the unique file names (without the path) in a given directory and all its hierarchy of subdirectories.
+
+Answer: find /path/to/directory -type f -print | awk -F/ '{print $NF}' | sort | uniq
+
+
+5. Write a UNIX shell script that calculates the average number of line in all the files with the .txt extension in the current directory.
+
+Answer:
+
+#!/bin/bash
+
+# Initialize variables
+total_lines=0
+file_count=0
+
+# Loop through all .txt files in the current directory
+for file in *.txt
+do
+  if [ -f "$file" ]; then
+    # Get the number of lines in the current file
+    lines=$(wc -l < "$file")
+    # Add the number of lines to the total
+    total_lines=$((total_lines + lines))
+    # Increment the file count
+    file_count=$((file_count + 1))
+  fi
+done
+
+# Calculate the average number of lines
+if [ $file_count -ne 0 ]; then
+  average=$((total_lines / file_count))
+  echo "Average number of lines in .txt files: $average"
+else
+  echo "No .txt files found in the current directory."
+fi
+
+
+
+8. What will the code fragment below print to the console?
+
+char *s[3] = {"A", "B", "C"};
+for(i = 0; i < 3; i++) {
+	execl("/bin/echo", "/bin/echo", s[i], NULL);
+}
+
+Answer: A
+
+
+9. What does the system call "read" do when the FIFO contains less data then it is requiered to read?
+
+Answer: it reads the available data and returns
+
+
+10. What will the code fragment below print to the console, if no other process opens the "abc" FIFO? Justify your answer.
+
+int r, w, n = 0;
+r = open("abc", O_RDONLY);
+n++;
+w = open("abc", O_WRONLY);
+n++;
+printf("%d\n", n);
+
+Answer: 2
+
+
+11. What happens with a process between the moment it finishes and the moment its parent calls wait?
+
+Answer: it becomes a zombie process
+
+
+13. Schedule the following jobs (given as Name/Duration/Deadline) so that the sum of their delays is minimized: A/7/13, B/5/9, C/2/4
+
+Answer: C, B, A - delay is 1
+
+
+14. Give an advantage and a disadvantage of the set-associative caches versus the associative caches.
+
+Answer: 
+advantage: more efficient (reduced complexity and cost) as it uses both direct and associative caches
+disadvantage: more conflict misses (collisions occur more often)
+
+
+15. What page category has the highest priority in the NRU replacement policy, when chosing a victim page?
+
+Answer: Unreferenced and unmodified pages (R=0, M=0)
+
+
+16. Given two set-associative caches, one with 2 sets of 4 pages and one with 4 sets of 2 pages, which would perform better for the following sequence of page requests: 20, 9 18, 27, 20, 9, 18, 27. Why?
+
+Answer: 4 set of 2 pages because the search is faster when dealing with collisions
+
+
+17. How many data blocks can be referenced to by the double-indirection of an i-node, if a block contains N addresses to other blocks?
+
+Answer: N^2
+
+
+19. Give a method for preventing the apparition of deadlock.
+
+Answer: Locking resources in a predetermined, consistent order
+
+
+20. Add the necessary instructions to the code fragment below, so that the standard input of command /bin/pwd to be read from PIPE p.
+
+int p[2];
+
+pipe(p);
+
+if(fork() == 0) {
+	// Child process
+        // Close the write end of the pipe
+        close(p[1]);
+
+        // Redirect standard input to the read end of the pipe
+        dup2(p[0], STDIN_FILENO)
+
+        // Close the read end of the pipe as it is now duplicated
+        close(p[0]);
+	execl("/bin/pwd", "/bin/pwd", NULL);
+	exit(0);
+}
+else {
+        // Parent process
+
+        // Close the read end of the pipe
+        close(p[0]);
+
+        // Close the write end of the pipe as it is not used
+        close(p[1]);
+
+        // Wait for the child process to finish
+        wait(0);
+    }

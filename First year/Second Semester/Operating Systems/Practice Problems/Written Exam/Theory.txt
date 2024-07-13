@@ -1,0 +1,287 @@
+Give an advantage and a disadvantage of the First-Fit placement policy versus the Worst-Fit?
+Answer: First-Fit is very fast, but some memory goes to waste (Memory Fragmentation)
+First-Fit Advantage: Very fast allocation due to minimal searching.
+First-Fit Disadvantage: Can lead to significant memory fragmentation.
+Worst-Fit Advantage: Potentially reduces fragmentation by making fewer large blocks into smaller pieces.
+Worst-Fit Disadvantage: Slower allocation due to the need to search for the largest block.
+
+
+Give an advantage and a disadvantage of set-associative caches compared to direct ones.
+Answer: - advantage: Reduced Conflict Misses
+- disadvantage: Increased Complexity and Cost
+advantage: collisions do not occur as often
+disadvantage: the search is slower
+
+
+Give an advantage and a disadvantage of the set-associative caches versus the associative caches.
+Answer: 
+advantage: more efficient (reduced complexity and cost) as it uses both direct and associative caches
+disadvantage: more conflict misses (collisions occur more often)
+
+
+Give one advantage and one disadvantage of the segmented allocation method over the paged allocation method.
+Answer:
+advantage: Security
+disadvantage: memory fragmentation
+
+advantage: flexibility in memory allocation
+segmented allocation allows for more flexible memory allocation compared to paged allocation.
+disadvantage: external fragmentation
+one significant disadvantage of the segmented allocation method is the potential for external fragmentation. external fragmentation occurs when free memory blocks are scattered throughout the memory space, resulting in the inability to allocate contiguous memory blocks for larger segments or modules
+
+
+What is the highest priority category of memory pages from which the NRU replacement policy would choose a victim page
+Answer:
+Class 0: Unreferenced and unmodified pages (R=0, M=0)
+
+
+What page has the highest priority in the LRU replacement policy, when choosing a victim page?
+Answer: the page that has not been accessed for the longest time (the least recently used page)
+
+
+Given two set-associative caches, with 2 sets of 4 pages and one with 4 sets of 2 pages, which will give better results for the sequence of page requests: 14, 23, 1, 16, 1, 23 , 16, 14. Justify the answer.
+Answer: 4 sets of 2 pages, because the search is faster
+4 sets of 2 pages:
+set 0: [16]    16%4 = 0
+set 1: [1]     1%4 = 1
+set 2: [14]    14%4 = 2
+set 3: [23]    23%4 = 3
+2 sets of 4 pages:
+set 0: [14, 16]
+set 1: [1, 23]
+
+
+How many data blocks can be referenced by the triple-indirection of an i-node, if a block has size B and an address has size A.
+Answer: (B/A)^3
+
+
+Considering that the size of a block is B and the size of and address is A, how many data blocks are addressed by the double indirect addressing of an i-node?
+Answer:
+(B/A)^2
+
+
+How many data blocks can be referenced to by the triple-indirection of an i-node, if a block contains N addresses to other blocks?
+Answer: N^3
+
+
+How many data blocks can be referenced to by the double-indirection of an i-node, if a block contains N addresses to other blocks?
+Answer: N^2
+
+
+Given a UNIX file system configured with a block size of B bytes that can contain A addresses, and i-nodes having S direct link, one simple indirection link, one double indirection link, and one triple indirection link, give the formula for the maximum file size possible.
+Answer: M = (S * B) + (A * B) + (A^2 * B) + (A^3 * B)
+
+
+Give a method to prevent (avoid) the impasse (deadlock), in the conditions in which the concurrent modification of the resources cannot be avoided.
+Answer: Locking resources in a predetermined, consistent order
+
+
+What does the "write" system call do when there is space in the PIPE, but not enough for what it asks to write?
+Answer: The write system call will block. The call will wait until enough space becomes available in the PIPE to write the entire amount of data and write will return the number of bytes written.
+
+
+What does the system call "read" do when the pipe is empty?
+Answer: - If another process has the end open for writing, it waits.
+ 	- If no one can write, it returns 0 (stops).
+
+
+What does the system call "open" do before returning from opening a FIFO?
+Answer: It is also waiting to open for the complementary operation (if I open it for reading, it is waiting to be opened for writing or vice versa).
+
+
+What does the system call "read" do when the FIFO contains less data then it is requiered to read?
+Answer: it reads the available data and returns
+
+
+What does the system call "read" do when the pipe contains less data than it is required to read, but it is not empty?
+Answer: it reads the available data and returns
+
+
+When would you load into memory the pages of a program that is being started?
+Answer: Load when necessary and use the principle of locality (neighboring priciple, load requested page and a few neighboring pages)
+demand paging is a technique where pages of a program are loaded into memory only when they are actually accessed or needed during the program's execution. when the program is first started, the operating system loads the initial set of pages that are required for program execution, such as the program's entry point and any necessary libraries or shared code.
+
+
+What happens with the data when you delete a file that has a hard link pointing to it?
+Answer: Nothing. As long as there is at least one hard link pointing to the file, the data remains accessible. If all hard links are deleted, the data is also deleted.
+
+
+What happens with a hard link when the file it points to is deleted?
+Answer: Nothing happens to the hard link, when the file that a hard link points to is deleted, the hard link remains intact and still provides access to the data. The data itself is not deleted until all hard links to it are removed
+
+
+Explain the difference between a symbolic link and a hard link.
+Answer: A symbolic link is a pointer to a file or directory, while a hard link is an additional name for an existing file, both referencing the same inode
+
+
+Why a hard-link can be created only toward files on the same partition and not toward files on other partitions?
+A hard link can only be created within the same partition because it references an inode unique to that file system, and inodes cannot span multiple file systems.
+
+
+What is a binary semaphone, and what is the effect of its P method, when called by multiple concurrent processes/threads?
+Answer:
+A binary semaphore ensures that only one process/thread can access the shared resource at a time by using the P method to decrement the semaphore value. If multiple processes/threads attempt to call the P method concurrently, only one will succeed and proceed, while the others will be blocked (wait) until the semaphore is signaled
+
+
+Define what a binary semaphore is and explain its functioning.
+Answer: 
+A binary semaphore is a synchronization primitive that only takes values 0 and 1, used to control access to a shared resource by ensuring mutual exclusion.
+
+
+What happens with a process between the moment it finishes and the moment its parent calls wait?
+Answer: it becomes a zombie process
+
+
+Why are zombie processes problematic?
+Answer:  Each zombie process holds an entry in the process table, leading to resource consumption. If zombie processes accumulate, they can exhaust the available slots in the process table, which can cause system resource starvation and prevent new processes from being created. This accumulation can also lead to poor system performance and complicate process management
+
+
+What happens to zombie processes whose parent has terminated?
+Answer:
+The zombie process becomes an orphan.
+The orphaned zombie process is adopted by the init process.
+The init process, which regularly calls wait() or waitpid(), reaps the orphaned zombie process, cleaning up
+
+
+Explain why the file descriptor returned by popen must be closed with pclose instead of fclose.
+Answer:
+On its implementation, popen creates a new process, after which we have to wait. If we would use fclose, we won't wait for it, so we have to use pclose, because it waits for the process to terminate and return the exit status of the command
+
+
+How many FIFOs can a process open for reading if the FIFOs are and will ever be used by other processes only for writing?
+Answer: The number of FIFOs a process can open for reading is influenced by the behavior of FIFOs and the coordination between processes. Specifically, FIFOs have the special characteristic of blocking on open calls until the other side (either reading or writing) is opened. This can lead to deadlock scenarios if not managed carefully.
+
+
+How many FIFOs can a process open for writing if the FIFOs are and will ever be used by other processes only for reading?
+Answer:
+A process can open as many FIFOs for writing as allowed by its file descriptor limit, typically 1024 by default, provided each FIFO is also opened for reading by another process to avoid blocking
+
+
+How many FIFOs can a process open if they are not and will not ever be used by any other process?
+Answer: The number of FIFOs a process can open, assuming they are not used by any other process, is determined by the file descriptor limit. By default, with a limit of 1024, a process can open 1021 FIFOs (3 standard descriptors are used already (stdin, stdout, stderr))
+
+
+How many FIFOs can a process open for reading if the FIFOs are and will ever be used by other processes only for reading?
+Answer: At most 1, the open will block, because no process has the fifo opened for writing -> deadlock, we will be waiting for a writer that wont exist, as all the processes will only use the fifo for reading
+
+
+When would you prefer using a process instead of a thread?
+Answer: You would prefer using a process instead of a thread for better isolation, stability, resource management, scalability, handling different technologies or permissions, and simpler synchronization.
+You would prefer using a process instead of a thread when you need complete isolation and independence for reliability and security
+
+
+When would you prefer using a FIFO instead of a pipe?
+Answer: You would prefer using a FIFO instead of a pipe when you need communication between processes that are not related or started independently
+
+
+When would you prefer using a mutex instead of a rwlock?
+You would prefer using a mutex instead of a read-write lock (rwlock) when most operations require writing, as mutexes provide exclusive access which is simpler and incurs less overhead than rwlocks in write-heavy scenarios
+
+
+Give a reason for choosing threads over processes.
+Answer: the communication between threads is easier and faster
+efficiency, shared memory, easier synchronization
+
+
+When would you use execv instead of execl?
+Answer:
+You would use execv instead of execl when you need to pass an array of arguments, especially if the number of arguments is determined at runtime.
+
+
+When would you use execl instead of execv?
+Answer: Use execl when you know the exact number of arguments at compile time and can list them explicitly, and use execv when the arguments are stored in an array
+
+
+What is a "critical section"?
+Answer:
+A "critical section" is a part of a program where shared resources are accessed and modified, requiring mutual exclusion to prevent race conditions and ensure data consistency
+
+
+Give three function calls that ensure mutual exclusion
+Answer:
+1) pthread_mutex_lock(&mtx)
+2) When using binary semaphores: sem_wait(&sem)
+3) pthread_rwlock_wrlock(&rwlock)
+
+
+What will be the effect of replacing calls to pthread_mutex_lock with calls to sem_post?
+Answer: Replacing pthread_mutex_lock with sem_post would remove mutual exclusion, leading to race conditions and data corruption. More so, if the replace just the pthread_mutex_lock, and we still have a pthread_mutex_unlock, it will result in an undefined behaviour, because we unlock a mutex that was never locked 
+
+
+What will be the effect of replacing calls to pthread_mutex_lock with calls to sem_wait?
+Answer: Replacing pthread_mutex_lock with sem_wait removes ownership control and error checking, potentially leading to synchronization issues and undefined behavior
+
+
+What will be the effect of replacing calls to pthread_mutex_lock with calls to pthread_rwlock_rdlock?
+Answer: Replacing calls to pthread_mutex_lock with calls to pthread_rwlock_rdlock will allow multiple threads to acquire the lock concurrently in read-only mode, improving performance for read-heavy workloads but potentially causing write operations to block longer and leading to data corruption if modifications are attempted in the critical section.
+
+
+When does a process change state from RUN to READY?
+Answer: When it loses the processor
+
+
+What state transition will a process undergo when it calls sem_wait and under what conditions? Justify your answer.
+Answer: A process will transition from the running state to the wait state when it calls sem_wait if the semaphore value is zero, indicating it must wait for another process to increment the semaphore. If the semaphore value is different from zero, the process will remain in the running state when it calls sem_wait, decrementing the semaphore and continuing execution.
+
+
+What state transition will a process undergo when it calls pthread_cond_wait? Justify your answer.
+Answer: When a process calls pthread_cond_wait, it transitions from the running state to the waiting state, releasing the mutex and waiting for the condition variable to be signaled.
+
+
+What state transition will a process undergo when reading from a file?
+Answer: When a process reads from a file, it moves from Ready to Running, then to Blocked while waiting for the I/O operation to complete, and finally back to Ready once the I/O operation is finished.
+
+
+What state transition will a process undergo when it calls pthread_join and under what conditions? Justify your answer.
+Answer: When a thread calls pthread_join, it transitions to the WAIT state if the target thread has not yet finished execution; it remains waiting until the target thread terminates.
+
+
+Why is it not advisable to communicate bidirectionally through a single FIFO?
+Answer: When both processes attempt to read from or write to the same FIFO simultaneously, it can lead to race conditions. This can result in unpredictable behavior and data corruption. If both processes try to read from the FIFO at the same time, they may end up waiting for each other indefinitely, leading to a deadlock situation
+
+
+Why should the thread recheck the condition after returning from the pthread_cond_wait call?
+Answer: A thread should recheck the condition after returning from the pthread_cond_wait call because wakeups can occur, and multiple threads might be waiting on the same condition variable, so the condition might not be true when the thread is awakened. Rechecking ensures the thread proceeds only when the condition is actually met
+
+
+What is the effect of calling pthread_barrier_wait on a barrier initialized with 1?
+Answer: Calling pthread_barrier_wait on a barrier initialized with 1 will immediately release the single waiting thread, as the barrier count is already met upon the thread's arrival. This means the thread will not block and will proceed past the barrier without waiting
+
+
+How can you increment the value of a POSIX semaphore?
+Answer: To increment the value of a POSIX semaphore, you use the sem_post function. This function increases the semaphore's value by one, allowing other threads or processes waiting on the semaphore to proceed
+
+
+What is the content of the superblock on a Linux disk?
+Answer: The superblock on a Linux disk contains critical metadata that defines the filesystem on the disk, including the number of inodes, the number of zones on the disk, pointers to the inode allocation bitmap, pointers to the free disk space bitmap, and the sizes of disk areas.
+
+
+Can you create a hard link towards a file on a different partition? Justify your answer.
+Answer: No, you cannot create a hard link to a file on a different partition because hard links must reside within the same filesystem as they reference the inode directly, which is unique to each filesystem
+
+
+What does pthread_cond_wait do with the mutex it gets as argument?
+Answer: pthread_cond_wait temporarily releases the mutex it receives as an argument, waits for the condition variable to be signaled, and then reacquires the mutex before returning
+
+
+What is the content of file of type directory in the Linux file system?
+Answer: The content of a directory in the Linux file system consists of entries mapping filenames to inode numbers, including special entries '.' (A link to the directory itself) and '..' (A link to the parent directory)
+
+
+What happens to the content of a directory in which a partition is mounted?
+Answer:
+When a partition is mounted on a directory, the original contents of that directory become hidden and inaccessible. The directory then serves as the mount point for the root of the mounted partition, displaying the contents of the partition instead. The original contents will reappear and become accessible again once the partition is unmounted.
+
+
+How many threads would you use for processing a million files? Justify your choice.
+Answer: use a number of threads equal to the number of cores on the processor so there is a balance between having too many threads that don't actualy get the processor to run their code and to few threads that the code becomes almost as if we were to write it iteratively.
+
+
+Why I/O operations cause a process to move from the state RUN to the state WAIT?
+Answer: Because the process has to pause itself while it gets/sends the data through the I/O operations and it frees the processor until the operations have been completed, leaving the processor for other processes
+
+
+How is the address calculation done in the absolute fixed partition allocation?
+Answer: There are multiple predetermined partitions and the RAM locations are already established
+the first program takes the first position, the first address takes the beginning of the partition
+In absolute fixed partition allocation, the physical address is calculated by adding the logical address to the base address of the predetermined partition assigned to the program.

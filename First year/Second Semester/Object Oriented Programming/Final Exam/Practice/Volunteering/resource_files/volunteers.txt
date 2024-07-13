@@ -1,0 +1,6 @@
+Andrei;andrei@gmail.com;biking|swimming|gaming;HR
+Ion;ion@gmail.com;gaming|anime;Media
+John;john@gmail.com;swimming|gaming;null
+Maria;maria@gmail.com;swimming|biking;null
+Dorin;dorin@gmail.com;pacanele|masini;null
+Anuta;anuta@gmail.com;media;null
