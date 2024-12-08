@@ -1,0 +1,225 @@
+ExeStack:
+int v
+(v = 2; Print(v))
+SymTable:
+Out:
+FileTable:
+
+
+ExeStack:
+(v = 2; Print(v))
+SymTable:
+v --> 0
+Out:
+FileTable:
+
+
+ExeStack:
+v = 2
+Print(v)
+SymTable:
+v --> 0
+Out:
+FileTable:
+
+
+ExeStack:
+Print(v)
+SymTable:
+v --> 2
+Out:
+FileTable:
+
+
+ExeStack:
+SymTable:
+v --> 2
+Out:
+2
+FileTable:
+
+
+ExeStack:
+int v
+(v = 2; Print(v))
+SymTable:
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+int v
+(v = 2; Print(v))
+SymTable:
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(v = 2; Print(v))
+SymTable:
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(v = 2; Print(v))
+SymTable:
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+v = 2
+Print(v)
+SymTable:
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+v = 2
+Print(v)
+SymTable:
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+Print(v)
+SymTable:
+v --> 2
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+Print(v)
+SymTable:
+v --> 2
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+SymTable:
+v --> 2
+Heap:
+Out:
+2
+FileTable:
+
+
+ExeStack:
+SymTable:
+v --> 2
+Heap:
+Out:
+2
+FileTable:
+
+
+ExeStack:
+int v
+(v = 2; Print(v))
+SymTable:
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+int v
+(v = 2; Print(v))
+SymTable:
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(v = 2; Print(v))
+SymTable:
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(v = 2; Print(v))
+SymTable:
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+v = 2
+Print(v)
+SymTable:
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+v = 2
+Print(v)
+SymTable:
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+Print(v)
+SymTable:
+v --> 2
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+Print(v)
+SymTable:
+v --> 2
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+SymTable:
+v --> 2
+Heap:
+Out:
+2
+FileTable:
+
+
+ExeStack:
+SymTable:
+v --> 2
+Heap:
+Out:
+2
+FileTable:
+
+

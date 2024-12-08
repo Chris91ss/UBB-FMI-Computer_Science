@@ -1,0 +1,1231 @@
+ExeStack:
+string varf
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+Out:
+FileTable:
+
+
+ExeStack:
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+varf --> ""
+Out:
+FileTable:
+
+
+ExeStack:
+varf = "test.in"
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> ""
+Out:
+FileTable:
+
+
+ExeStack:
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+
+
+ExeStack:
+openRFile(varf)
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+
+
+ExeStack:
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+int varc
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+Print(varc)
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+Print(varc)
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+"test.in" --> java.io.BufferedReader@1d56ce6a
+
+
+ExeStack:
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+
+
+ExeStack:
+string varf
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+Out:
+FileTable:
+
+
+ExeStack:
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+varf --> ""
+Out:
+FileTable:
+
+
+ExeStack:
+varf = "test.in"
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> ""
+Out:
+FileTable:
+
+
+ExeStack:
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+
+
+ExeStack:
+openRFile(varf)
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+
+
+ExeStack:
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+int varc
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+Print(varc)
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+Print(varc)
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+
+
+ExeStack:
+string varf
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+Out:
+FileTable:
+
+
+ExeStack:
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+varf --> ""
+Out:
+FileTable:
+
+
+ExeStack:
+varf = "test.in"
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> ""
+Out:
+FileTable:
+
+
+ExeStack:
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+
+
+ExeStack:
+openRFile(varf)
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+
+
+ExeStack:
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+int varc
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+Print(varc)
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+Print(varc)
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+"test.in" --> java.io.BufferedReader@64729b1e
+
+
+ExeStack:
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+
+
+ExeStack:
+string varf
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+Out:
+FileTable:
+
+
+ExeStack:
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+varf --> ""
+Out:
+FileTable:
+
+
+ExeStack:
+varf = "test.in"
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> ""
+Out:
+FileTable:
+
+
+ExeStack:
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+
+
+ExeStack:
+openRFile(varf)
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+
+
+ExeStack:
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+int varc
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+Print(varc)
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+Print(varc)
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+
+
+ExeStack:
+string varf
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+Out:
+FileTable:
+
+
+ExeStack:
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+varf --> ""
+Out:
+FileTable:
+
+
+ExeStack:
+varf = "test.in"
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> ""
+Out:
+FileTable:
+
+
+ExeStack:
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+
+
+ExeStack:
+openRFile(varf)
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+
+
+ExeStack:
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+int varc
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+Print(varc)
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+Print(varc)
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+"test.in" --> java.io.BufferedReader@45ff54e6
+
+
+ExeStack:
+SymTable:
+varf --> "test.in"
+varc --> 50
+Out:
+15
+50
+FileTable:
+
+
+ExeStack:
+string varf
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+string varf
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+varf --> ""
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))
+SymTable:
+varf --> ""
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+varf = "test.in"
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> ""
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+varf = "test.in"
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> ""
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> "test.in"
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))
+SymTable:
+varf --> "test.in"
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+openRFile(varf)
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+openRFile(varf)
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))
+SymTable:
+varf --> "test.in"
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+int varc
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+int varc
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 0
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+Print(varc)
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+Print(varc)
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Heap:
+Out:
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Heap:
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+(readFile(varf, varc); (Print(varc); closeRFile(varf)))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Heap:
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Heap:
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+readFile(varf, varc)
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 15
+Heap:
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 50
+Heap:
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+(Print(varc); closeRFile(varf))
+SymTable:
+varf --> "test.in"
+varc --> 50
+Heap:
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+Print(varc)
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Heap:
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+Print(varc)
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Heap:
+Out:
+15
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Heap:
+Out:
+15
+50
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+closeRFile(varf)
+SymTable:
+varf --> "test.in"
+varc --> 50
+Heap:
+Out:
+15
+50
+FileTable:
+"test.in" --> java.io.BufferedReader@25f38edc
+
+
+ExeStack:
+SymTable:
+varf --> "test.in"
+varc --> 50
+Heap:
+Out:
+15
+50
+FileTable:
+
+
+ExeStack:
+SymTable:
+varf --> "test.in"
+varc --> 50
+Heap:
+Out:
+15
+50
+FileTable:
+
+

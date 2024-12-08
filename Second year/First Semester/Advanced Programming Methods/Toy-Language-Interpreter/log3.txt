@@ -1,0 +1,198 @@
+ExeStack:
+bool a
+(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))
+SymTable:
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+bool a
+(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))
+SymTable:
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))
+SymTable:
+a --> false
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))
+SymTable:
+a --> false
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+a = false
+(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))
+SymTable:
+a --> false
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+a = false
+(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))
+SymTable:
+a --> false
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))
+SymTable:
+a --> false
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))
+SymTable:
+a --> false
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+int v
+(If(a) Then(v = 2) Else(v = 3); Print(v))
+SymTable:
+a --> false
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+int v
+(If(a) Then(v = 2) Else(v = 3); Print(v))
+SymTable:
+a --> false
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(If(a) Then(v = 2) Else(v = 3); Print(v))
+SymTable:
+a --> false
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+(If(a) Then(v = 2) Else(v = 3); Print(v))
+SymTable:
+a --> false
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+If(a) Then(v = 2) Else(v = 3)
+Print(v)
+SymTable:
+a --> false
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+If(a) Then(v = 2) Else(v = 3)
+Print(v)
+SymTable:
+a --> false
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+v = 3
+Print(v)
+SymTable:
+a --> false
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+v = 3
+Print(v)
+SymTable:
+a --> false
+v --> 0
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+Print(v)
+SymTable:
+a --> false
+v --> 3
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+Print(v)
+SymTable:
+a --> false
+v --> 3
+Heap:
+Out:
+FileTable:
+
+
+ExeStack:
+SymTable:
+a --> false
+v --> 3
+Heap:
+Out:
+3
+FileTable:
+
+
+ExeStack:
+SymTable:
+a --> false
+v --> 3
+Heap:
+Out:
+3
+FileTable:
+
+
