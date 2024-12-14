@@ -3,7 +3,10 @@ package repository;
 import model.state.PrgState;
 import exceptions.InterpreterException;
 
+import java.util.List;
+
 public interface IRepository {
-    PrgState getCrtPrg() throws InterpreterException;
-    void logPrgStateExec() throws InterpreterException;
+    void logPrgStateExec(PrgState prgState) throws InterpreterException;
+    List<PrgState> getPrgList();
+    void setPrgList(List<PrgState> newList);
 }

@@ -14,4 +14,5 @@ public interface MyIDictionary<K, V> {
     Collection<V> values();
     String toString();
     String toLogString();
+    MyIDictionary<K, V> deepCopy();
 }

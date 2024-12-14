@@ -223,3 +223,1123 @@ Out:
 FileTable:
 
 
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}

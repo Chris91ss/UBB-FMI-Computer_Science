@@ -1,25 +1,26 @@
 package controller;
 
 import model.state.PrgState;
-import model.stmt.IStmt;
-import model.values.Value;
-import model.values.RefValue;
-import exceptions.ControllerException;
+import repository.IRepository;
 import exceptions.InterpreterException;
+import exceptions.ControllerException;
 import exceptions.StackException;
 import exceptions.ADTException;
-import repository.IRepository;
+import model.values.Value;
+import model.values.RefValue;
 
 import java.util.*;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
 public class Controller {
     private IRepository repo;
     private boolean displayFlag;
+    private ExecutorService executor; // new field
 
     public Controller(IRepository repo) {
         this.repo = repo;
-        this.displayFlag = false; // Default is off
+        this.displayFlag = false;
     }
 
     public void setDisplayFlag(boolean flag) {
@@ -30,92 +31,123 @@ public class Controller {
         return this.repo;
     }
 
-    public void oneStep(PrgState state) throws InterpreterException {
-        try {
-            if (state.getStk().isEmpty()) {
-                repo.logPrgStateExec();
-                throw new ControllerException("Execution stack is empty");
+    List<PrgState> removeCompletedPrg(List<PrgState> inPrgList) {
+        return inPrgList.stream()
+                .filter(PrgState::isNotCompleted)
+                .collect(Collectors.toList());
+    }
+
+    private void oneStepForAllPrg(List<PrgState> prgList) throws InterpreterException {
+        // Before the execution, print the PrgState List into the log file
+        prgList.forEach(prg -> {
+            try {
+                repo.logPrgStateExec(prg);
+            } catch (InterpreterException e) {
+                System.out.println("Error logging state: " + e.getMessage());
             }
-            IStmt crtStmt = state.getStk().pop();
-            crtStmt.execute(state);
-            repo.logPrgStateExec(); // Log the program state after each execution step
-            if (displayFlag) {
-                System.out.println("Current Program State:");
-                System.out.println(state.toString());
-            }
-        } catch (StackException e) {
-            throw new ControllerException(e.getMessage());
-        } catch (InterpreterException e) {
-            throw e;
+        });
+
+        // Display states if displayFlag is true
+        if (displayFlag) {
+            System.out.println("Current Program States before execution of oneStep:");
+            prgList.forEach(prg -> System.out.println(prg.toString()));
         }
+
+        // RUN concurrently one step for each of the existing PrgStates
+        List<Callable<PrgState>> callList = prgList.stream()
+                .map((PrgState p) -> (Callable<PrgState>) (p::oneStep))
+                .collect(Collectors.toList());
+
+        List<PrgState> newPrgList;
+        try {
+            newPrgList = executor.invokeAll(callList).stream()
+                    .map(future -> {
+                        try {
+                            return future.get();
+                        } catch (ExecutionException | InterruptedException e) {
+                            System.out.println("Error in threads: " + e.getMessage());
+                            return null;
+                        }
+                    })
+                    .filter(p -> p != null)
+                    .collect(Collectors.toList());
+        } catch (InterruptedException e) {
+            throw new InterpreterException("Thread execution interrupted: " + e.getMessage());
+        }
+
+        // Add the new created threads to the list of existing threads
+        prgList.addAll(newPrgList);
+
+        // After the execution, print the PrgState List into the log file
+        prgList.forEach(prg -> {
+            try {
+                repo.logPrgStateExec(prg);
+            } catch (InterpreterException e) {
+                System.out.println("Error logging state: " + e.getMessage());
+            }
+        });
+
+        // Display states if displayFlag is true
+        if (displayFlag) {
+            System.out.println("Current Program States after execution of oneStep:");
+            prgList.forEach(prg -> System.out.println(prg.toString()));
+        }
+
+        // Save the current programs in the repository
+        repo.setPrgList(prgList);
     }
 
     public void allStep() throws InterpreterException {
-        PrgState state = repo.getCrtPrg();
-        while (!state.getStk().isEmpty()) {
-            oneStep(state);
+        executor = Executors.newFixedThreadPool(2);
 
-            // Perform garbage collection after each execution step
-            try {
-                conservativeGarbageCollector(state);
-            } catch (ADTException e) {
-                throw new ControllerException("Garbage Collector error: " + e.getMessage());
-            }
+        List<PrgState> prgList = removeCompletedPrg(repo.getPrgList());
+        List<PrgState> lastKnownStates = null; // Backup for final states
 
-            repo.logPrgStateExec(); // Log the program state after garbage collection
-            if (displayFlag) {
-                System.out.println("Current Program State:");
+        while (prgList.size() > 0) {
+            lastKnownStates = new ArrayList<>(prgList); // Backup current states
+
+            conservativeGarbageCollector(prgList);
+            oneStepForAllPrg(prgList);
+
+            // After executing one step for all prg, we remove completed again
+            prgList = removeCompletedPrg(repo.getPrgList());
+        }
+
+        executor.shutdownNow();
+        repo.setPrgList(prgList);
+
+        // If we end up with no states and displayFlag = no, print the last known states
+        // because no states have been printed during execution
+        if ((lastKnownStates != null) && (lastKnownStates.size() > 0) && !displayFlag) {
+            System.out.println("Final Program States:");
+            for (PrgState state : lastKnownStates) {
                 System.out.println(state.toString());
             }
         }
     }
 
-    private void conservativeGarbageCollector(PrgState state) throws ADTException {
-        Collection<Value> symTableValues = state.getSymTable().values(); // Use the values() method
-        Map<Integer, Value> heapContent = state.getHeap().getContent();
 
-        // Get addresses from the symbol table
-        Set<Integer> symTableAddresses = getAddressesFromValues(symTableValues);
+    private void conservativeGarbageCollector(List<PrgState> prgList) throws InterpreterException {
+        List<Integer> symTableAddrs = prgList.stream()
+                .flatMap(p -> getAddrFromSymTable(p.getSymTable().values()).stream())
+                .collect(Collectors.toList());
 
-        // Compute the set of all reachable addresses
-        Set<Integer> reachableAddresses = getReachableAddresses(symTableAddresses, heapContent);
+        PrgState anyPrg = prgList.get(0);
+        Map<Integer,Value> heap = anyPrg.getHeap().getContent();
+        Map<Integer,Value> newHeap = safeGarbageCollector(symTableAddrs, heap);
+        anyPrg.getHeap().setContent(newHeap);
+    }
 
-        // Perform garbage collection
-        Map<Integer, Value> newHeapContent = heapContent.entrySet().stream()
-                .filter(entry -> reachableAddresses.contains(entry.getKey()))
+    private List<Integer> getAddrFromSymTable(Collection<Value> symTableValues) {
+        return symTableValues.stream()
+                .filter(v -> v instanceof RefValue)
+                .map(v -> ((RefValue)v).getAddr())
+                .collect(Collectors.toList());
+    }
+
+    private Map<Integer,Value> safeGarbageCollector(List<Integer> symTableAddr, Map<Integer,Value> heap) {
+        return heap.entrySet().stream()
+                .filter(e -> symTableAddr.contains(e.getKey()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-
-        state.getHeap().setContent(newHeapContent);
-    }
-
-    private Set<Integer> getAddressesFromValues(Collection<Value> values) {
-        Set<Integer> addresses = new HashSet<>();
-        for (Value value : values) {
-            if (value instanceof RefValue) {
-                addresses.add(((RefValue) value).getAddr());
-            }
-        }
-        return addresses;
-    }
-
-    private Set<Integer> getReachableAddresses(Set<Integer> addresses, Map<Integer, Value> heap) {
-        Set<Integer> visited = new HashSet<>();
-        Stack<Integer> toVisit = new Stack<>();
-        toVisit.addAll(addresses);
-
-        while (!toVisit.isEmpty()) {
-            int address = toVisit.pop();
-            if (!visited.contains(address)) {
-                visited.add(address);
-                Value value = heap.get(address);
-                if (value instanceof RefValue) {
-                    int newAddr = ((RefValue) value).getAddr();
-                    if (!visited.contains(newAddr)) {
-                        toVisit.push(newAddr);
-                    }
-                }
-            }
-        }
-        return visited;
     }
 }

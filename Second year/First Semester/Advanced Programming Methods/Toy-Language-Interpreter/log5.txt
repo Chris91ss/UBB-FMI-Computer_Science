@@ -766,3 +766,759 @@ Out:
 FileTable:
 
 
+Program ID: 5
+ExeStack:
+[(int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int a, (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int a, (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int b, (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int b, (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[a = 10, (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[a = 10, (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[b = 20, (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[b = 20, (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a < b) Then(Print("a < b")) Else(Print("a >= b")), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a < b) Then(Print("a < b")) Else(Print("a >= b")), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a < b"), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a < b"), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a - 5 <= b"), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a - 5 <= b"), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a == b) Then(Print("a == b")) Else(Print("a != b")), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a == b) Then(Print("a == b")) Else(Print("a != b")), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a != b"), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a != b"), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int a, (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int a, (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int b, (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int b, (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[a = 10, (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[a = 10, (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[b = 20, (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[b = 20, (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a < b) Then(Print("a < b")) Else(Print("a >= b")), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a < b) Then(Print("a < b")) Else(Print("a >= b")), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a < b"), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a < b"), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a - 5 <= b"), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a - 5 <= b"), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a == b) Then(Print("a == b")) Else(Print("a != b")), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a == b) Then(Print("a == b")) Else(Print("a != b")), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a != b"), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a != b"), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int a, (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int a, (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int b, (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[int b, (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[a = 10, (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[a = 10, (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[b = 20, (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[b = 20, (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a < b) Then(Print("a < b")) Else(Print("a >= b")), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a < b) Then(Print("a < b")) Else(Print("a >= b")), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a < b"), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a < b"), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a - 5 <= b"), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a - 5 <= b"), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[(If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a == b) Then(Print("a == b")) Else(Print("a != b")), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[If(a == b) Then(Print("a == b")) Else(Print("a != b")), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a != b"), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("a != b"), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b"]FileTable:
+{}
+Program ID: 5
+ExeStack:
+[]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}

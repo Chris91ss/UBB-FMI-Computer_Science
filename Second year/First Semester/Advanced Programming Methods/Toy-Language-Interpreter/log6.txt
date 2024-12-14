@@ -1122,3 +1122,647 @@ Out:
 FileTable:
 
 
+Program ID: 6
+ExeStack:
+[(int v; (v = 4; (while(v > 0) (Print(v); v = v - 1); Print(v))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[int v, (v = 4; (while(v > 0) (Print(v); v = v - 1); Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[int v, (v = 4; (while(v > 0) (Print(v); v = v - 1); Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(v = 4; (while(v > 0) (Print(v); v = v - 1); Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(v = 4; (while(v > 0) (Print(v); v = v - 1); Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = 4, (while(v > 0) (Print(v); v = v - 1); Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = 4, (while(v > 0) (Print(v); v = v - 1); Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(while(v > 0) (Print(v); v = v - 1); Print(v))]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(while(v > 0) (Print(v); v = v - 1); Print(v))]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[]SymTable:
+{v=0}Heap:
+Out:
+[4, 3, 2, 1, 0]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(int v; (v = 4; (while(v > 0) (Print(v); v = v - 1); Print(v))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[int v, (v = 4; (while(v > 0) (Print(v); v = v - 1); Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[int v, (v = 4; (while(v > 0) (Print(v); v = v - 1); Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(v = 4; (while(v > 0) (Print(v); v = v - 1); Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(v = 4; (while(v > 0) (Print(v); v = v - 1); Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = 4, (while(v > 0) (Print(v); v = v - 1); Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = 4, (while(v > 0) (Print(v); v = v - 1); Print(v))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(while(v > 0) (Print(v); v = v - 1); Print(v))]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(while(v > 0) (Print(v); v = v - 1); Print(v))]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=4}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=3}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[(Print(v); v = v - 1), while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v), v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[v = v - 1, while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=1}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[while(v > 0) (Print(v); v = v - 1), Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[Print(v)]SymTable:
+{v=0}Heap:
+Out:
+[4, 3, 2, 1]FileTable:
+{}
+Program ID: 6
+ExeStack:
+[]SymTable:
+{v=0}Heap:
+Out:
+[4, 3, 2, 1, 0]FileTable:
+{}

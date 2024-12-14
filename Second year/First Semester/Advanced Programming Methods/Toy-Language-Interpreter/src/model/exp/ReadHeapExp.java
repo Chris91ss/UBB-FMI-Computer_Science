@@ -1,4 +1,3 @@
-// File: src/model/exp/ReadHeapExp.java
 package model.exp;
 
 import model.datastructures.MyIDictionary;

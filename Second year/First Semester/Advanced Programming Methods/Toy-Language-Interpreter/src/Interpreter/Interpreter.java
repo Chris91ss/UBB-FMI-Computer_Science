@@ -331,6 +331,60 @@ public class Interpreter {
         IRepository repo8 = new Repository(prg8, "log8.txt");
         Controller ctr8 = new Controller(repo8);
 
+
+        // Example 9:
+        // int v; Ref int a; v=10; new(a,22);
+        // fork(wH(a,30); v=32; print(v); print(rH(a)));
+        // print(v); print(rH(a))
+
+        IStmt ex9 = new CompStmt(
+                new VarDeclStmt("v", new IntType()),
+                new CompStmt(
+                        new VarDeclStmt("a", new RefType(new IntType())),
+                        new CompStmt(
+                                new AssignStmt("v", new ValueExp(new IntValue(10))),
+                                new CompStmt(
+                                        new NewStmt("a", new ValueExp(new IntValue(22))),
+                                        new CompStmt(
+                                                new forkStmt(
+                                                        new CompStmt(
+                                                                new WriteHeapStmt("a", new ValueExp(new IntValue(30))),
+                                                                new CompStmt(
+                                                                        new AssignStmt("v", new ValueExp(new IntValue(32))),
+                                                                        new CompStmt(
+                                                                                new PrintStmt(new VarExp("v")),
+                                                                                new PrintStmt(new ReadHeapExp(new VarExp("a")))
+                                                                        )
+                                                                )
+                                                        )
+                                                ),
+                                                new CompStmt(
+                                                        new PrintStmt(new VarExp("v")),
+                                                        new PrintStmt(new ReadHeapExp(new VarExp("a")))
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+
+        // Initialize Heap
+        MyIHeap heap9 = new MyHeap();
+
+        // Initialize Program State, Repository, and Controller for ex9
+        PrgState prg9 = new PrgState(
+                new MyStack<IStmt>(),
+                new MyDictionary<String, Value>(heap9),
+                heap9,
+                new MyList<Value>(),
+                new MyDictionary<StringValue, BufferedReader>(heap9),
+                ex9
+        );
+
+        IRepository repo9 = new Repository(prg9, "log9.txt");
+        Controller ctr9 = new Controller(repo9);
+
+
         // Create the Text Menu and add commands
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
@@ -342,6 +396,7 @@ public class Interpreter {
         menu.addCommand(new RunExample("6", ex6.toString(), ctr6));
         menu.addCommand(new RunExample("7", ex7.toString(), ctr7));
         menu.addCommand(new RunExample("8", ex8.toString(), ctr8));
+        menu.addCommand(new RunExample("9", ex9.toString(), ctr9));
 
         // Display the menu and wait for user input
         menu.show();

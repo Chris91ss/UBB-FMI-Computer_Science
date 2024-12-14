@@ -178,3 +178,885 @@ Out:
 FileTable:
 
 
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}

@@ -19,20 +19,21 @@ public class Repository implements IRepository {
     }
 
     @Override
-    public PrgState getCrtPrg() throws RepositoryException {
-        if (prgStates.isEmpty()) {
-            throw new RepositoryException("Repository is empty");
-        }
-        return prgStates.get(0);
+    public List<PrgState> getPrgList() {
+        return prgStates;
     }
 
     @Override
-    public void logPrgStateExec() throws InterpreterException {
-        PrgState prgState = getCrtPrg();
+    public void setPrgList(List<PrgState> newList) {
+        this.prgStates = newList;
+    }
+
+    @Override
+    public void logPrgStateExec(PrgState prgState) throws InterpreterException {
         try (PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))) {
-            logFile.println(prgState.toLogString());
-            logFile.flush();
+            logFile.print(prgState.toLogString());
         } catch (IOException e) {
+            // If we previously threw MyException, now we throw a RepositoryException since it's a repository logging error
             throw new RepositoryException("Error writing to log file: " + e.getMessage());
         }
     }

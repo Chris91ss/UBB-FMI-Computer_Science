@@ -39,7 +39,7 @@ public class IfStmt implements IStmt {
         } catch (ExpressionException | ADTException e) {
             throw new StatementException(e.getMessage());
         }
-        return state;
+        return null;
     }
 
     @Override

@@ -75,4 +75,20 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V> {
         }
         return sb.toString();
     }
+
+    @Override
+    public MyIDictionary<K, V> deepCopy() {
+        MyDictionary<K, V> newDict = new MyDictionary<>(this.heap);
+        for (Map.Entry<K, V> entry : dictionary.entrySet()) {
+            try {
+                newDict.add(entry.getKey(), entry.getValue());
+            } catch (DictionaryException e) {
+                // This should never happen because we are copying keys that already exist in the old dict,
+                // and there's no reason they would fail here.
+                // Still, if needed, handle it or rethrow as a RuntimeException.
+                throw new RuntimeException("Unexpected error during deepCopy: " + e.getMessage(), e);
+            }
+        }
+        return newDict;
+    }
 }

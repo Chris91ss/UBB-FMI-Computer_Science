@@ -28,7 +28,7 @@ public class VarDeclStmt implements IStmt {
                 throw new StatementException(e.getMessage());
             }
         }
-        return state;
+        return null;
     }
 
     @Override

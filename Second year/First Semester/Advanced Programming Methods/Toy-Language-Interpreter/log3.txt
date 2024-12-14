@@ -196,3 +196,423 @@ Out:
 FileTable:
 
 
+Program ID: 3
+ExeStack:
+[(bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[bool a, (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[bool a, (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[a = false, (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[a = false, (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int v, (If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int v, (If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[If(a) Then(v = 2) Else(v = 3), Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[If(a) Then(v = 2) Else(v = 3), Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[v = 3, Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[v = 3, Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[bool a, (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[bool a, (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[a = false, (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[a = false, (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int v, (If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int v, (If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[If(a) Then(v = 2) Else(v = 3), Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[If(a) Then(v = 2) Else(v = 3), Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[v = 3, Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[v = 3, Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[bool a, (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[bool a, (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[a = false, (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[a = false, (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int v, (If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int v, (If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[If(a) Then(v = 2) Else(v = 3), Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[If(a) Then(v = 2) Else(v = 3), Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[v = 3, Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[v = 3, Print(v)]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
