@@ -1,7 +1,11 @@
 package model.stmt;
 
+import exceptions.DictionaryException;
+import exceptions.ExpressionException;
+import exceptions.StatementException;
 import model.datastructures.*;
 import model.state.PrgState;
+import model.types.Type;
 import model.values.Value;
 import exceptions.InterpreterException;
 
@@ -25,6 +29,12 @@ public class forkStmt implements IStmt {
 
         PrgState newPrg = new PrgState(newStack, newSymTable, heap, out, fileTable, null);
         return newPrg;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws StatementException, ExpressionException, DictionaryException {
+        stmt.typecheck(typeEnv);
+        return typeEnv;
     }
 
     @Override

@@ -2,6 +2,8 @@ package model.exp;
 
 import model.datastructures.MyIDictionary;
 import model.datastructures.MyIHeap;
+import model.types.RefType;
+import model.types.Type;
 import model.values.*;
 import exceptions.ExpressionException;
 import exceptions.ADTException;
@@ -31,6 +33,17 @@ public class ReadHeapExp implements Exp {
         }
 
         return heap.get(address);
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws ExpressionException, DictionaryException {
+        Type typ = exp.typecheck(typeEnv);
+        if (typ instanceof RefType) {
+            RefType reft = (RefType) typ;
+            return reft.getInner();
+        } else {
+            throw new ExpressionException("The argument of rH is not a Ref Type");
+        }
     }
 
     @Override

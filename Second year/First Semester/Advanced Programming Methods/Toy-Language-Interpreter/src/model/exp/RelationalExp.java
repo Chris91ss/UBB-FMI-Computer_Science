@@ -3,6 +3,7 @@ package model.exp;
 import exceptions.ADTException;
 import model.datastructures.MyIDictionary;
 import model.types.IntType;
+import model.types.Type;
 import model.values.IntValue;
 import model.values.Value;
 import model.values.BoolValue;
@@ -59,6 +60,20 @@ public class RelationalExp implements Exp {
                 throw new ExpressionException("Invalid relational operator");
         }
         return new BoolValue(result);
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws ExpressionException, DictionaryException {
+        Type typ1, typ2;
+        typ1 = e1.typecheck(typeEnv);
+        typ2 = e2.typecheck(typeEnv);
+        if (!typ1.equals(new IntType()))
+            throw new ExpressionException("First operand is not an integer");
+        if (!typ2.equals(new IntType()))
+            throw new ExpressionException("Second operand is not an integer");
+        if(!op.equals("<") && !op.equals("<=") && !op.equals("==") && !op.equals("!=") && !op.equals(">") && !op.equals(">="))
+            throw new ExpressionException("Invalid relational operator");
+        return new BoolType();
     }
 
     @Override

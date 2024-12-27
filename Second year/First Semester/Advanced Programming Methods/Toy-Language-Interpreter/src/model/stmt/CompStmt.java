@@ -1,8 +1,12 @@
 package model.stmt;
 
+import exceptions.DictionaryException;
+import exceptions.ExpressionException;
+import model.datastructures.MyIDictionary;
 import model.state.PrgState;
 import model.datastructures.MyIStack;
 import exceptions.StatementException;
+import model.types.Type;
 
 public class CompStmt implements IStmt {
     private IStmt first;
@@ -19,6 +23,11 @@ public class CompStmt implements IStmt {
         stack.push(second);
         stack.push(first);
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws StatementException, ExpressionException, DictionaryException {
+        return second.typecheck(first.typecheck(typeEnv));
     }
 
     @Override

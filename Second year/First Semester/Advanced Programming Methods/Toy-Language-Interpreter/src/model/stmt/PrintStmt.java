@@ -1,9 +1,11 @@
 package model.stmt;
 
 import exceptions.ADTException;
+import model.datastructures.MyIDictionary;
 import model.state.PrgState;
 import model.exp.Exp;
 import model.datastructures.MyIList;
+import model.types.Type;
 import model.values.Value;
 import exceptions.StatementException;
 import exceptions.ExpressionException;
@@ -26,6 +28,16 @@ public class PrintStmt implements IStmt {
             throw new StatementException(e.getMessage());
         }
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws StatementException {
+        try {
+            exp.typecheck(typeEnv);
+            return typeEnv;
+        } catch (ExpressionException | DictionaryException e) {
+            throw new StatementException(e.getMessage());
+        }
     }
 
     @Override

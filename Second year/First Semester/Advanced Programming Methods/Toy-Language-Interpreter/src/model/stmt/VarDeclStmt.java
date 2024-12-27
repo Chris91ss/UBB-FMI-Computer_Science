@@ -1,5 +1,6 @@
 package model.stmt;
 
+import exceptions.ExpressionException;
 import model.state.PrgState;
 import model.datastructures.MyIDictionary;
 import model.values.Value;
@@ -29,6 +30,12 @@ public class VarDeclStmt implements IStmt {
             }
         }
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws StatementException, ExpressionException, DictionaryException {
+        typeEnv.add(id, type);
+        return typeEnv;
     }
 
     @Override

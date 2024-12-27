@@ -2,6 +2,7 @@ package model.exp;
 
 import exceptions.ADTException;
 import model.datastructures.MyIDictionary;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.Value;
 import model.types.BoolType;
@@ -46,6 +47,21 @@ public class LogicExp implements Exp {
         } else {
             throw new ExpressionException("Invalid logical operator");
         }
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws ExpressionException, DictionaryException {
+        Type typ1, typ2;
+        typ1 = e1.typecheck(typeEnv);
+        typ2 = e2.typecheck(typeEnv);
+        if (!typ1.equals(new BoolType()))
+            throw new ExpressionException("First operand is not a boolean");
+        if (!typ2.equals(new BoolType()))
+            throw new ExpressionException("Second operand is not a boolean");
+        if(!op.equals("and") && !op.equals("or"))
+            throw new ExpressionException("Invalid logical operator");
+
+        return new BoolType();
     }
 
     @Override

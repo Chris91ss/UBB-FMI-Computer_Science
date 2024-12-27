@@ -1563,3 +1563,316 @@ ExeStack:
 Out:
 [10, 30, 32, 30]FileTable:
 {}
+Program ID: 9
+ExeStack:
+[(int v; (Ref int a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[int v, (Ref int a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a)))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[int v, (Ref int a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a)))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[(Ref int a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a)))))))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[(Ref int a; (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a)))))))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[Ref int a, (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a))))))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[Ref int a, (v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a))))))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[(v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a))))))]SymTable:
+{a=(0, int), v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[(v = 10; (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a))))))]SymTable:
+{a=(0, int), v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[v = 10, (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a)))))]SymTable:
+{a=(0, int), v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[v = 10, (new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a)))))]SymTable:
+{a=(0, int), v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[(new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a)))))]SymTable:
+{a=(0, int), v=10}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[(new(a, 22); (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a)))))]SymTable:
+{a=(0, int), v=10}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[new(a, 22), (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a))))]SymTable:
+{a=(0, int), v=10}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[new(a, 22), (fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a))))]SymTable:
+{a=(0, int), v=10}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[(fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[(fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))); (Print(v); Print(rH(a))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))), (Print(v); Print(rH(a)))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[fork((wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))), (Print(v); Print(rH(a)))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[(Print(v); Print(rH(a)))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[(wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[(Print(v); Print(rH(a)))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[(wH(a, 30); (v = 32; (Print(v); Print(rH(a)))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[Print(v), Print(rH(a))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[wH(a, 30), (v = 32; (Print(v); Print(rH(a))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[Print(v), Print(rH(a))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[wH(a, 30), (v = 32; (Print(v); Print(rH(a))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->22
+Out:
+[]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[Print(rH(a))]SymTable:
+{a=(1, int), v=10}Heap:
+1->30
+Out:
+[10]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[(v = 32; (Print(v); Print(rH(a))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->30
+Out:
+[10]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[Print(rH(a))]SymTable:
+{a=(1, int), v=10}Heap:
+1->30
+Out:
+[10]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[(v = 32; (Print(v); Print(rH(a))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->30
+Out:
+[10]FileTable:
+{}
+Program ID: 9
+ExeStack:
+[]SymTable:
+{a=(1, int), v=10}Heap:
+1->30
+Out:
+[10, 30]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[v = 32, (Print(v); Print(rH(a)))]SymTable:
+{a=(1, int), v=10}Heap:
+1->30
+Out:
+[10, 30]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[v = 32, (Print(v); Print(rH(a)))]SymTable:
+{a=(1, int), v=10}Heap:
+1->30
+Out:
+[10, 30]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[(Print(v); Print(rH(a)))]SymTable:
+{a=(1, int), v=32}Heap:
+1->30
+Out:
+[10, 30]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[(Print(v); Print(rH(a)))]SymTable:
+{a=(1, int), v=32}Heap:
+1->30
+Out:
+[10, 30]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[Print(v), Print(rH(a))]SymTable:
+{a=(1, int), v=32}Heap:
+1->30
+Out:
+[10, 30]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[Print(v), Print(rH(a))]SymTable:
+{a=(1, int), v=32}Heap:
+1->30
+Out:
+[10, 30]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[Print(rH(a))]SymTable:
+{a=(1, int), v=32}Heap:
+1->30
+Out:
+[10, 30, 32]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[Print(rH(a))]SymTable:
+{a=(1, int), v=32}Heap:
+1->30
+Out:
+[10, 30, 32]FileTable:
+{}
+Program ID: 10
+ExeStack:
+[]SymTable:
+{a=(1, int), v=32}Heap:
+1->30
+Out:
+[10, 30, 32, 30]FileTable:
+{}

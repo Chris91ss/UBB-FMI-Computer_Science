@@ -41,6 +41,17 @@ public class AssignStmt implements IStmt {
     }
 
     @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws StatementException, ExpressionException, DictionaryException {
+        Type varType = typeEnv.lookup(id);
+        Type expType = exp.typecheck(typeEnv);
+        if (varType.equals(expType)) {
+            return typeEnv;
+        } else {
+            throw new StatementException("Declared type of variable '" + id + "' and type of the assigned expression do not match");
+        }
+    }
+
+    @Override
     public String toString() {
         return id + " = " + exp.toString();
     }

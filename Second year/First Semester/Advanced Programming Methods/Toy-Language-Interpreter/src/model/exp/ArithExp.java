@@ -1,12 +1,13 @@
 package model.exp;
 
 import exceptions.ADTException;
+import exceptions.DictionaryException;
+import exceptions.ExpressionException;
 import model.datastructures.MyIDictionary;
+import model.types.IntType;
+import model.types.Type;
 import model.values.IntValue;
 import model.values.Value;
-import model.types.IntType;
-import exceptions.ExpressionException;
-import exceptions.DictionaryException;
 
 public class ArithExp implements Exp {
     private Exp e1;
@@ -21,33 +22,61 @@ public class ArithExp implements Exp {
 
     @Override
     public Value eval(MyIDictionary<String, Value> tbl) throws ExpressionException, ADTException {
+        // Evaluate the first operand
         Value v1 = e1.eval(tbl);
         if (!v1.getType().equals(new IntType())) {
             throw new ExpressionException("First operand is not an integer");
         }
+
+        // Evaluate the second operand
         Value v2 = e2.eval(tbl);
         if (!v2.getType().equals(new IntType())) {
             throw new ExpressionException("Second operand is not an integer");
         }
 
-        IntValue i1 = (IntValue) v1;
-        IntValue i2 = (IntValue) v2;
-        int n1 = i1.getVal();
-        int n2 = i2.getVal();
+        // Retrieve integer values
+        int n1 = ((IntValue) v1).getVal();
+        int n2 = ((IntValue) v2).getVal();
 
+        // Perform the arithmetic operation based on the operator
         switch (op) {
-            case 1:
+            case 1: // Addition
                 return new IntValue(n1 + n2);
-            case 2:
+            case 2: // Subtraction
                 return new IntValue(n1 - n2);
-            case 3:
+            case 3: // Multiplication
                 return new IntValue(n1 * n2);
-            case 4:
-                if (n2 == 0) throw new ExpressionException("Division by zero");
+            case 4: // Division
+                if (n2 == 0) {
+                    throw new ExpressionException("Division by zero");
+                }
                 return new IntValue(n1 / n2);
             default:
-                throw new ExpressionException("Invalid arithmetic operator");
+                throw new ExpressionException("Invalid arithmetic operator: " + op);
         }
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws ExpressionException, DictionaryException {
+        // Type check the first operand
+        Type t1 = e1.typecheck(typeEnv);
+        if (!t1.equals(new IntType())) {
+            throw new ExpressionException("First operand is not an integer");
+        }
+
+        // Type check the second operand
+        Type t2 = e2.typecheck(typeEnv);
+        if (!t2.equals(new IntType())) {
+            throw new ExpressionException("Second operand is not an integer");
+        }
+
+        // Validate the operator
+        if (op < 1 || op > 4) {
+            throw new ExpressionException("Invalid arithmetic operator: " + op);
+        }
+
+        // The result of any arithmetic operation is an integer
+        return new IntType();
     }
 
     @Override
@@ -66,7 +95,7 @@ public class ArithExp implements Exp {
             case 4:
                 return "/";
             default:
-                return "";
+                return "?"; // Represents an unknown operator
         }
     }
 }

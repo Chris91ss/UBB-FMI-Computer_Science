@@ -3,6 +3,7 @@ package model.stmt;
 import exceptions.*;
 import model.exp.Exp;
 import model.state.PrgState;
+import model.types.Type;
 import model.values.StringValue;
 import model.values.Value;
 import model.types.StringType;
@@ -41,6 +42,15 @@ public class CloseRFile implements IStmt {
             throw new StatementException(e.getMessage());
         }
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws StatementException, ExpressionException, DictionaryException {
+        Type expType = exp.typecheck(typeEnv);
+        if (!expType.equals(new StringType())) {
+            throw new StatementException("Expression must evaluate to StringType");
+        }
+        return typeEnv;
     }
 
     @Override

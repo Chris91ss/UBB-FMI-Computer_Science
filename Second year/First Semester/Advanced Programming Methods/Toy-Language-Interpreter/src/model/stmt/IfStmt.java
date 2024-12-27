@@ -1,9 +1,11 @@
 package model.stmt;
 
 import exceptions.ADTException;
+import model.datastructures.MyIDictionary;
 import model.state.PrgState;
 import model.exp.Exp;
 import model.datastructures.MyIStack;
+import model.types.Type;
 import model.values.Value;
 import model.values.BoolValue;
 import model.types.BoolType;
@@ -40,6 +42,17 @@ public class IfStmt implements IStmt {
             throw new StatementException(e.getMessage());
         }
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws StatementException, ExpressionException, DictionaryException {
+        Type expType = exp.typecheck(typeEnv);
+        if (!expType.equals(new BoolType())) {
+            throw new StatementException("Conditional expression must be of type BoolType");
+        }
+        thenS.typecheck(typeEnv);
+        elseS.typecheck(typeEnv);
+        return typeEnv;
     }
 
     @Override

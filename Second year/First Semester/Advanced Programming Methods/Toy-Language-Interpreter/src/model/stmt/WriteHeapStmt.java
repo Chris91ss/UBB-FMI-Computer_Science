@@ -3,6 +3,7 @@ package model.stmt;
 import model.datastructures.*;
 import model.exp.Exp;
 import model.state.PrgState;
+import model.types.RefType;
 import model.values.*;
 import model.types.Type;
 import exceptions.StatementException;
@@ -49,6 +50,18 @@ public class WriteHeapStmt implements IStmt {
 
         heap.update(address, expValue);
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws StatementException, ExpressionException, DictionaryException {
+        Type varType = typeEnv.lookup(varName);
+        Type expType = exp.typecheck(typeEnv);
+
+        if (varType.equals(new RefType(expType))) {
+            return typeEnv;
+        } else {
+            throw new StatementException("WriteHeap error: Declared type of variable '" + varName + "' and type of the assigned expression do not match");
+        }
     }
 
     @Override

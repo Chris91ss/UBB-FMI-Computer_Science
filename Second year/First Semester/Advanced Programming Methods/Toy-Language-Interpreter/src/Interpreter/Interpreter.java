@@ -12,35 +12,102 @@ import repository.Repository;
 import view.*;
 
 import java.io.BufferedReader;
+import exceptions.StatementException;
+import exceptions.ExpressionException;
+import exceptions.DictionaryException;
 
 public class Interpreter {
     public static void main(String[] args) {
+        // Initialize examples
+        IStmt ex1 = initializeExample1();
+        IStmt ex2 = initializeExample2();
+        IStmt ex3 = initializeExample3();
+        IStmt ex4 = initializeExample4();
+        IStmt ex5 = initializeExample5();
+        IStmt ex6 = initializeExample6();
+        IStmt ex7 = initializeExample7();
+        IStmt ex8 = initializeExample8();
+        IStmt ex9 = initializeExample9();
+        IStmt ex10 = initializeExample10();
+
+        // Create the Text Menu
+        TextMenu menu = new TextMenu();
+        menu.addCommand(new ExitCommand("0", "exit"));
+
+        // Initialize and add examples to the menu
+        initializeAndAddToMenu("1", ex1, "int v; v=2; Print(v)", menu);
+        initializeAndAddToMenu("2", ex2, "int a; int b; a=2+3*5; b=a+1; Print(b)", menu);
+        initializeAndAddToMenu("3", ex3, "bool a; a=false; int v; If a Then v=2 Else v=3; Print(v)", menu);
+        initializeAndAddToMenu("4", ex4, "File operations test: " + ex4.toString(), menu);
+        initializeAndAddToMenu("5", ex5, "Using relational expressions: " + ex5.toString(), menu);
+        initializeAndAddToMenu("6", ex6, "int v; v=4; while (v>0) { print(v); v=v-1; } print(v);", menu);
+        initializeAndAddToMenu("7", ex7, "Testing the Heap: " + ex7.toString(), menu);
+        initializeAndAddToMenu("8", ex8, "Testing the Garbage Collector: " + ex8.toString(), menu);
+        initializeAndAddToMenu("9", ex9, "Concurrency and Heap Operations: " + ex9.toString(), menu);
+        initializeAndAddToMenu("10", ex10, "Type Error Example: " + ex10.toString(), menu);
+
+        // Display the menu and wait for user input
+        menu.show();
+    }
+
+    /**
+     * Helper method to initialize a program, perform type checking, and add it to the menu if valid.
+     *
+     * @param key         The menu key for the example.
+     * @param stmt        The statement representing the program.
+     * @param description A brief description of the example.
+     * @param menu        The TextMenu instance to which the example is added.
+     */
+    private static void initializeAndAddToMenu(String key, IStmt stmt, String description, TextMenu menu) {
+        // Create a fresh heap for the type environment
+        MyIHeap typeHeap = new MyHeap();
+        // Create the type environment dictionary with the heap
+        MyIDictionary<String, Type> typeEnv = new MyDictionary<>(typeHeap);
+
+        try {
+            // Perform type checking
+            stmt.typecheck(typeEnv);
+        } catch (StatementException | ExpressionException | DictionaryException e) {
+            System.out.println("Type Checking Failed for Example " + key + ": " + e.getMessage());
+            return; // Skip adding this example to the menu
+        }
+
+        // Initialize the actual heap for the program
+        MyIHeap programHeap = new MyHeap();
+
+        // Initialize Program State
+        PrgState prg = new PrgState(
+                new MyStack<IStmt>(),
+                new MyDictionary<String, Value>(programHeap),
+                programHeap,
+                new MyList<Value>(),
+                new MyDictionary<StringValue, BufferedReader>(programHeap), // FileTable
+                stmt
+        );
+
+        // Initialize Repository and Controller
+        IRepository repo = new Repository(prg, "log" + key + ".txt");
+        Controller ctr = new Controller(repo);
+
+        // Add the example to the menu
+        menu.addCommand(new RunExample(key, description, ctr));
+    }
+
+    // Helper methods to initialize each example statement
+    private static IStmt initializeExample1() {
         // Example 1: int v; v=2; Print(v)
-        IStmt ex1 = new CompStmt(
+        return new CompStmt(
                 new VarDeclStmt("v", new IntType()),
                 new CompStmt(
                         new AssignStmt("v", new ValueExp(new IntValue(2))),
                         new PrintStmt(new VarExp("v"))
                 )
         );
+    }
 
-        // Initialize Heap
-        MyIHeap heap1 = new MyHeap();
-
-        // Initialize Program State, Repository, and Controller for ex1
-        PrgState prg1 = new PrgState(
-                new MyStack<IStmt>(),
-                new MyDictionary<String, Value>(heap1),
-                heap1,
-                new MyList<Value>(),
-                new MyDictionary<StringValue, BufferedReader>(heap1), // FileTable
-                ex1
-        );
-        IRepository repo1 = new Repository(prg1, "log1.txt");
-        Controller ctr1 = new Controller(repo1);
-
+    private static IStmt initializeExample2() {
         // Example 2: int a; int b; a=2+3*5; b=a+1; Print(b)
-        IStmt ex2 = new CompStmt(
+        return new CompStmt(
                 new VarDeclStmt("a", new IntType()),
                 new CompStmt(
                         new VarDeclStmt("b", new IntType()),
@@ -65,24 +132,11 @@ public class Interpreter {
                         )
                 )
         );
+    }
 
-        // Initialize Heap
-        MyIHeap heap2 = new MyHeap();
-
-        // Initialize Program State, Repository, and Controller for ex2
-        PrgState prg2 = new PrgState(
-                new MyStack<IStmt>(),
-                new MyDictionary<String, Value>(heap2),
-                heap2,
-                new MyList<Value>(),
-                new MyDictionary<StringValue, BufferedReader>(heap2), // FileTable
-                ex2
-        );
-        IRepository repo2 = new Repository(prg2, "log2.txt");
-        Controller ctr2 = new Controller(repo2);
-
+    private static IStmt initializeExample3() {
         // Example 3: bool a; a=false; int v; If a Then v=2 Else v=3; Print(v)
-        IStmt ex3 = new CompStmt(
+        return new CompStmt(
                 new VarDeclStmt("a", new BoolType()),
                 new CompStmt(
                         new AssignStmt("a", new ValueExp(new BoolValue(false))),
@@ -99,24 +153,11 @@ public class Interpreter {
                         )
                 )
         );
+    }
 
-        // Initialize Heap
-        MyIHeap heap3 = new MyHeap();
-
-        // Initialize Program State, Repository, and Controller for ex3
-        PrgState prg3 = new PrgState(
-                new MyStack<IStmt>(),
-                new MyDictionary<String, Value>(heap3),
-                heap3,
-                new MyList<Value>(),
-                new MyDictionary<StringValue, BufferedReader>(heap3), // FileTable
-                ex3
-        );
-        IRepository repo3 = new Repository(prg3, "log3.txt");
-        Controller ctr3 = new Controller(repo3);
-
+    private static IStmt initializeExample4() {
         // Example 4: File operations test
-        IStmt ex4 = new CompStmt(
+        return new CompStmt(
                 new VarDeclStmt("varf", new StringType()),
                 new CompStmt(
                         new AssignStmt("varf", new ValueExp(new StringValue("test.in"))),
@@ -141,24 +182,11 @@ public class Interpreter {
                         )
                 )
         );
+    }
 
-        // Initialize Heap
-        MyIHeap heap4 = new MyHeap();
-
-        // Initialize Program State, Repository, and Controller for ex4
-        PrgState prg4 = new PrgState(
-                new MyStack<IStmt>(),
-                new MyDictionary<String, Value>(heap4),
-                heap4,
-                new MyList<Value>(),
-                new MyDictionary<StringValue, BufferedReader>(heap4), // FileTable
-                ex4
-        );
-        IRepository repo4 = new Repository(prg4, "log4.txt");
-        Controller ctr4 = new Controller(repo4);
-
+    private static IStmt initializeExample5() {
         // Example 5: Using relational expressions
-        IStmt ex5 = new CompStmt(
+        return new CompStmt(
                 new VarDeclStmt("a", new IntType()),
                 new CompStmt(
                         new VarDeclStmt("b", new IntType()),
@@ -192,24 +220,11 @@ public class Interpreter {
                         )
                 )
         );
+    }
 
-        // Initialize Heap
-        MyIHeap heap5 = new MyHeap();
-
-        // Initialize Program State, Repository, and Controller for ex5
-        PrgState prg5 = new PrgState(
-                new MyStack<IStmt>(),
-                new MyDictionary<String, Value>(heap5),
-                heap5,
-                new MyList<Value>(),
-                new MyDictionary<StringValue, BufferedReader>(heap5), // FileTable
-                ex5
-        );
-        IRepository repo5 = new Repository(prg5, "log5.txt");
-        Controller ctr5 = new Controller(repo5);
-
+    private static IStmt initializeExample6() {
         // Example 6: int v; v=4; while (v>0) { print(v); v=v-1; } print(v);
-        IStmt ex6 = new CompStmt(
+        return new CompStmt(
                 new VarDeclStmt("v", new IntType()),
                 new CompStmt(
                         new AssignStmt("v", new ValueExp(new IntValue(4))),
@@ -225,26 +240,11 @@ public class Interpreter {
                         )
                 )
         );
-        // Initialize Heap
-        MyIHeap heap6 = new MyHeap();
+    }
 
-        // Initialize Program State, Repository, and Controller for ex6
-        PrgState prg6 = new PrgState(
-                new MyStack<IStmt>(),
-                new MyDictionary<String, Value>(heap6),
-                heap6,
-                new MyList<Value>(),
-                new MyDictionary<StringValue, BufferedReader>(heap6), // FileTable
-                ex6
-        );
-        IRepository repo6 = new Repository(prg6, "log6.txt");
-        Controller ctr6 = new Controller(repo6);
-
-
-
-
+    private static IStmt initializeExample7() {
         // Example 7: Testing the Heap
-        IStmt ex7 = new CompStmt(
+        return new CompStmt(
                 new VarDeclStmt("v", new IntType()),
                 new CompStmt(
                         new VarDeclStmt("a", new RefType(new IntType())),
@@ -263,24 +263,11 @@ public class Interpreter {
                         )
                 )
         );
-        // Initialize Heap
-        MyIHeap heap7 = new MyHeap();
+    }
 
-        // Initialize Program State, Repository, and Controller for ex7
-        PrgState prg7 = new PrgState(
-                new MyStack<IStmt>(),
-                new MyDictionary<String, Value>(heap7),
-                heap7,
-                new MyList<Value>(),
-                new MyDictionary<StringValue, BufferedReader>(heap7), // FileTable
-                ex7
-        );
-        IRepository repo7 = new Repository(prg7, "log7.txt");
-        Controller ctr7 = new Controller(repo7);
-
-
+    private static IStmt initializeExample8() {
         // Example 8: Testing the Garbage Collector
-        IStmt ex8 = new CompStmt(
+        return new CompStmt(
                 new VarDeclStmt("a", new RefType(new IntType())),
                 new CompStmt(
                         new VarDeclStmt("b", new RefType(new IntType())),
@@ -305,39 +292,14 @@ public class Interpreter {
                         )
                 )
         );
+    }
 
-        // Initialize Heap for ex8
-        MyIHeap heap8 = new MyHeap();
-
-        // Initialize Symbol Tables and File Tables with the heap
-        MyIDictionary<String, Value> symTable8 = new MyDictionary<>(heap8);
-        MyIDictionary<StringValue, BufferedReader> fileTable8 = new MyDictionary<>(heap8);
-
-        // Initialize Execution Stack and Output
-        MyIStack<IStmt> exeStack8 = new MyStack<>();
-        MyIList<Value> out8 = new MyList<>();
-
-        // Create the initial Program State with the selected program
-        PrgState prg8 = new PrgState(
-                exeStack8,
-                symTable8,
-                heap8,
-                out8,
-                fileTable8,
-                ex8
-        );
-
-        // Create the repository and controller for ex8
-        IRepository repo8 = new Repository(prg8, "log8.txt");
-        Controller ctr8 = new Controller(repo8);
-
-
+    private static IStmt initializeExample9() {
         // Example 9:
         // int v; Ref int a; v=10; new(a,22);
-        // fork(wH(a,30); v=32; print(v); print(rH(a)));
-        // print(v); print(rH(a))
-
-        IStmt ex9 = new CompStmt(
+        // fork(wH(a,30); v=32; Print(v); Print(rH(a)));
+        // Print(v); Print(rH(a))
+        return new CompStmt(
                 new VarDeclStmt("v", new IntType()),
                 new CompStmt(
                         new VarDeclStmt("a", new RefType(new IntType())),
@@ -367,38 +329,16 @@ public class Interpreter {
                         )
                 )
         );
+    }
 
-        // Initialize Heap
-        MyIHeap heap9 = new MyHeap();
-
-        // Initialize Program State, Repository, and Controller for ex9
-        PrgState prg9 = new PrgState(
-                new MyStack<IStmt>(),
-                new MyDictionary<String, Value>(heap9),
-                heap9,
-                new MyList<Value>(),
-                new MyDictionary<StringValue, BufferedReader>(heap9),
-                ex9
+    private static IStmt initializeExample10() {
+        // Example 10: Type Error - Assigning a boolean to an integer variable
+        return new CompStmt(
+                new VarDeclStmt("x", new IntType()),                      // Declare x as Int
+                new CompStmt(
+                        new AssignStmt("x", new ValueExp(new BoolValue(true))), // Assign boolean to x
+                        new PrintStmt(new VarExp("x"))                          // Attempt to print x
+                )
         );
-
-        IRepository repo9 = new Repository(prg9, "log9.txt");
-        Controller ctr9 = new Controller(repo9);
-
-
-        // Create the Text Menu and add commands
-        TextMenu menu = new TextMenu();
-        menu.addCommand(new ExitCommand("0", "exit"));
-        menu.addCommand(new RunExample("1", ex1.toString(), ctr1));
-        menu.addCommand(new RunExample("2", ex2.toString(), ctr2));
-        menu.addCommand(new RunExample("3", ex3.toString(), ctr3));
-        menu.addCommand(new RunExample("4", ex4.toString(), ctr4));
-        menu.addCommand(new RunExample("5", ex5.toString(), ctr5));
-        menu.addCommand(new RunExample("6", ex6.toString(), ctr6));
-        menu.addCommand(new RunExample("7", ex7.toString(), ctr7));
-        menu.addCommand(new RunExample("8", ex8.toString(), ctr8));
-        menu.addCommand(new RunExample("9", ex9.toString(), ctr9));
-
-        // Display the menu and wait for user input
-        menu.show();
     }
 }

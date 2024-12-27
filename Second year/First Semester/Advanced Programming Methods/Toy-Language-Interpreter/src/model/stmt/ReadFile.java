@@ -3,6 +3,7 @@ package model.stmt;
 import exceptions.*;
 import model.exp.Exp;
 import model.state.PrgState;
+import model.types.Type;
 import model.values.IntValue;
 import model.values.StringValue;
 import model.values.Value;
@@ -63,6 +64,19 @@ public class ReadFile implements IStmt {
             throw new StatementException(e.getMessage());
         }
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws StatementException, ExpressionException, DictionaryException {
+        Type expType = exp.typecheck(typeEnv);
+        if (!expType.equals(new StringType())) {
+            throw new StatementException("Expression must evaluate to StringType");
+        }
+        if (typeEnv.lookup(varName).equals(new IntType())) {
+            return typeEnv;
+        } else {
+            throw new StatementException("Variable must be of type int: " + varName);
+        }
     }
 
     @Override

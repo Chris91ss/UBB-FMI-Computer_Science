@@ -3,6 +3,7 @@ package model.stmt;
 import model.exp.Exp;
 import model.state.PrgState;
 import model.datastructures.*;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.Value;
 import model.types.BoolType;
@@ -35,6 +36,17 @@ public class WhileStmt implements IStmt {
         }
 
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws StatementException, ExpressionException, DictionaryException {
+        Type expType = exp.typecheck(typeEnv);
+        if (!expType.equals(new BoolType())) {
+            throw new StatementException("While statement error: Condition is not a boolean.");
+        }
+
+        stmt.typecheck(typeEnv);
+        return typeEnv;
     }
 
     @Override
