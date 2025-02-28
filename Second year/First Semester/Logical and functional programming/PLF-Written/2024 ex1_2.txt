@@ -1,0 +1,48 @@
+% Base case: no more chairs to process, no consecutive yellow chairs left.
+count_consecutive_yellow([], 0).
+
+% If the current chair is yellow, increment the count of consecutive yellow chairs.
+count_consecutive_yellow([Y|T], Count) :-
+    Y = 'Y',
+    count_consecutive_yellow(T, TempCount),
+    Count is TempCount + 1.
+
+% If the current chair is red, reset the count of consecutive yellow chairs.
+count_consecutive_yellow([R|T], 0) :-
+    R = 'R',
+    count_consecutive_yellow(T, _).
+
+% Check if an arrangement is valid by ensuring no more than 3 consecutive yellow chairs.
+valid_arrangement(Arrangement) :-
+    not((count_consecutive_yellow(Arrangement, Count), Count > 3)).
+
+% Generate all possible arrangements of chairs with N chairs in total.
+arrange_chairs(N, Arrangement) :-
+    length(Arrangement, N),
+    findall(C, (member(C, ['R', 'Y']), length(Arrangement, N)), Arrangement),
+    valid_arrangement(Arrangement).
+
+
+
+% Mathematical Model:
+
+count_consecutive_yellow(l1, l2, ..., ln) = {
+  0, if the list is empty
+  1 + count_consecutive_yellow(l2, ..., ln), if l1 = 'Y'
+  count_consecutive_yellow(l2, ..., ln), if l1 ≠ 'Y'
+}
+
+valid_arrangement(L) = {
+  true, if max_consecutive_yellow(L) ≤ 3
+  false, otherwise
+}
+
+arrange_chairs(N) = {
+  P | P ∈ permutations(['R', 'Y'], N)
+  and valid_arrangement(P) = true
+}
+
+% Flow Model:
+arrange_chairs(i, o) - Input the number of chairs, output valid arrangements.	
+valid_arrangement(i) - Input a list and check if it is valid.	
+count_consecutive_yellow(i, o) - Input a list and output the count of consecutive yellow chairs.

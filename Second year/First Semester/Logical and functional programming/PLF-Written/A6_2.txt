@@ -1,0 +1,31 @@
+% Generate all permutations of a list.
+permutation([], []).
+permutation(L, [H|Result]) :-
+    select(H, L, RemainingList),
+    permutation(RemainingList, Result).
+
+% Check if the absolute difference between consecutive elements is ≤ 3.
+check_difference_condition([]).
+check_difference_condition([X, Y | Rest]) :- 
+    abs(X - Y) =< 3,
+    check_difference_condition([Y | Rest]).
+
+% Generate all valid permutations with the condition.
+permutations_with_condition(L, P) :-
+    permutation(L, P),
+    check_difference_condition(P).
+
+% Generate all valid permutations with the condition.
+all_permutations_with_condition(L, AllP) :-
+    findall(P, permutations_with_condition(L, P), AllP).
+
+
+% permutations_with_condition(i, o) – Input a list, output a valid permutation.
+% permutation(i, o) – Generate a permutation from the input list.
+% check_difference_condition(i) – Verify the absolute difference condition between consecutive elements.
+
+%mathematical model:
+
+permutations_with_condition(L) = {
+  P | P ∈ permutations(L) and ∀ i ∈ [1, length(P) - 1], abs(P[i] - P[i+1]) ≤ 3
+}

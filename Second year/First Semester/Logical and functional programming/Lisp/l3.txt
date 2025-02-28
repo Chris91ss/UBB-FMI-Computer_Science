@@ -1,0 +1,12 @@
+;;; ================================================
+;;; Function to count the number of atoms in a list at any level
+;;; ================================================
+
+(defun count-atoms (lst)
+  "Return the number of atoms in a list at any level using MAP functions."
+  (if (atom lst)
+      1  ; If the element is an atom, count it as 1
+      (reduce #'+ (mapcar #'count-atoms lst) :initial-value 0)))  ; Recursively count atoms in sublists
+
+;;; Example: Running the count-atoms function
+(print (count-atoms '(A (B C) (D (E F) G) H)))  ; Expected output: 8

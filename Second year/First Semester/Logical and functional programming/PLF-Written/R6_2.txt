@@ -1,0 +1,35 @@
+% Generate arrangements (permutations) of K elements from a list.
+arrangement(0, _, []).
+arrangement(K, L, [H|T]) :-
+    K > 0,
+    select(H, L, R),
+    K1 is K - 1,
+    arrangement(K1, R, T).
+
+% Calculate the product of elements in a list.
+product([], 1).
+product([H|T], P) :-
+    product(T, P1),
+    P is H * P1.
+
+% Generate all valid arrangements with product less than V.
+valid_arrangements(L, K, V, Arr) :-
+    arrangement(K, L, Arr),
+    product(Arr, P),
+    P < V.
+
+% Remove duplicates from valid arrangements.
+unique_valid_arrangements(L, K, V, UniqueArr) :-
+    setof(Arr, valid_arrangements(L, K, V, Arr), UniqueArr).
+
+
+% Flow model:
+valid_arrangements(i, i, i, o) - Input list, number of elements K, value V, and output a valid arrangement.
+arrangement(i, i, o) - Generates arrangements (permutations) of K elements from the list.
+product(i, o) - Computes the product of elements in a list.
+
+% mathematical model:
+
+arrangements(L, K, V) = {
+  P | P ∈ permutations(L, K) and product(P) < V
+}

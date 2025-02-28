@@ -1,0 +1,14 @@
+(defun replace-odd-levels (tree val &optional (level 0))
+  (if (atom tree) tree
+      (cons (if (oddp level) val (car tree))
+            (mapcar #'(lambda (subtree) (replace-odd-levels subtree val (+ level 1)))
+                    (cdr tree)))))
+
+replace_odd_levels(Tree - n-ary Tree, Val - number, Level - number)
+% flow model: (i, i, i) -> o
+
+replace_odd_levels(Tree, Val, Level) = {
+Tree, if Tree is an atom
+(val, map(replace_odd_levels, subtrees, val, level + 1)), if level is odd
+(root, map(replace_odd_levels, subtrees, val, level + 1)), if level is even
+}

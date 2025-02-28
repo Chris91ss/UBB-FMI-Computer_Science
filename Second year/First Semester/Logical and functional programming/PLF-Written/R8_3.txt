@@ -1,0 +1,26 @@
+For a given n-ary tree the function should return the list of nodes at level k.
+
+(defun nodes-at-level (tree k)
+  (cond
+    ;; Base case: if the tree is null, return an empty list
+    ((null tree) nil)
+
+    ;; If k = 0, return the root node as a list
+    ((= k 0) (list (car tree)))
+
+    ;; If k > 0 and the tree is not null, recurse on subtrees
+    ((> k 0) (apply #'append (mapcar (lambda (subtree) (nodes-at-level subtree (- k 1))) (cdr tree))))
+
+    ;; All other cases are invalid (e.g., negative k), return nil
+    (t nil)))
+
+
+; Flow model:
+; nodes_at_level(i, i, o) – Input an n-ary tree and a level k, and output the list of nodes at that level.
+
+; mathematical model:
+nodes_at_level(tree, k) = {
+  [node], if k = 0
+  flatten(map(nodes_at_level(subtree, k - 1))), if tree is not empty
+  [], otherwise
+}

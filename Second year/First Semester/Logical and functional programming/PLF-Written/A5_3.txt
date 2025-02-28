@@ -1,0 +1,27 @@
+(defun replace-atoms-level (lst k &optional (level 1))
+  (cond
+    ;; If the list is empty, return an empty list
+    ((null lst) nil)
+    
+    ;; If it's an atom and we're at the specified level, replace it with 0
+    ((and (atom lst) (= level k)) 0)
+    
+    ;; If it's an atom but not at the specified level, keep the atom
+    ((atom lst) lst)
+    
+    ;; Otherwise, recursively process each element of the list
+    (t (mapcar (lambda (x) (replace-atoms-level x k (+ level 1))) lst))))
+
+
+% replace-atoms-level(lst - List, k - Number, level - Number)
+% flow model: replace-atoms-level(i, i, i) -> o 
+
+; mathematical model
+
+replace-atoms-level(lst, k, level) =
+  {
+    [] , if lst is empty
+    0 , if lst is an atom and level = k
+    lst , if lst is an atom and level ≠ k
+    map(replace-atoms-level(x, k, level + 1)) , otherwise
+  }

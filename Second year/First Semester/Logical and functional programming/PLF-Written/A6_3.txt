@@ -1,0 +1,27 @@
+(defun remove-divisible-by-3 (lst)
+  (cond
+    ;; Base case: if the list is empty, return NIL
+    ((null lst) nil)
+
+    ;; If the element is a list, apply the function recursively
+    ((listp lst) (mapcar #'remove-divisible-by-3 lst))
+
+    ;; If the element is a number divisible by 3, replace it with NIL
+    ((and (numberp lst) (= (mod lst 3) 0)) nil)
+
+    ;; Otherwise, return the element as it is
+    (t lst)))
+
+% remove_divisible_by_3(lst - List)
+% flow model: remove_divisible_by_3(i, o)
+
+; mathematical model:
+remove_divisible_by_3(L) = 
+    {
+      NIL, if L is empty
+      map(remove_divisible_by_3, L'), if L is a list
+      L, if L is an atom and not divisible by 3
+      NIL, if L is an atom and divisible by 3
+    }
+Where 
+L' is the list without elements divisible by 3.

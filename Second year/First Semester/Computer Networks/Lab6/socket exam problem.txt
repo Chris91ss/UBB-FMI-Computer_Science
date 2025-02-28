@@ -1,0 +1,22 @@
+A server collects data from multiple clients in the form of integer numbers.
+
+The server has an internal value where it adds all the data colected from the clients.
+
+The server will only colect data if a minimum number of clients are conected.
+
+Each client sends 2 types of data to the server, an even number and an odd number, depending on the type of data the server requests.
+
+Each client sends data to the server once every 2 seconds.
+
+The data colection process has 3 states:
+1) standby - the server wait for the required number of clients to connect
+2) even - the server is demanding even numbers
+3) odd - the server is demandig odd numbers
+
+The serev will announce the current state of the data colection process via broadcast.
+
+Each client has an even and an odd number to sent to the server, each randomly generated, with a value between 1 and 9.
+
+When the server is collecting data it will switch between requesting even or odd data once every 100 datas colected.
+
+The server will stop collecting data once it colected a total amount of over 9000.

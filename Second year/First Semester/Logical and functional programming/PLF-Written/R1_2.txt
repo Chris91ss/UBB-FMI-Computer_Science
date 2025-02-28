@@ -1,0 +1,26 @@
+% Base case: the product of an empty list is 1, and k must be 0.
+arrangement_with_product([], 0, 1, []).
+
+% Recursive case: select an element from the list, reduce k, and calculate the product.
+arrangement_with_product(L, K, P, [H|Result]) :-
+    K > 0,
+    select(H, L, T),
+    P mod H =:= 0,
+    P1 is P // H,
+    K1 is K - 1,
+    arrangement_with_product(T, K1, P1, Result).
+
+% Case where the current element is skipped.
+arrangement_with_product([_|T], K, P, Result) :-
+    arrangement_with_product(T, K, P, Result).
+
+
+% arrangement_with_product(L - list, K - number, P - number, Result - list)
+% flow model: arrangement_with_product(i, i, i, o)
+
+% mathematical model:
+
+arrangement_with_product(l1 l2...ln, K, P, Result) = {
+[] , if K = 0 and P = 1
+{l1} U arrangement_with_product(l2 l3...ln, K - 1, P / l1, Result) , if K > 0 and P % l1 = 0
+arrangement_with_product(l2 l3...ln, K, P, Result), otherwise

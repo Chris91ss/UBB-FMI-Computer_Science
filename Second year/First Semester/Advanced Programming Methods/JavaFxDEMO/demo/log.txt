@@ -1,0 +1,4742 @@
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b)), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b)), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b)), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b)), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18, 18]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 10, (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 10, (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = 20, (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = 20, (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a < b) Then(Print("a < b")) Else(Print("a >= b")), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a < b) Then(Print("a < b")) Else(Print("a >= b")), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a < b"), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a < b"), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a - 5 <= b"), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a - 5 <= b"), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a == b) Then(Print("a == b")) Else(Print("a != b")), Print("End of relational expression tests"), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a == b) Then(Print("a == b")) Else(Print("a != b")), Print("End of relational expression tests"), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a != b"), Print("End of relational expression tests"), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a != b"), Print("End of relational expression tests"), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("End of relational expression tests"), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("End of relational expression tests"), (int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int a; (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int a, (int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int b; (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int b, (a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(a = 10; (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 10, (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[a = 10, (b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(b = 20; (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = 20, (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[b = 20, (If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a < b) Then(Print("a < b")) Else(Print("a >= b")); (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a < b) Then(Print("a < b")) Else(Print("a >= b")), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a < b) Then(Print("a < b")) Else(Print("a >= b")), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a < b"), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a < b"), (If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")); (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests")))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a - 5 > b) Then(Print("a - 5 > b")) Else(Print("a - 5 <= b")), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a - 5 <= b"), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a - 5 <= b"), (If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(If(a == b) Then(Print("a == b")) Else(Print("a != b")); Print("End of relational expression tests"))]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a == b) Then(Print("a == b")) Else(Print("a != b")), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[If(a == b) Then(Print("a == b")) Else(Print("a != b")), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a != b"), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("a != b"), Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b", "a - 5 <= b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b", "a - 5 <= b", "a != b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print("End of relational expression tests")]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b", "a - 5 <= b", "a != b"]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{a=10, b=20}Heap:
+Out:
+["a < b", "a - 5 <= b", "a != b", "End of relational expression tests", "a < b", "a - 5 <= b", "a != b", "End of relational expression tests"]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b))), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b)), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b)), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=0, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(b = a + 1; Print(b)), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(b = a + 1; Print(b)), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[b = a + 1, Print(b), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[b = a + 1, Print(b), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(b), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(b), (int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int a; (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b)))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int a, (int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int b; (a = 2 + 3 * 5; (b = a + 1; Print(b))))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int b, (a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(a = 2 + 3 * 5; (b = a + 1; Print(b)))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[a = 2 + 3 * 5, (b = a + 1; Print(b))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(b = a + 1; Print(b))]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[b = a + 1, Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(b)]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[]SymTable:
+{a=17, b=18}Heap:
+Out:
+[18, 18]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[bool a, (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[bool a, (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[a = false, (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[a = false, (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(int v; (If(a) Then(v = 2) Else(v = 3); Print(v))), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(int v; (If(a) Then(v = 2) Else(v = 3); Print(v))), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[int v, (If(a) Then(v = 2) Else(v = 3); Print(v)), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[int v, (If(a) Then(v = 2) Else(v = 3); Print(v)), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(If(a) Then(v = 2) Else(v = 3); Print(v)), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(If(a) Then(v = 2) Else(v = 3); Print(v)), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[If(a) Then(v = 2) Else(v = 3), Print(v), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[If(a) Then(v = 2) Else(v = 3), Print(v), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[v = 3, Print(v), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[v = 3, Print(v), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false, v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(v), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(v), (bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(bool a; (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[bool a, (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[bool a, (a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(a = false; (int v; (If(a) Then(v = 2) Else(v = 3); Print(v))))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[a = false, (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[a = false, (int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(int v; (If(a) Then(v = 2) Else(v = 3); Print(v)))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[int v, (If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[int v, (If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(If(a) Then(v = 2) Else(v = 3); Print(v))]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[If(a) Then(v = 2) Else(v = 3), Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[If(a) Then(v = 2) Else(v = 3), Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[v = 3, Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[v = 3, Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(v)]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[]SymTable:
+{a=false, v=3}Heap:
+Out:
+[3, 3]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v))), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v)), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v), (int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(int v; (v = 2; Print(v)))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[int v, (v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[(v = 2; Print(v))]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[v = 2, Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[Print(v)]SymTable:
+{v=2}Heap:
+Out:
+[2]FileTable:
+{}
+Program ID: 1
+ExeStack:
+[]SymTable:
+{v=2}Heap:
+Out:
+[2, 2]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Ref int a, (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Ref int a, (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(0, int), v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(0, int), v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 10, (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(0, int), v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 10, (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(0, int), v=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(0, int), v=10}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(0, int), v=10}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[new(a, v), (Print(rH(a)); (wH(a, 20); Print(rH(a)))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(0, int), v=10}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[new(a, v), (Print(rH(a)); (wH(a, 20); Print(rH(a)))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(0, int), v=10}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(Print(rH(a)); (wH(a, 20); Print(rH(a)))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->10
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(Print(rH(a)); (wH(a, 20); Print(rH(a)))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->10
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(rH(a)), (wH(a, 20); Print(rH(a))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->10
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(rH(a)), (wH(a, 20); Print(rH(a))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->10
+Out:
+[]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(wH(a, 20); Print(rH(a))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->10
+Out:
+[10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(wH(a, 20); Print(rH(a))), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->10
+Out:
+[10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[wH(a, 20), Print(rH(a)), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->10
+Out:
+[10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[wH(a, 20), Print(rH(a)), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->10
+Out:
+[10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(rH(a)), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(rH(a)), (int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(int v; (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[int v, (Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(Ref int a; (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Ref int a, (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Ref int a, (v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(v = 10; (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a))))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 10, (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[v = 10, (new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(new(a, v); (Print(rH(a)); (wH(a, 20); Print(rH(a)))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[new(a, v), (Print(rH(a)); (wH(a, 20); Print(rH(a))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[new(a, v), (Print(rH(a)); (wH(a, 20); Print(rH(a))))]SymTable:
+{a=(1, int), v=10}Heap:
+1->20
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(Print(rH(a)); (wH(a, 20); Print(rH(a))))]SymTable:
+{a=(2, int), v=10}Heap:
+1->20
+2->10
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(Print(rH(a)); (wH(a, 20); Print(rH(a))))]SymTable:
+{a=(2, int), v=10}Heap:
+2->10
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(rH(a)), (wH(a, 20); Print(rH(a)))]SymTable:
+{a=(2, int), v=10}Heap:
+2->10
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(rH(a)), (wH(a, 20); Print(rH(a)))]SymTable:
+{a=(2, int), v=10}Heap:
+2->10
+Out:
+[10, 20]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(wH(a, 20); Print(rH(a)))]SymTable:
+{a=(2, int), v=10}Heap:
+2->10
+Out:
+[10, 20, 10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[(wH(a, 20); Print(rH(a)))]SymTable:
+{a=(2, int), v=10}Heap:
+2->10
+Out:
+[10, 20, 10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[wH(a, 20), Print(rH(a))]SymTable:
+{a=(2, int), v=10}Heap:
+2->10
+Out:
+[10, 20, 10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[wH(a, 20), Print(rH(a))]SymTable:
+{a=(2, int), v=10}Heap:
+2->10
+Out:
+[10, 20, 10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(rH(a))]SymTable:
+{a=(2, int), v=10}Heap:
+2->20
+Out:
+[10, 20, 10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[Print(rH(a))]SymTable:
+{a=(2, int), v=10}Heap:
+2->20
+Out:
+[10, 20, 10]FileTable:
+{}
+Program ID: 2
+ExeStack:
+[]SymTable:
+{a=(2, int), v=10}Heap:
+2->20
+Out:
+[10, 20, 10, 20]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[string varf, (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[string varf, (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf=""}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf=""}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[varf = "test.in", (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf=""}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[varf = "test.in", (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf=""}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[openRFile(varf), (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[openRFile(varf), (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int varc, (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int varc, (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[readFile(varf, varc), (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[readFile(varf, varc), (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(varc), (readFile(varf, varc); (Print(varc); closeRFile(varf))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(varc), (readFile(varf, varc); (Print(varc); closeRFile(varf))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(readFile(varf, varc); (Print(varc); closeRFile(varf))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(readFile(varf, varc); (Print(varc); closeRFile(varf))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[readFile(varf, varc), (Print(varc); closeRFile(varf)), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[readFile(varf, varc), (Print(varc); closeRFile(varf)), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(Print(varc); closeRFile(varf)), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(Print(varc); closeRFile(varf)), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(varc), closeRFile(varf), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(varc), closeRFile(varf), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[closeRFile(varf), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[closeRFile(varf), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[string varf, (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[string varf, (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[varf = "test.in", (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[varf = "test.in", (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[openRFile(varf), (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[openRFile(varf), (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int varc, (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[int varc, (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[readFile(varf, varc), (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[readFile(varf, varc), (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(varc), (readFile(varf, varc); (Print(varc); closeRFile(varf)))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(varc), (readFile(varf, varc); (Print(varc); closeRFile(varf)))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(readFile(varf, varc); (Print(varc); closeRFile(varf)))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(readFile(varf, varc); (Print(varc); closeRFile(varf)))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[readFile(varf, varc), (Print(varc); closeRFile(varf))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[readFile(varf, varc), (Print(varc); closeRFile(varf))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(Print(varc); closeRFile(varf))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[(Print(varc); closeRFile(varf))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(varc), closeRFile(varf)]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[Print(varc), closeRFile(varf)]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[closeRFile(varf)]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[closeRFile(varf)]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0, 0]FileTable:
+{}
+Program ID: 3
+ExeStack:
+[]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[string varf, (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[string varf, (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf=""}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf=""}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[varf = "test.in", (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf=""}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[varf = "test.in", (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf=""}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[openRFile(varf), (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[openRFile(varf), (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[int varc, (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[int varc, (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in"}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[readFile(varf, varc), (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[readFile(varf, varc), (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(varc), (readFile(varf, varc); (Print(varc); closeRFile(varf))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(varc), (readFile(varf, varc); (Print(varc); closeRFile(varf))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(readFile(varf, varc); (Print(varc); closeRFile(varf))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(readFile(varf, varc); (Print(varc); closeRFile(varf))), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[readFile(varf, varc), (Print(varc); closeRFile(varf)), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[readFile(varf, varc), (Print(varc); closeRFile(varf)), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(Print(varc); closeRFile(varf)), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(Print(varc); closeRFile(varf)), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(varc), closeRFile(varf), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(varc), closeRFile(varf), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[closeRFile(varf), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[closeRFile(varf), (string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(string varf; (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[string varf, (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[string varf, (varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(varf = "test.in"; (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[varf = "test.in", (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[varf = "test.in", (openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(openRFile(varf); (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[openRFile(varf), (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[openRFile(varf), (int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(int varc; (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[int varc, (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[int varc, (readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(readFile(varf, varc); (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf)))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[readFile(varf, varc), (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[readFile(varf, varc), (Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(Print(varc); (readFile(varf, varc); (Print(varc); closeRFile(varf))))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(varc), (readFile(varf, varc); (Print(varc); closeRFile(varf)))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(varc), (readFile(varf, varc); (Print(varc); closeRFile(varf)))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(readFile(varf, varc); (Print(varc); closeRFile(varf)))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(readFile(varf, varc); (Print(varc); closeRFile(varf)))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[readFile(varf, varc), (Print(varc); closeRFile(varf))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[readFile(varf, varc), (Print(varc); closeRFile(varf))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(Print(varc); closeRFile(varf))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[(Print(varc); closeRFile(varf))]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(varc), closeRFile(varf)]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[Print(varc), closeRFile(varf)]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[closeRFile(varf)]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[closeRFile(varf)]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0, 0]FileTable:
+{}
+Program ID: 4
+ExeStack:
+[]SymTable:
+{varf="test.in", varc=0}Heap:
+Out:
+[0, 0, 0, 0]FileTable:
+{}

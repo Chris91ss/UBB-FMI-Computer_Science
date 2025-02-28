@@ -1,0 +1,26 @@
+The server waits for a predefined  number of clients to connect.
+
+Once all the expected clients are connected the server will start the game.
+
+The game has 4 rounds. In each round the server generates 5 random numbers for the clients to have to guess.
+
+In each round the number interval and the score for each guess changes in acorde to the below matrix
+
+Round:    Interval          Points
+1 	    0-9               5
+2           10-90             10
+3           100-999           20
+4           1000-9999         30
+
+
+The game will start in round 1
+After all the numbers in the current round are guessed by the clients the game will proceed to the next round.
+This process will repeat until the final round is finished.
+
+The server will decide the order in which the clients can attempt to guess a number and announce each client when is its turn. After a client attempts to guess a number the server will wait 0.5 seconds until announcing the next client.
+
+If a client disconects during the game the game will continue without it.
+
+As the end of the game the server announce each client its position on the scoreboard, after that each client can disconnect or request to see its individual score, in which case the server will deliver.
+
+During the game the server must display messages on the standard input in order to make the game easy to follow.

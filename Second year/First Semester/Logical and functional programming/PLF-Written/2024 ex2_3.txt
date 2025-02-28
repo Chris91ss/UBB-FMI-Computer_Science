@@ -1,0 +1,22 @@
+(defun multiply-nodes (tree &optional (level 1))
+  (if (null tree)
+      nil ; Base case: if the tree is empty, return NIL
+      (mapcar
+       (lambda (node)
+         (cond
+           ;; If the current node is a number, multiply it by the level
+           ((numberp node) (* node level))
+           ;; If the current node is a list, recursively process the subtree with incremented level
+           ((listp node) (multiply-nodes node (+ level 1)))
+           ;; If the current node is a non-numerical atom, leave it unchanged
+           (t node)))
+       tree)))
+
+; multiply-nodes(i, o) - Multiplies numerical nodes by their level.
+
+; Mathematical model:
+multiply-nodes(tree, level) =
+  NIL, if tree is empty
+  (* root level), if root is a number
+  root, if root is a non-numerical atom
+  multiply-nodes(subtree, level + 1), if root is a subtree

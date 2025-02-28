@@ -1,0 +1,26 @@
+(defun substitute-odd-levels (lst e e1 level)
+  (cond
+    ;; Base case: if the list is empty, return NIL
+    ((null lst) nil)
+
+    ;; If the current element is a list, apply the function recursively
+    ((listp lst)
+     (mapcar (lambda (sublist) (substitute-odd-levels sublist e e1 (+ level 1))) lst))
+
+    ;; If the current element matches `e` and the level is odd, replace it with `e1`
+    ((and (equal lst e) (oddp level)) e1)
+
+    ;; Otherwise, return the element as it is
+    (t lst)))
+
+
+; Flow Model:
+substitute-odd-levels(i, i, i, i, o) – Takes a list, an element to be replaced, the replacement element, the current level, and outputs the modified list.
+
+
+; Mathematical model:
+substitute_odd_levels(l1 l2...ln, e, e1, level) = {
+  e1, if l1 = e and level is odd
+  map(substitute_odd_levels(sublist, e, e1, level + 1)), if L is a list
+  l1, otherwise
+}

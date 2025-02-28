@@ -1,0 +1,14 @@
+;;; ================================================
+;;; Preorder Traversal of a Binary Tree (Type 2 Representation)
+;;; ================================================
+
+(defun preorder (tree)
+  "Return the list of nodes accessed in preorder from a binary tree in type (2) representation."
+  (if (null tree)
+      nil
+      (cons (car tree)  ; Visit the root node
+            (append (preorder (cadr tree))  ; Traverse the left subtree
+                    (preorder (caddr tree))))))  ; Traverse the right subtree
+
+;;; Example: Running the preorder traversal
+(print (preorder '(A (B) (C (D) (E)))))  ; Expected output: (A B C D E)

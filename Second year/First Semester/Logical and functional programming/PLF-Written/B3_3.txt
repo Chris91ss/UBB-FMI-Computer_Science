@@ -1,0 +1,28 @@
+(defun replace-even-values (lst)
+  (cond
+    ;; Base case: if the list is empty, return NIL
+    ((null lst) nil)
+
+    ;; If the element is a list, apply the function recursively
+    ((listp lst) (mapcar #'replace-even-values lst))
+
+    ;; If the element is an even number, replace it with the next number
+    ((and (numberp lst) (evenp lst)) (+ lst 1))
+
+    ;; Otherwise, return the element as it is
+    (t lst)))
+
+; Flow Model:
+; replace_even_values(i, o) – Takes an input list and returns the modified list with even numbers replaced by the next numeric value.
+
+; mathematical model:
+replace_even_values(L) =
+    {
+      NIL, if L is empty
+      map(replace_even_values, L'), if L is a list
+      L + 1, if L is a number and L is even
+      L, otherwise
+    }
+
+Where 
+L' is the list with elements processed recursively.

@@ -1,0 +1,43 @@
+For a given value N, generate a list of all permutations of the number N, N + 1, ..., 2N - 1 with the condition that the absolute difference between consecutine elements is <= 2
+
+% Generate a list of numbers from N to 2N-1.
+generate_list(N, List) :-
+    End is 2 * N - 1,
+    findall(X, between(N, End, X), List).
+
+% Generate all permutations of a list.
+permutation([], []).
+permutation(L, [H|T]) :-
+    select(H, L, R),
+    permutation(R, T).
+
+% Check if the absolute difference between consecutive elements is ≤ 2.
+check_difference_condition([]).
+check_difference_condition([_]).
+check_difference_condition([X, Y | Rest]) :-
+    abs(X - Y) =< 2,
+    check_difference_condition([Y | Rest]).
+
+% Generate all valid permutations with the condition.
+valid_permutations(N, Perm) :-
+    generate_list(N, List),
+    permutation(List, Perm),
+    check_difference_condition(Perm).
+
+all_perm(N, Result):-
+    findall(Perm, valid_permutations(N, Perm), Result).
+
+
+% Flow model:
+generate_list(i, o) – Generates the list [N, N+1,...,2N - 1] from a given value N
+permutation(i, o) – Generates permutations of a list.
+check_difference_condition(i) – Checks that the absolute difference between consecutive elements is ≤ 2.
+valid_permutations(i, o) – Outputs valid permutations.
+
+
+% Mathematical Model:
+
+valid_permutations(L) = {
+  P | P ∈ permutations(L) and ∀ i ∈ [1, length(P)-1], abs(P[i] - P[i+1]) ≤ 2
+}
+

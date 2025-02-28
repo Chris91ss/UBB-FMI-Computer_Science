@@ -1,0 +1,24 @@
+; Sa se elimine toate aparitiile elementului maxim dintr-o lista neliniara
+
+(defun remove-max (lst)
+  (let ((max-val (find-max lst))) 
+    (remove-max-helper lst max-val)))
+
+(defun find-max (lst)
+  (cond
+    ((null lst) nil) 
+    ((atom (car lst)) (max (car lst) (or (find-max (cdr lst)) 0)))  
+    (t (max (find-max (car lst)) (find-max (cdr lst)))))) 
+
+(defun remove-max-helper (lst max-val)
+  (cond
+    ((null lst) nil) 
+    ((atom (car lst))
+     (if (eql (car lst) max-val)
+         (remove-max-helper (cdr lst) max-val)  
+         (cons (car lst) (remove-max-helper (cdr lst) max-val))))  
+    (t (cons (remove-max-helper (car lst) max-val)
+             (remove-max-helper (cdr lst) max-val)))))  
+
+(print (remove-max '(3 (7 2) (7 (4 7) 5) 7)))
+(print (remove-max '(1 2 7 10 (3 4 (5 (10 7) 2 ) 4 5) 3 2)))

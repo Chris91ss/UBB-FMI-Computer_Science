@@ -1,0 +1,1 @@
+r3: subiectul 1 cu 4 intrebari de teorie, permutarile unei liste cu conditia ca diferenta dintre doua valori consecutive sa fie =< 3, si sub 3 cu eliminarea valorilor multiplu de 3 dintr-o lista neliniara, folosind functie map

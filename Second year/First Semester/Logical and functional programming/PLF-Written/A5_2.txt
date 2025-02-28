@@ -1,0 +1,35 @@
+% Base case: an empty list has a sum of 0 and an empty subset.
+subsets_with_sum_divisible_by_3([], 0, []).
+
+% Recursive case: select an element from the list, include it in the subset, and check divisibility by 3.
+subsets_with_sum_divisible_by_3([H|T], N, [H|Subset]) :-
+    N > 0,
+    N1 is N - 1,
+    subsets_with_sum_divisible_by_3(T, N1, Subset),
+    sum_list([H|Subset], Sum),
+    Sum mod 3 =:= 0.
+
+% Case where the current element is skipped.
+subsets_with_sum_divisible_by_3([_|T], N, Subset) :-
+    subsets_with_sum_divisible_by_3(T, N, Subset).
+
+% Helper predicate to calculate the sum of a list.
+sum_list([], 0).
+sum_list([H|T], Sum) :-
+    sum_list(T, SumRest),
+    Sum is H + SumRest.
+
+
+
+% subsets_with_sum_divisible_by_3(L - list, N - number, Result - list)
+% flow model: subsets_with_sum_divisible_by_3(i, i, o)
+
+% mathematical model:
+
+subsets_with_sum_divisible_by_3(L, N, Result) = {
+[] , if N = 0 and the sum of elements in Result is divisible by 3
+{l1} U subsets_with_sum_divisible_by_3(l2 l3...ln, N - 1, Result) , if N > 0 and the sum of elements in Result is divisible by 3
+subsets_with_sum_divisible_by_3(l2 l3...ln, N, Result), otherwise
+}
+
+

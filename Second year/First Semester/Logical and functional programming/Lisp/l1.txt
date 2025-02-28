@@ -1,0 +1,49 @@
+;;; a) Function to calculate the dot product of two vectors
+(defun dot-product (vec1 vec2)
+  "Calculate the dot product of two vectors vec1 and vec2."
+  (if (or (null vec1) (null vec2))
+      0
+      (+ (* (car vec1) (car vec2))
+         (dot-product (cdr vec1) (cdr vec2)))))
+
+(print (dot-product '(1 2 3) '(4 5 6)))  ; Expected output: 32
+(print (dot-product '(1 0 -1) '(2 3 -2)))  ; Expected output: 4
+
+;;; b) Function to return the maximum value of all numerical atoms in a list
+(defun max-numerical-atom (lst)
+  "Find the maximum numerical value from a nested list."
+  (cond
+    ((null lst) nil)
+    ((numberp (car lst)) (max (car lst) (or (max-numerical-atom (cdr lst)) (car lst))))
+    ((listp (car lst)) (max (or (max-numerical-atom (car lst)) 0) (or (max-numerical-atom (cdr lst)) 0)))
+    (t (max-numerical-atom (cdr lst)))))
+
+(print (max-numerical-atom '(1 2 (3 4 (5 6)) -10)))  ; Expected output: 6
+(print (max-numerical-atom '((10 (12) 8) (7 -100))))  ; Expected output: 12
+
+;;; c) Function to evaluate an arithmetic expression in preorder
+(defun eval-stack (expr)
+  "Evaluate a preorder arithmetic expression stored in a list."
+  (if (atom expr)
+      expr
+      (let ((op (car expr))
+            (left (eval-stack (cadr expr)))
+            (right (eval-stack (caddr expr))))
+        (case op
+          (+ (+ left right))
+          (- (- left right))
+          (* (* left right))
+          (/ (/ left right))
+          (otherwise nil)))))  
+
+(print (eval-stack '(+ 1 3)))  ; Expected output: 4
+(print (eval-stack '(+ (* 2 4) 3)))  ; Expected output: 11
+(print (eval-stack '(- (* 2 4) (* 5 2))))  ; Expected output: -2
+
+;;; d) Function to check if a list has an even number of elements at the first level
+(defun even-elements? (lst)
+  "Return T if the list has an even number of elements, NIL otherwise."
+  (evenp (length lst)))
+
+(print (even-elements? '(1 2 3 4)))  ; Expected output: T
+(print (even-elements? '(1 2 3)))  ; Expected output: NIL
