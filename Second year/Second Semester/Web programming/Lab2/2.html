@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Windows Start Menu</title>
+  <style>
+    body {
+        background-color: black;
+    }
+    /* Basic vertical menu styles */
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: #2c3e50;
+      width: 200px;
+    }
+    li {
+      position: relative; /* so submenus can be positioned to the right */
+    }
+    li a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    li a:hover {
+      background: #34495e;
+    }
+    /* Submenu hidden by default, shown on hover */
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background: #34495e;
+    }
+    li:hover > .submenu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Main menu -->
+<ul id="mainMenu">
+  <li><a href="#">Item 1</a></li>
+  <li><a href="#">Item 2</a></li>
+  <li><a href="#">Item 3</a></li>
+  <li><a href="#">Item 4</a></li>
+  <li><a href="#">Item 5</a></li>
+</ul>
+
+<script>
+  // The single submenu snippet we want to reuse
+  const subMenuHtml = `
+    <div class="submenu">
+      <ul class="subMenuList">
+        <li><a href="#">Sub A</a></li>
+        <li><a href="#">Sub B</a></li>
+        <li><a href="#">Sub C</a></li>
+      </ul>
+    </div>
+  `;
+
+  // How many levels we want to add (beyond the top menu)
+  const levels = 6;  
+  // 'levels = 2' means we add a submenu to each top-level <li>,
+  // then add another submenu to each newly created <li>, for 2 nested levels total.
+
+  // Start by selecting top-level <li> items
+  let currentSelector = '#mainMenu > li';
+
+  for (let i = 0; i < levels; i++) {
+    // Get all <li> matching the current selector
+    const items = document.querySelectorAll(currentSelector);
+    
+    // Append the submenu snippet to each <li>
+    items.forEach(item => {
+      item.insertAdjacentHTML('beforeend', subMenuHtml);
+    });
+
+    // Next iteration: go one level deeper (".subMenuList > li")
+    // So each time we loop, it appends the snippet to the newly created sub-items
+    currentSelector += ' .subMenuList > li';
+  }
+</script>
+
+</body>
+</html>

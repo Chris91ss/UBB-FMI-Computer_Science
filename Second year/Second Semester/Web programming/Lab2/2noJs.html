@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Windows Start Menu (Single Loop Reuse)</title>
+  <style>
+    body {
+      background-color: black;
+    }
+    /* Basic vertical menu styles */
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: #2c3e50;
+      width: 200px;
+    }
+    li {
+      position: relative; /* so submenus can be positioned to the right */
+    }
+    li a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    li a:hover {
+      background: #34495e;
+    }
+    /* Submenu hidden by default, shown on hover */
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background: #34495e;
+    }
+    li:hover > .submenu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<ul id="mainMenu">
+  <li>
+    <a href="#">Item 1</a>
+    <div class="submenu">
+      <ul class="subMenuList">
+        <li>
+          <a href="#">Sub A</a>
+          <div class="submenu">
+            <ul class="subMenuList">
+              <li>
+                <a href="#">Sub A</a>
+                <div class="submenu">
+                  <ul class="subMenuList">
+                    <li>
+                      <a href="#">Sub A</a>
+                      <div class="submenu">
+                        <ul class="subMenuList">
+                          <li>
+                            <a href="#">Sub A</a>
+                            <div class="submenu">
+                              <ul class="subMenuList">
+                                <li>
+                                  <a href="#">Sub A</a>
+                                  <div class="submenu">
+                                    <ul class="subMenuList">
+                                      <!-- Level 6 reached -->
+                                      <li><a href="#">Sub A</a></li>
+                                      <li><a href="#">Sub B</a></li>
+                                      <li><a href="#">Sub C</a></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li><a href="#">Sub B</a></li>
+                                <li><a href="#">Sub C</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li><a href="#">Sub B</a></li>
+                          <li><a href="#">Sub C</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#">Sub B</a></li>
+                    <li><a href="#">Sub C</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">Sub B</a>
+                <!-- copy paste -->
+              </li>
+              <li>
+                <a href="#">Sub C</a>
+                <!-- copy paste -->
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Sub B</a>
+          <!-- copy paste -->
+        </li>
+        <li>
+          <a href="#">Sub C</a>
+          <!-- copy paste -->
+        </li>
+      </ul>
+    </div>
+  </li>
+  <li>
+    <a href="#">Item 2</a>
+    <!-- The submenu structure for Item 2 is identical to that for Item 1 -->
+  </li>
+  <li>
+    <a href="#">Item 3</a>
+    <!-- The submenu structure for Item 3 is identical to that for Item 1 -->
+  </li>
+  <li>
+    <a href="#">Item 4</a>
+    <!-- The submenu structure for Item 4 is identical to that for Item 1 -->
+  </li>
+  <li>
+    <a href="#">Item 5</a>
+    <!-- The submenu structure for Item 5 is identical to that for Item 1 -->
+  </li>
+</ul>
+
+</body>
+</html>

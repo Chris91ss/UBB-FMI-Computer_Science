@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab5 - Javascript</title>
+  <style>
+    /* Default link style */
+    a {
+      text-decoration: none;
+      color: red;
+      padding: 2px 4px;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="changeBackground()">Change Background</button>
+  <button onclick="changeLinks()">Change Links</button>
+
+  <br><br>
+  <!-- At least 10 links -->
+  <a href="http://example.com/1" target="_blank">Link 1</a> |
+  <a href="http://example.com/2" target="_blank">Link 2</a> |
+  <a href="http://example.com/3" target="_blank">Link 3</a> |
+  <a href="http://example.com/4" target="_blank">Link 4</a> |
+  <a href="http://example.com/5" target="_blank">Link 5</a> |
+  <a href="http://example.com/6" target="_blank">Link 6</a> |
+  <a href="http://example.com/7" target="_blank">Link 7</a> |
+  <a href="http://example.com/8" target="_blank">Link 8</a> |
+  <a href="http://example.com/9" target="_blank">Link 9</a> |
+  <a href="http://example.com/10" target="_blank">Link 10</a>
+
+  <script>
+    // Array of background images (using placeholder images)
+    var backgrounds = [
+      "image1.jpg",
+      "image2.jpg",
+      "image3.jpg",
+      "image4.jpg",
+      "image5.jpg"
+    ];
+    var currentBg = 0;
+
+    // Function to change the background image
+    function changeBackground() {
+      document.body.style.backgroundImage = "url('" + backgrounds[currentBg] + "')";
+      document.body.style.backgroundSize = "cover";
+      // Move to the next background image (rotate when end reached)
+      currentBg = (currentBg + 1) % backgrounds.length;
+    }
+
+    // Function to change the style of all links
+    function changeLinks() {
+      var links = document.getElementsByTagName("a");
+      for (var i = 0; i < links.length; i++) {
+        // Change text color and font style
+        links[i].style.color = "green";
+        links[i].style.fontFamily = "Courier New, monospace";
+        // Add padding, border, and rounded corners for a "changed shape"
+        links[i].style.padding = "5px 10px";
+        links[i].style.border = "2px solid black";
+        links[i].style.borderRadius = "8px";
+      }
+    }
+  </script>
+</body>
+</html>

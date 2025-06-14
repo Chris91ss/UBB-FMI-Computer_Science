@@ -1,0 +1,149 @@
+/* --------------------------------------------------
+   Berserker Red Color Palette:
+   - Black:    #000000
+   - Red:      #c02026
+   - Light Gray: #d4c8c8
+   -------------------------------------------------- */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000;      /* Black background */
+    color: #d4c8c8;              /* Light gray text */
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #c02026;   /* Berserker red */
+    padding: 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin-bottom: 10px;
+    color: #d4c8c8;              /* Light gray for title */
+    font-size: 2rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: #d4c8c8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    color: #fff;                 /* White hover effect */
+  }
+  
+  /* Main Content */
+  main {
+    margin: 20px 0;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  article h2 {
+    margin-bottom: 10px;
+    color: #c02026;              /* Use red for subheadings */
+    font-size: 1.5rem;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  
+  /* Horizontal Rule */
+  hr {
+    border: 1px solid #c02026;   /* Red horizontal line */
+    margin: 20px 0;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  table, th, td {
+    border: 1px solid #c02026;   /* Red table border */
+  }
+  thead {
+    background-color: #c02026;   /* Red header background */
+  }
+  thead th {
+    color: #d4c8c8;              /* Light gray text in thead */
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+    background-color: #000;      /* Black background for rows */
+    color: #d4c8c8;              /* Light gray text */
+  }
+  
+  /* Figure Styling */
+  figure {
+    text-align: center;
+    margin: 20px 0;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+  }
+  figurecaption {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #d4c8c8;
+  }
+  
+  /* Media Samples */
+  .media-sample > div {
+    margin-bottom: 20px;
+  }
+  
+  /* Sidebar Styling */
+  aside .sidebar {
+    background-color: #000;      /* Keep sidebar black */
+    border: 1px solid #c02026;   /* Red border to match theme */
+    padding: 15px;
+    margin-top: 20px;
+  }
+  aside .sidebar h3 {
+    margin-bottom: 10px;
+    color: #c02026;              /* Red accent for sidebar heading */
+  }
+  aside .sidebar a {
+    color: #d4c8c8;
+  }
+  aside .sidebar a:hover {
+    color: #fff;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #c02026;  /* Red top border in footer */
+    padding-top: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (min-width: 1024px) {
+    body {
+      max-width: 1024px;
+      margin: auto;
+    }
+  }
+  

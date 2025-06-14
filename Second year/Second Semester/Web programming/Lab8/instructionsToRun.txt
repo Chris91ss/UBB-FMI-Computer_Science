@@ -1,0 +1,3 @@
+in document-manager run ng serve
+
+in another bash run php -S localhost:8000

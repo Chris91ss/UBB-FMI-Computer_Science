@@ -1,0 +1,162 @@
+/* RESET / BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0; /* Remove default margins so everything spans the screen */
+    font-family: Arial, sans-serif;
+    background-color: #eaeded; /* Amazon-like background */
+  }
+  
+  /* HEADER (TOP NAV) */
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #131921; /* Dark navy */
+    color: white;
+    padding: 0.5rem 1rem;
+    width: 100%; /* Full width */
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-placeholder {
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #f0c14b; /* Amazon gold */
+    color: #111;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  
+  .location {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .location-line1 {
+    color: #ccc;
+  }
+  .location-line2 {
+    font-weight: bold;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    flex: 1;
+    display: flex;
+    margin: 0 1rem;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+  }
+  
+  .search-bar button {
+    background-color: #f3a847;
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Header Right */
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .account, .orders {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .cart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cart-icon {
+    margin-right: 0.2rem;
+  }
+  
+  /* SUBNAV */
+  .subnav {
+    background-color: #232f3e;
+    padding: 0.5rem 1rem;
+    width: 100%; /* Full width */
+  }
+  
+  .subnav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .subnav a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  /* MAIN CONTENT */
+  main {
+    width: 100%; /* Full width */
+  }
+  
+  /* HERO SECTION: 800px tall, background image, text centered */
+  .hero {
+    width: 100%;
+    height: 300px;
+    background: url("Border.jpg") 
+                no-repeat center center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    /* Optional background to make text readable if needed */
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* CARDS SECTION */
+  .cards-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem; /* Some space around the cards */
+    width: 100%;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+  }
+  

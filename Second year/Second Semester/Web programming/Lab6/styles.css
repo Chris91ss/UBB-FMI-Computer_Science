@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+#desktop-container {
+    position: relative;
+    height: 100%;
+}
+
+.desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+#desktop1 {
+    background: rgba(255, 0, 0, 0.5);
+}
+
+#desktop2 {
+    background: rgba(0, 128, 0, 0.5);
+}
+
+#desktop3 {
+    background: rgba(0, 0, 255, 0.5);
+}
+
+#desktop4 {
+    background: rgba(128, 0, 128, 0.5);
+}

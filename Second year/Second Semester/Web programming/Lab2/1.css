@@ -1,0 +1,38 @@
+/* Center the container on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
+}
+
+/* Parent container to stack both images */
+.image-container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+}
+
+/* Both images fill the container and overlap */
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Top image is pixelated */
+.pixelated-image {
+  image-rendering: pixelated;
+  /* Transition on clip-path for a smooth effect */
+  transition: clip-path 1s ease;
+  /* Start fully covering the container with a large circle */
+  clip-path: circle(150% at 50% 50%);
+}
+
+/* On hover, shrink the circle to 0, revealing the clear image below */
+.image-container:hover .pixelated-image {
+  clip-path: circle(0% at 50% 50%);
+}
