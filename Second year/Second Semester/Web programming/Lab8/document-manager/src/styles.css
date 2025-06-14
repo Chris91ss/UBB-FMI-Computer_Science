@@ -1,0 +1,143 @@
+/* Dark theme styles */
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.main-container {
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    padding: 24px;
+    background: rgba(30, 30, 30, 0.98);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.filters-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.actions-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #e0e0e0;
+    padding: 5px 10px;
+    border: 1px solid #404040;
+    border-radius: 3px;
+    background-color: #2d2d2d;
+}
+
+nav a:hover {
+    background-color: #404040;
+}
+
+.filters {
+    margin: 20px 0;
+}
+
+.filters select {
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border: 1px solid #404040;
+}
+
+.document-item {
+    border: 1px solid #404040;
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    background-color: #232323;
+}
+
+.document-item h3 {
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.document-actions {
+    margin-top: 10px;
+}
+
+.document-actions button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #404040;
+    border-radius: 4px;
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #5345a0;
+}
+
+button {
+    background-color: #0c2663;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 8px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #5345a0;
+}
+
+.delete-btn {
+    background-color: #8b0000;
+}
+
+.delete-btn:hover {
+    background-color: #b22222;
+}
+
+.centered {
+    text-align: center;
+    margin: 18px 0;
+}
+
+.error {
+    color: #ff4d4f;
+} 

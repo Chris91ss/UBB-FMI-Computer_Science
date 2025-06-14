@@ -1,0 +1,13 @@
+<div class="filters">
+  <select [value]="type" (change)="onTypeChange($event)">
+    <option value="">All Types</option>
+    <option value="PDF">PDF</option>
+    <option value="DOC">DOC</option>
+    <option value="TXT">TXT</option>
+  </select>
+  <select [value]="format" (change)="onFormatChange($event)">
+    <option value="">All Formats</option>
+    <option value="Digital">Digital</option>
+    <option value="Physical">Physical</option>
+  </select>
+</div>

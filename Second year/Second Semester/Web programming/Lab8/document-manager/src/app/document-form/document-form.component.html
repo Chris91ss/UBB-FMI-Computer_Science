@@ -1,0 +1,35 @@
+<div *ngIf="loading">Loading...</div>
+<form *ngIf="!loading" (ngSubmit)="submit()" #docForm="ngForm">
+  <div>
+    <label>Title:</label>
+    <input [(ngModel)]="document.title" name="title" required />
+  </div>
+  <div>
+    <label>Author:</label>
+    <input [(ngModel)]="document.author" name="author" required />
+  </div>
+  <div>
+    <label>Pages:</label>
+    <input type="number" [(ngModel)]="document.pages" name="pages" min="1" required />
+  </div>
+  <div>
+    <label>Type:</label>
+    <select [(ngModel)]="document.type" name="type" required>
+      <option value="">Select Type</option>
+      <option value="PDF">PDF</option>
+      <option value="DOC">DOC</option>
+      <option value="TXT">TXT</option>
+    </select>
+  </div>
+  <div>
+    <label>Format:</label>
+    <select [(ngModel)]="document.format" name="format" required>
+      <option value="">Select Format</option>
+      <option value="Digital">Digital</option>
+      <option value="Physical">Physical</option>
+    </select>
+  </div>
+  <div *ngIf="error" style="color:red">{{ error }}</div>
+  <button type="submit">{{ isEdit ? 'Update' : 'Add' }} Document</button>
+  <button type="button" (click)="cancel()">Cancel</button>
+</form>

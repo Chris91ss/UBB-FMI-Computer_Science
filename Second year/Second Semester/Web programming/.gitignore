@@ -1,0 +1,44 @@
+# === Global ===
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# === Visual Studio ===
+.vs/
+*.suo
+
+# === Build results ===
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.csproj.user
+*.dbmdl
+
+# === ASP.NET Core Secrets/Configs ===
+appsettings.Development.json
+secrets.json
+
+# === EF Core Migrations Build Cache ===
+Migrations/
+
+# === Node + Angular (Lab8) ===
+node_modules/
+dist/
+.angular/
+*.log
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === IDEs ===
+.idea/
+*.code-workspace
+
+# === Coverage Reports ===
+coverage/

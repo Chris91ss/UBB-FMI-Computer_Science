@@ -1,0 +1,28 @@
+<div class="main-container">
+  <div class="filters-row">
+    <app-document-filter
+      [type]="typeFilter"
+      [format]="formatFilter"
+      (filterChange)="onFilterChange($event.type, $event.format)">
+    </app-document-filter>
+  </div>
+
+  <div class="actions-row">
+    <button (click)="addDocument()">Add Document</button>
+  </div>
+
+  <div *ngIf="loading" class="centered">Loading...</div>
+  <div *ngIf="error" class="centered error">{{ error }}</div>
+
+  <div *ngIf="documents.length === 0 && !loading" class="centered">No documents found.</div>
+
+  <div *ngFor="let doc of documents" class="document-item">
+    <h3>{{ doc.title }}</h3>
+    <p><strong>Author:</strong> {{ doc.author }}</p>
+    <p><strong>Pages:</strong> {{ doc.pages }}</p>
+    <p><strong>Type:</strong> {{ doc.type }}</p>
+    <p><strong>Format:</strong> {{ doc.format }}</p>
+    <button (click)="editDocument(doc.id!)">Edit</button>
+    <button (click)="deleteDocument(doc.id!)" class="delete-btn">Delete</button>
+  </div>
+</div>
