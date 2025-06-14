@@ -1,0 +1,11 @@
+Instructions
+This assignment is worth 0.25 extra points added to the final mark.
+
+Task: 
+
+Use any resources (images, networks, CNNs, LLMs, Copilot, ChatGPT, etc.) to create an AI system that classifies in real time in the video stream from the webcam the owner of the laptop, the owner's pet (if you don't have a pet, borrow one), or if there is another person or nobody. 
+
+
+
+Your solution should respect ETHICAL guidelines and prioritize user privacy. It is essential to ensure that any data collected during this classification process is handled securely and with the explicit consent of the individuals involved. Moreover, the system should be designed to operate transparently, allowing users to understand how their data is used and providing options for them to opt out if they choose.
+
