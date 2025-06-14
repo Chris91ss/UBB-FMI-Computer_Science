@@ -1,9 +1,0 @@
-config_id,func_name,encoding,crossover,pop_size,num_gens,mutation_rate,best_min,best_mean,best_std
-rastrigin_binary_one_point,rastrigin,binary,one_point,50,200,0.01,2.4218522760577343e-06,0.4561677184036564,0.5720230165227294
-rastrigin_binary_two_point,rastrigin,binary,two_point,50,200,0.01,2.4218522760577343e-06,0.6047895199375308,0.7081961322040315
-rastrigin_real_arithmetic,rastrigin,real,arithmetic,50,200,0.1,9.530154443382344e-11,0.596975552469385,0.6079300778103788
-rastrigin_real_blx,rastrigin,real,blx,50,200,0.1,0.0,0.5306448378488252,0.6666143149865233
-six_hump_binary_one_point,six_hump,binary,one_point,50,200,0.01,-1.0316284446403685,-1.0258755061754814,0.008771405760454555
-six_hump_binary_two_point,six_hump,binary,two_point,50,200,0.01,-1.0316284446403685,-1.027959086418901,0.007030304698631888
-six_hump_real_arithmetic,six_hump,real,arithmetic,50,200,0.1,-1.0316284534896667,-1.031628445316526,2.50099098284906e-08
-six_hump_real_blx,six_hump,real,blx,50,200,0.1,-1.0316284534898774,-1.031628452717007,3.872612780961734e-09
