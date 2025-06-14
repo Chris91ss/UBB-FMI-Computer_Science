@@ -1,0 +1,10 @@
+C:\Users\Chris\Desktop\University\4 Fourth Semester\DBM\DatabaseManagementApp\DatabaseManagementApp\bin\Debug\DatabaseManagementApp.exe.config
+C:\Users\Chris\Desktop\University\4 Fourth Semester\DBM\DatabaseManagementApp\DatabaseManagementApp\bin\Debug\DatabaseManagementApp.exe
+C:\Users\Chris\Desktop\University\4 Fourth Semester\DBM\DatabaseManagementApp\DatabaseManagementApp\bin\Debug\DatabaseManagementApp.pdb
+C:\Users\Chris\Desktop\University\4 Fourth Semester\DBM\DatabaseManagementApp\DatabaseManagementApp\obj\Debug\DatabaseManagementApp.csproj.AssemblyReference.cache
+C:\Users\Chris\Desktop\University\4 Fourth Semester\DBM\DatabaseManagementApp\DatabaseManagementApp\obj\Debug\DatabaseManagementApp.Properties.Resources.resources
+C:\Users\Chris\Desktop\University\4 Fourth Semester\DBM\DatabaseManagementApp\DatabaseManagementApp\obj\Debug\DatabaseManagementApp.csproj.GenerateResource.cache
+C:\Users\Chris\Desktop\University\4 Fourth Semester\DBM\DatabaseManagementApp\DatabaseManagementApp\obj\Debug\DatabaseManagementApp.csproj.CoreCompileInputs.cache
+C:\Users\Chris\Desktop\University\4 Fourth Semester\DBM\DatabaseManagementApp\DatabaseManagementApp\obj\Debug\DatabaseManagementApp.exe
+C:\Users\Chris\Desktop\University\4 Fourth Semester\DBM\DatabaseManagementApp\DatabaseManagementApp\obj\Debug\DatabaseManagementApp.pdb
+C:\Users\Chris\Desktop\University\4 Fourth Semester\DBM\DatabaseManagementApp\DatabaseManagementApp\obj\Debug\DatabaseManagementApp.Form1.resources

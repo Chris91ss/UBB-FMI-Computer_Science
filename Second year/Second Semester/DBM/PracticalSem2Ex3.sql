@@ -1,0 +1,15 @@
+-- Session 1
+BEGIN TRAN;
+UPDATE FavouriteBakeries 
+SET Name = 'UncommittedBakery' 
+WHERE BakeryID = 1;
+
+WAITFOR DELAY '00:00:10'; 
+ROLLBACK TRAN;
+
+-- Session 2
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+BEGIN TRAN;
+SELECT * FROM FavouriteBakeries 
+WHERE BakeryID = 1;
+COMMIT TRAN;
