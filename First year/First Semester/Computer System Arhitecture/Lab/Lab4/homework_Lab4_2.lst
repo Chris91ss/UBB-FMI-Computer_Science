@@ -1,0 +1,79 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                          ;3.
+    14                                          ;A dw 1101100011011000b
+    15                                          ;B dw 1001101010010011b
+    16                                          ;C dd 00000000000000000000000000000000b
+    17                                  
+    18                                          
+    19                                          ;18.
+    20 00000000 D8D8                            A dw 1101100011011000b 
+    21 00000002 00000000                        B dd 00000000000000000000000000000000b
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                      
+    26                                          ;3.
+    27                                          ;xor eax, eax
+    28                                          ;xor edx, edx
+    29                                          ;mov bx, [A]
+    30                                          ;and bx, 00000111000000000000b ; isolate bits 12-14 from A
+    31                                          ;form the result in dx:ax because it's a double word
+    32                                          ;mov cl, 12
+    33                                          ;shr bx, cl ; shift right bx with 10 positions, so the bits 12-14 are on position 0-2
+    34                                          ;or ax, bx ; set the bits 0-2 the same as the 12-14 bits
+    35                                          
+    36                                          ;mov bx, [B]
+    37                                          ;and bx, 00000000000000111111b ; isolate bits 0-5 of B
+    38                                          ;mov cl, 3
+    39                                          ;shl bx, cl ; shift left bx with 3 positions, so the bits 0-5 are on position 3-8
+    40                                          ;or ax, bx ; set the bits 3-8 of C as the bits 0-5 of B
+    41                                          
+    42                                          ;mov bx, [A]
+    43                                          ;and bx, 00000000001111111000b ; isolate bits 3-9 of A
+    44                                          ;mov cl, 6
+    45                                          ;shl bx, cl  ; shift left with 6 positions, so the bits 3-9 are on position 9-15
+    46                                          ;or ax, bx ; set the bits 9-15 of C the same as the bits 3-9 of A
+    47                                          
+    48                                          ;mov bx, [A]
+    49                                          ;or dx, bx ; the bits 16-31 of C are the same as the bits of A
+    50                                                     ; we have the result in dx:ax
+    51                                          
+    52                                          
+    53                                          ;18.
+    54 00000000 31C0                            xor eax, eax
+    55 00000002 31D2                            xor edx, edx
+    56 00000004 668B1D[00000000]                mov bx, [A]
+    57 0000000B 6681E3000F                      and bx, 0000111100000000b ; isolate the bits 8-11 of A
+    58 00000010 B104                            mov cl, 4
+    59 00000012 66D3EB                          shr bx, cl ; shift right with 4 positions, so the bits 8-11 are on position 4-7
+    60 00000015 6609D8                          or ax, bx ; the bits 4-7 of B are the same as the bits 8-11 of A
+    61                                          
+    62 00000018 668B1D[00000000]                mov bx, [A]
+    63 0000001F 6683E303                        and bx, 0000000000000011b ; isolate the bits 0-1 of A
+    64 00000023 66F7DB                          neg bx ; inverse the bits
+    65 00000026 B108                            mov cl, 8
+    66 00000028 66D3E3                          shl bx, cl ; shift left with 8 positions, so the bits 0-1 are on position 8-9
+    67 0000002B 6609D8                          or ax, bx ; the bits 8-9 of B are the invert of the bits 0-1 of A 
+    68 0000002E B102                            mov cl, 2
+    69 00000030 66D3E3                          shl bx, cl ; shift left with 2 positions, so the bits 8-9 are on position 10-11
+    70 00000033 6689D8                          mov ax, bx ; the bits 10-11 of B are the invert of the bits 0-1 of A 
+    71                                          
+    72 00000036 660D0070                        or ax, 1111000000000000 ; the bits 12-15 of B have the value 1
+    72          ******************       warning: word data exceeds bounds [-w+number-overflow]
+    73                                          
+    74 0000003A 6609C2                          or dx, ax ; the bits 16-31 of B are the same as the bits 0-15 of B.
+    75                                                    ; we have the final result in dx:ax
+    76                                          ; exit(0)
+    77 0000003D 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    78 0000003F FF15[00000000]                  call    [exit]       ; call exit to terminate the program

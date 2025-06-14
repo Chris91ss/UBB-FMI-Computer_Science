@@ -1,0 +1,13 @@
+{
+  "base_url": "/",
+  "hostname": "localhost",
+  "password": false,
+  "pid": 17280,
+  "port": 8888,
+  "root_dir": "C:\\Users\\Chris\\Desktop\\University\\4 Forth Semester\\AI",
+  "secure": false,
+  "sock": "",
+  "token": "f73f0f69de6d33c24622120ccb7fba42cb7bf1a134f9fec2",
+  "url": "http://localhost:8888/",
+  "version": "2.14.1"
+}

@@ -1,0 +1,82 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                          ;4.
+    14                                          ;A db 11011000b
+    15                                          ;B db 0
+    16                                          ;C dd 00000000000000000000000000000000b
+    17                                          
+    18                                          
+    19                                          ;19.
+    20 00000000 D8D8                            A dw 1101100011011000b
+    21 00000002 00000000                        B dd 00000000000000000000000000000000b
+    22                                  ; our code starts here
+    23                                  segment code use32 class=code
+    24                                      start:
+    25                                          ;4.
+    26                                          ;mov al, [A]
+    27                                          ;mov bl, 0
+    28                                          ;and al, 00011100b
+    29                                          ;or bl, al ; bl = n = the number represented on bits 2-4
+    30                                          ;mov al, [A]
+    31                                          ;mov cl, bl
+    32                                          ;ror al, cl
+    33                                          ;mov [B], al ; B = the number by rotating A n positions to the right.
+    34                                          
+    35                                          ;Compute the doubleword C
+    36                                          
+    37                                          ;xor eax, eax
+    38                                          ;mov al, [B]
+    39                                          ;mov ah, 0
+    40                                          ;mov dx, 0 ; dx:ax = [B]
+    41                                          ;mov cl, 8
+    42                                          ;shl al, 8
+    43                                          ;or [C], dx ; bits 16-23 from C are the same bits as B
+    44                                          
+    45                                          ;xor eax, eax
+    46                                          ;mov al, [A]
+    47                                          ;mov ah, 0
+    48                                          ;mov dx, 0; dx:ax = [A]
+    49                                          ;mov cl, 16
+    50                                          ;shl al, cl
+    51                                          ;or [C], dx ; bits 24-31 from C are the same bits as A
+    52                                          
+    53                                          ;or dword [C], 00000000000000000000000011111111b
+    54                                          
+    55                                          
+    56                                          ;19.
+    57 00000000 31C0                            xor eax, eax
+    58 00000002 31D2                            xor edx, edx
+    59 00000004 6681CA00F0                      or dx, 1111000000000000b ; we form B in dx:ax, the bits 28-31 are set to 1
+    60                                          
+    61 00000009 668B1D[00000000]                mov bx, [A]
+    62 00000010 6681E30003                      and bx, 0000001100000000b ; isolate bits 8-9 from A
+    63 00000015 6609DA                          or dx, bx ; the bits 24-25 are the same as the bits 8-9 from A
+    64 00000018 B102                            mov cl, 2
+    65 0000001A 66D3E3                          shl bx, cl 
+    66 0000001D 6609DA                          or dx, bx ; ; the bits 26-27 are the same as the bits 8-9 from A
+    67                                          
+    68 00000020 668B1D[00000000]                mov bx, [A]
+    69 00000027 6683E30F                        and bx, 0000000000001111b
+    70 0000002B 66F7D3                          not bx 
+    71 0000002E B101                            mov cl, 1
+    72 00000030 66D3E3                          shl bx, cl
+    73 00000033 6609DA                          or dx, bx ; the bits 20-23 are the same as the inverted 0-3 bits from A
+    74 00000036 6689D0                          mov ax, dx ; the bits 0-15 of B are the same as the bits 16-31 of B.
+    75                                                    ; we have the result in dx:ax
+    76                                                    
+    77                                          
+    78                                          
+    79                                      
+    80                                          ; exit(0)
+    81 00000039 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    82 0000003B FF15[00000000]                  call    [exit]       ; call exit to terminate the program

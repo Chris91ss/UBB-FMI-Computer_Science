@@ -1,0 +1,64 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                      
+    13                                  segment data use32 class=data
+    14                                      ;3.
+    15                                      ;s db 5, 25, 55, 127
+    16                                      ;len equ $ - s
+    17                                      ;d times len db 0
+    18                                      
+    19                                      ;18.
+    20 00000000 07563412013C2B1A12-         s dd  12345607h, 1A2B3C01h, 13A33412h
+    20 00000009 34A313             
+    21                                      l equ ($ - s) / 4
+    22 0000000C 07                          multiple_of_7 db 7
+    23 0000000D 00<rept>                    d times l db 0
+    24                                  
+    25                                  
+    26                                  ; our code starts here
+    27                                  segment code use32 class=code
+    28                                      start:
+    29                                          ;3.
+    30                                          ;mov esi, s       ; source index (input byte string)
+    31                                          ;mov edi, d       ; destination index (output byte string)
+    32                                          ;mov ecx, len     ; set the loop counter
+    33                                  
+    34                                          ;convert_loop:
+    35                                          ;    lodsb            ; load the next byte from s into AL
+    36                                          ;    popcnt eax, eax  ; count the number of set bits in AL
+    37                                          ;    stosb            ; store the result in d
+    38                                          ;loop convert_loop
+    39                                          
+    40                                          
+    41                                          ;18. Given an array S of doublewords, build the array of bytes D formed from lower bytes of lower words, bytes multiple of 7
+    42 00000000 BE[00000000]                    mov esi, s
+    43 00000005 BF[0D000000]                    mov edi, d
+    44 0000000A B903000000                      mov ecx, l
+    45 0000000F E31A                            jecxz ending
+    46                                          repeat:
+    47 00000011 AD                                  lodsd ; eax = [esi], esi += 4
+    48 00000012 89C3                                mov ebx, eax
+    49 00000014 B800000000                          mov eax, 0
+    50 00000019 88D8                                mov al, bl
+    51 0000001B F635[0C000000]                      div byte [multiple_of_7] ; ax / multiple_of_7 = al, rest = ah
+    52 00000021 80FC00                              cmp ah, 0
+    53 00000024 7503                                jne divisor ; if ah == 0
+    54 00000026 88D8                                    mov al, bl
+    55 00000028 AA                                      stosb ; [edi] = al, edi += 1
+    56                                              divisor:
+    57 00000029 E2E6                            loop repeat
+    58                                          ending:
+    59                                          
+    60                                      
+    61                                          ; exit(0)
+    62 0000002B 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    63 0000002D FF15[00000000]                  call    [exit]       ; call exit to terminate the program

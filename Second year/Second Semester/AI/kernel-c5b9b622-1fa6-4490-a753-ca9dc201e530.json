@@ -1,0 +1,13 @@
+{
+  "shell_port": 57168,
+  "iopub_port": 57169,
+  "stdin_port": 57170,
+  "control_port": 57172,
+  "hb_port": 57171,
+  "ip": "127.0.0.1",
+  "key": "3c36c0bb-f2ae20bd4590b2e09cfcf4c0",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "ailabkernel",
+  "jupyter_session": "C:\\Users\\Chris\\Desktop\\University\\4 Forth Semester\\AI\\Untitled.ipynb"
+}

@@ -1,0 +1,13 @@
+{
+  "shell_port": 51212,
+  "iopub_port": 51213,
+  "stdin_port": 51214,
+  "control_port": 51216,
+  "hb_port": 51215,
+  "ip": "127.0.0.1",
+  "key": "a77f6f69-7924e817f0116ba1682023df",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "C:\\Users\\Chris\\Desktop\\University\\4 Forth Semester\\AI\\Lab 1\\AI_2024_lab_01_v2.ipynb"
+}

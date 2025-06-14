@@ -1,0 +1,161 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                          ;First set
+    14                                          ;a db 1
+    15                                          ;b dw 2
+    16                                          ;c dd 3
+    17                                          ;d dq 4
+    18                                          
+    19                                          
+    20                                          ;Second set
+    21 00000000 0100                            a dw 1
+    22 00000002 02                              b db 2
+    23 00000003 03                              c db 3
+    24 00000004 04                              d db 4
+    25 00000005 05000000                        e dd 5
+    26 00000009 0600000000000000                x dq 6
+    27 00000011 64                              var db 100
+    28                                      
+    29                                  ; our code starts here
+    30                                  segment code use32 class=code
+    31                                      start:
+    32                                          ;First set - Unsigned
+    33                                          ;3. (c+d)-(a+d)+b
+    34                                          ;xor eax, eax
+    35                                          ;mov eax, [c]
+    36                                          ;add eax, [d]
+    37                                          ;sub eax, [a]
+    38                                          ;sub eax, [d]
+    39                                          ;add eax, [b]
+    40                                          
+    41                                          
+    42                                          ;18. (d+d)-a-b-c
+    43                                          ;xor eax, eax
+    44                                          ;mov eax, [d]
+    45                                          ;add eax, [d]
+    46                                          ;sub eax, [a]
+    47                                          ;sub eax, [b]
+    48                                          ;sub eax, [c]
+    49                                          
+    50                                          
+    51                                          ;Signed
+    52                                          ;3.(b+b+d)-(c+a)
+    53                                          ;xor eax, eax
+    54                                          ;mov eax, [b]
+    55                                          ;add eax, [b]
+    56                                          ;add eax, [d]
+    57                                          ;sub eax, [c]
+    58                                          ;sub eax, [a]
+    59                                          
+    60                                          
+    61                                          ;18.(d-b)-a-(b-c)
+    62                                          ;xor eax, eax
+    63                                          ;mov eax, [d]
+    64                                          ;sub eax, [b]
+    65                                          ;sub eax, [a]
+    66                                          ;sub eax, [b]
+    67                                          ;add eax, [c]
+    68                                          
+    69                                          ;Second set
+    70                                          ;Unsigned
+    71                                          ;3. (8-a*b*100+c)/d+x
+    72                                          ;xor eax, eax
+    73                                          ;mov bl, 8
+    74                                          ;mov al, [a]
+    75                                          ;mul word [b] 
+    76                                          ;mov ah, 0
+    77                                          ;mul byte [var] 
+    78                                          ;add ax, [c] ; ax = a*b*100+c
+    79                                          ;mov cx, ax ; cx = a*b*100+c
+    80                                          ;mov ax, 0
+    81                                          ;mov al, bl ; al = 8
+    82                                          ;mov ah, 0
+    83                                          ;sub ax, cx ; ax = 8-a*b*100+c
+    84                                          ;mov bx, [d]
+    85                                          ;add bx, [x]; bx = d+x
+    86                                          ;div bx ; al = (8-a*b*100+c)/d+x
+    87                                          
+    88                                          ;18.(a+b*c+2/c)/(2+a)+e+x
+    89                                          ;xor eax, eax
+    90                                          ;mov al, [b]
+    91                                          ;mul word [c] ; ax = b*c
+    92                                          ;mov bx, ax ; bx = b*c
+    93                                          ;xor eax, eax
+    94                                          ;mov ax, 2
+    95                                          ;div word [c] ; al = 2/c
+    96                                          ;mov ah, 0 ; ax = 2/c
+    97                                          ;xor ecx, ecx
+    98                                          ;mov cl, 2
+    99                                          ;add cl, [a] ; cl = 2+a
+   100                                          ;add ax, bx
+   101                                          ;add ax, [a] ; ax = (a+b*c+2/c)
+   102                                          ;mov ah, 0 ; convert to make sure it's a word
+   103                                          ;xor edx, edx
+   104                                          ;div cl ; ax = (a+b*c+2/c)/(2+a)
+   105                                          ;add ax, [e]
+   106                                          ;add ax, [x] ; ax = (a+b*c+2/c)/(2+a)+e+x
+   107                                          
+   108                                          
+   109                                          ;Signed
+   110                                          ;3. (8-a*b*100+c)/d+x
+   111                                          ;xor eax, eax
+   112                                          ;mov bl, 8
+   113                                          ;mov al, [a]
+   114                                          ;imul word [b] 
+   115                                          ;cbw
+   116                                          ;imul byte [var] 
+   117                                          ;add ax, [c] ; ax = a*b*100+c
+   118                                          ;mov cx, ax ; cx = a*b*100+c
+   119                                          ;xor eax, eax
+   120                                          ;mov al, bl ; al = 8
+   121                                          ;cbw
+   122                                          ;sub ax, cx ; ax = 8-a*b*100+c
+   123                                          ;mov bx, [d]
+   124                                          ;add bx, [x]; bx = d+x
+   125                                          ;idiv bx ; al = (8-a*b*100+c)/d+x
+   126                                          
+   127                                          
+   128                                          ;18.(a+b*c+2/c)/(2+a)+e+x
+   129 00000000 31C0                            xor eax, eax
+   130 00000002 A0[02000000]                    mov al, [b]
+   131 00000007 6698                            cbw ; ax = b
+   132 00000009 66F72D[03000000]                imul word [c] ; ax = b*c
+   133 00000010 6689C3                          mov bx, ax ; bx = b*c
+   134 00000013 31C0                            xor eax, eax
+   135 00000015 B002                            mov al, 2
+   136 00000017 6698                            cbw ; ax = 2
+   137 00000019 66F73D[03000000]                idiv word [c] ; al = 2/c
+   138 00000020 6698                            cbw ; ax = 2/c
+   139 00000022 6601D8                          add ax, bx ; ax = b*c+2/c
+   140 00000025 660305[00000000]                add ax, [a] ; ax = (a+b*c+2/c)
+   141 0000002C 6689C3                          mov bx, ax ; bx = (a+b*c+2/c)
+   142 0000002F 31C9                            xor ecx, ecx
+   143 00000031 B102                            mov cl, 2
+   144 00000033 020D[00000000]                  add cl, [a] ; cl = 2+a
+   145 00000039 88C8                            mov al, cl ; al = 2+a
+   146 0000003B 6698                            cbw ; ax = 2+a
+   147 0000003D 6689C1                          mov cx, ax ; cx = 2+a
+   148 00000040 6689D8                          mov ax, bx
+   149 00000043 66F7F9                          idiv cx ; al = (a+b*c+2/c)/(2+a)
+   150 00000046 6698                            cbw
+   151 00000048 6699                            cwd
+   152 0000004A 99                              cdq ; edx:eax = (a+b*c+2/c)/(2+a)
+   153 0000004B 0305[05000000]                  add eax, [e]
+   154 00000051 83D200                          adc edx, 0
+   155 00000054 0305[09000000]                  add eax, [x] ; ax = (a+b*c+2/c)/(2+a)+e+x
+   156 0000005A 83D200                          adc edx, 0
+   157                                          
+   158                                          
+   159                                          ; exit(0)
+   160 0000005D 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   161 0000005F FF15[00000000]                  call    [exit]       ; call exit to terminate the program

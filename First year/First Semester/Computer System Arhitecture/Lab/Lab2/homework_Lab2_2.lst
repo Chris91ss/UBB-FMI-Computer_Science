@@ -1,0 +1,141 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                  
+    14                                      ;Second set
+    15                                      ;a db 1
+    16                                      ;b db 2
+    17                                      ;c db 3
+    18                                      ;d db 4
+    19                                      
+    20                                      ;Third set
+    21                                      ;a dw 1
+    22                                      ;b dw 2
+    23                                      ;c dw 3
+    24                                      ;d dw 4
+    25                                      
+    26                                      ;4th set
+    27                                      ;a db 1
+    28                                      ;b db 2
+    29                                      ;c db 3
+    30                                      ;d dw 4
+    31                                      
+    32                                      ;5th set
+    33 00000000 05                          a db 5
+    34 00000001 02                          b db 2
+    35 00000002 07                          c db 7
+    36 00000003 08                          d db 8
+    37 00000004 0500                        e dw 5
+    38 00000006 1400                        f dw 20
+    39 00000008 0700                        g dw 7
+    40 0000000A 0800                        h dw 8
+    41                                      
+    42                                  
+    43                                  ; our code starts here
+    44                                  segment code use32 class=code
+    45                                      start:
+    46                                          ;First set:
+    47                                          ;3. 128+128
+    48                                          ;mov eax, 128
+    49                                          ;add eax, 128
+    50                                          
+    51                                          ;18. 127+129
+    52                                          ;mov eax, 127
+    53                                          ;add eax, 129
+    54                                          
+    55                                          ;Second set
+    56                                          ;3. (c+d)-(a+d)+b
+    57                                          ;xor al, al
+    58                                          ;add al, [c]
+    59                                          ;add al, [d]
+    60                                          ;sub al, [a]
+    61                                          ;sub al, [d]
+    62                                          ;add al, [b]
+    63                                          
+    64                                          ;18. d-(a+b)+c
+    65                                          ;xor al, al
+    66                                          ;add al, [d]
+    67                                          ;sub al, [a]
+    68                                          ;sub al, [b]
+    69                                          ;add al, [c]
+    70                                          
+    71                                          ;Third set
+    72                                          ;3.(b+b+d)-(c+a)
+    73                                          ;xor ax, ax
+    74                                          ;add ax, [b]
+    75                                          ;add ax, [b]
+    76                                          ;add ax, [d]
+    77                                          ;sub ax, [c]
+    78                                          ;sub ax, [a]
+    79                                          
+    80                                          ;18. (a-b-c)+(a-c-d-d)
+    81                                          ;xor ax, ax
+    82                                          ;add ax, [a]
+    83                                          ;sub ax, [b]
+    84                                          ;sub ax, [c]
+    85                                          ;add ax, [a]
+    86                                          ;sub ax, [c]
+    87                                          ;sub ax, [d]
+    88                                          ;sub ax, [d]
+    89                                          
+    90                                          ;4th set
+    91                                          ;3. [-1+d-2*(b+1)]/a
+    92                                          ;xor eax, eax
+    93                                          ;add al, -1
+    94                                          ;add al, [d]
+    95                                          ;mov bx, ax
+    96                                          ;mov al, 2
+    97                                          ;mul byte [b]
+    98                                          ;add al, 2
+    99                                          ;add ax, bx
+   100                                          ;div byte [a]
+   101                                          
+   102                                          ;18. 200-[3*(c+b-d/a)-300]
+   103                                          ;xor eax, eax
+   104                                          ;xor ebx, ebx
+   105                                          ;add bl, 200
+   106                                          ;add cl, [c]
+   107                                          ;add cl, [b]
+   108                                          ;add ax, [d]
+   109                                          ;div byte [a]
+   110                                          ;mov dl, ax
+   111                                          ;mov ax, cl
+   112                                          ;add ax, dl
+   113                                          ;mul byte 3
+   114                                          ;add ax, 300
+   115                                          ;add ax, bl
+   116                                          
+   117                                          ;5th set
+   118                                          ;3. (e+f)*g
+   119                                          ;xor eax, eax
+   120                                          ;mov ax, [e]
+   121                                          ;add ax, [f]
+   122                                          ;mul word [g]
+   123                                          
+   124                                          ;18. f+(c-2)*(3+a)/(d-4)
+   125 00000000 A0[02000000]                    mov al, [c] ; al = c
+   126 00000005 2C02                            sub al, 2 ; al = c - 2 = 7 - 2 = 5
+   127 00000007 B303                            mov bl, 3 ; bl = 3
+   128 00000009 021D[00000000]                  add bl, [a]; bl = 3 + a = 3 + 5 = 8
+   129 0000000F F6E3                            mul bl; ax = 40
+   130 00000011 8A1D[03000000]                  mov bl, [d] ; bl = 8
+   131 00000017 80EB04                          sub bl, 4 ; bl = 8 - 4 = 4
+   132 0000001A F6F3                            div bl ; al = 40 / 4 = 10
+   133 0000001C B400                            mov ah, 0 ; ax = 10 we convert from byte to word
+   134 0000001E 668B1D[06000000]                mov bx, [f] ; bx = 20
+   135 00000025 6601C3                          add bx, ax ; bx = 20 + 10 = 30
+   136                                          
+   137                                          
+   138                                      
+   139                                          ; exit(0)
+   140 00000028 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   141 0000002A FF15[00000000]                  call    [exit]       ; call exit to terminate the program
