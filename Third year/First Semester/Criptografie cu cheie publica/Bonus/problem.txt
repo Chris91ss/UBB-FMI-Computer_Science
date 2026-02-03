@@ -1,0 +1,7 @@
+Each student will find a factor of a number using the continued fractions method. 
+
+Detailed solutions are expected! But you are encouraged to use a program for creating a table with needed values.
+
+Use the number from the file assignCF.pdf corresponding to your order number, which is given by the last two digits of your student ID ("numar matricol").
+
+Each student will submit a single pdf file (not exceeding 1MB) with the name of the form B-surname-ordernumber.pdf
