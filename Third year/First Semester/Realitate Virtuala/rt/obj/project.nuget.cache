@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "6bjEzSRPrNo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Chris\\Desktop\\Third year\\Realitate virtuala\\Lab1\\rt\\rt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Chris\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0-rc.2.23479.6\\microsoft.win32.systemevents.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\skiasharp\\3.119.1\\skiasharp.3.119.1.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\skiasharp.nativeassets.macos\\3.119.1\\skiasharp.nativeassets.macos.3.119.1.nupkg.sha512",
+    "C:\\Users\\Chris\\.nuget\\packages\\skiasharp.nativeassets.win32\\3.119.1\\skiasharp.nativeassets.win32.3.119.1.nupkg.sha512"
+  ],
+  "logs": []
+}
