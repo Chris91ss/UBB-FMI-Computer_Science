@@ -1,0 +1,25 @@
+BUCKET	POS	LEXEME
+0	0	"ApplePie"
+20	0	"The Orchard Keeper needs water from the Village Well."
+39	0	has_item
+42	0	"Water"
+44	0	"OrchardKeeper: Thank you! The trees will live."
+47	0	"The orchard trees are saved!"
+49	0	1
+51	0	3
+57	0	"You need a Bucket to carry water."
+66	0	"OrchardKeeper"
+76	0	tries
+89	0	"Deliver the water to the Orchard Keeper."
+108	0	"WaterForTheOrchard"
+113	0	"Fill the Bucket with water."
+143	0	level_at_least
+158	0	"You got a Bucket. Head to the Village Well."
+168	0	else
+178	0	40
+180	0	"Orchard"
+192	0	"OrchardKeeper: Please bring water quickly!"
+198	0	"VillageWell"
+210	0	"You should fetch water from the Village Well first."
+217	0	"Bucket"
+255	0	then

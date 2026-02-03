@@ -1,0 +1,171 @@
+Game Quests DSL — BNF (single document)
+
+--------------------------------------
+Lexical Tokens
+--------------------------------------
+<string>        ::= '"' <string_characters> '"'
+<string_characters> ::= <string_character> <string_characters> | ε
+<string_character>  ::= <letter> | <digit> | ' ' | '_' | '-' | '?' | '!' | ':' | ',' | '.' | '/'
+
+<number>        ::= "0" | <nonzero_digit> <digits_opt>
+<digits_opt>    ::= <digit> <digits_opt> | ε
+
+<boolean>       ::= "true" | "false"
+
+<identifier>    ::= <letter> <ident_rest>
+<ident_rest>    ::= <letter_or_digit_or_underscore> <ident_rest> | ε
+<letter_or_digit_or_underscore> ::= <letter> | <digit> | "_"
+
+<letter>        ::= "a" | ... | "z" | "A" | ... | "Z"
+<digit>         ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+<nonzero_digit> ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+
+--------------------------------------
+Program & Statements
+--------------------------------------
+<program>       ::= <statement_list>
+<statement_list>::= <statement> <statement_list> | ε
+
+<statement>     ::= <quest_def>
+                  | <npc_def>
+                  | <item_def>
+                  | <location_def>
+                  | <dialog_def>
+                  | <set_stmt>
+                  | <give_stmt>
+                  | <take_stmt>
+                  | <spawn_stmt>
+                  | <unlock_stmt>
+                  | <print_stmt>
+                  | <if_stmt>
+                  | <while_stmt>
+                  | <for_stmt>
+                  | <when_stmt>
+
+--------------------------------------
+Quest Definition
+--------------------------------------
+<quest_def>     ::= "quest" <string> "{" <quest_body> "}"
+<quest_body>    ::= <quest_section_list>
+<quest_section_list> ::= <quest_section> <quest_section_list> | ε
+
+<quest_section> ::= "requires" <condition>
+                  | "objectives:" <objective_list>
+                  | "rewards:" <reward_list>
+                  | "on_accept:" <block>
+                  | "on_update:" <block>
+                  | "on_complete:" <block>
+
+<objective_list>::= <objective> <objective_list_tail>
+<objective_list_tail> ::= "," <objective> <objective_list_tail> | ε
+
+<objective>     ::= "go_to" <string>
+                  | "talk_to" <string> <opt_when>
+                  | "collect" <string> "count" <number>
+                  | "defeat" <string> "count" <number>
+                  | "interact" <string>
+                  | "custom" <string>
+
+<opt_when>      ::= "when" <condition> | ε
+
+<reward_list>   ::= <reward> <reward_list_tail>
+<reward_list_tail> ::= "," <reward> <reward_list_tail> | ε
+
+<reward>        ::= "xp" <number>
+                  | "gold" <number>
+                  | "item" <string> <opt_count>
+                  | "unlock" <string>
+                  | "flag" <identifier> "=" <boolean>
+
+<opt_count>     ::= "count" <number> | ε
+
+
+--------------------------------------
+Entity Declarations (optional helpers)
+--------------------------------------
+<npc_def>       ::= "npc" <string> "{" <npc_body> "}"
+<npc_body>      ::= <npc_prop_list> | ε
+<npc_prop_list> ::= <npc_prop> <npc_prop_list> | ε
+<npc_prop>      ::= "faction" ":" <string>
+                  | "says" ":" <string>
+
+<item_def>      ::= "item" <string> "{" <item_body> "}"
+<item_body>     ::= <item_prop_list> | ε
+<item_prop_list>::= <item_prop> <item_prop_list> | ε
+<item_prop>     ::= "stackable" ":" <boolean>
+
+<location_def>  ::= "location" <string> ";"
+
+<dialog_def>    ::= "dialog" <string> "{" <dialog_line_list> "}"
+<dialog_line_list> ::= <dialog_line> <dialog_line_list> | ε
+<dialog_line>   ::= "line" ":" <string>
+
+
+--------------------------------------
+Scripting & Control Flow
+--------------------------------------
+<block>         ::= <statement> <block_tail>
+<block_tail>    ::= <statement> <block_tail> | ε
+
+<set_stmt>      ::= "set" <identifier> "=" <expression>
+<give_stmt>     ::= "give" <give_target>
+<give_target>   ::= "item" <string> <opt_count>
+                  | "xp" <number>
+                  | "gold" <number>
+
+<take_stmt>     ::= "take" <take_target>
+<take_target>   ::= "item" <string> <opt_count>
+                  | "gold" <number>
+
+<spawn_stmt>    ::= "spawn" <string> "at" <string>
+<unlock_stmt>   ::= "unlock" <string>
+<print_stmt>    ::= "print" <expression>
+
+<if_stmt>       ::= "if" <condition> ":" <block> "end"
+
+<while_stmt>    ::= "while" <condition> ":" <block> "end"
+
+<for_stmt>      ::= "for" <identifier> "in" <iterable> ":" <block> "end"
+<iterable>      ::= <range_expr>
+<range_expr>    ::= <expr> ".." <expr>    (* inclusive numeric range *)
+
+<when_stmt>     ::= "when" <event> <opt_if_guard> ":" <block> "end"
+<opt_if_guard>  ::= "if" <condition> | ε
+<event>         ::= "enter" <string>
+                  | "talk" <string>
+                  | "pickup" <string>
+                  | "kill" <string>
+                  | "timer" <number>
+                  | "quest_state" <string> <string>  (* <questName> <stateName> *)
+
+
+--------------------------------------
+Expressions & Conditions
+--------------------------------------
+<condition>     ::= <expr>
+
+<expr>          ::= <expr> <logical_op> <expr>
+                  | "not" <expr>
+                  | <rel_expr>
+
+<rel_expr>      ::= <term> <comp_op> <term>
+                  | <function_call>
+                  | <boolean>
+                  | <term>
+
+<term>          ::= <identifier>
+                  | <number>
+                  | <string>
+                  | "(" <expr> ")"
+
+<function_call> ::= <func_name> "(" <arg_list_opt> ")"
+<func_name>     ::= "has_item" | "completed" | "in_location" | "level_at_least" | "flag_set"
+
+<arg_list_opt>  ::= <arg_list> | ε
+<arg_list>      ::= <arg> <arg_list_tail>
+<arg_list_tail> ::= "," <arg> <arg_list_tail> | ε
+<arg>           ::= <string> | <number> | <identifier>
+
+<logical_op>    ::= "and" | "or"
+<comp_op>       ::= "==" | "!=" | "<" | "<=" | ">" | ">="

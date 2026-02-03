@@ -1,0 +1,27 @@
+BUCKET	POS	LEXEME
+5	0	completed
+10	0	"GranaryHill"
+10	1	false
+39	0	has_item
+49	0	1
+50	0	2
+51	0	3
+52	0	50
+118	0	"Foreman: Bring a Lantern and clear out those ShadowRats!"
+143	0	level_at_least
+168	0	"ShadowsInTheGranary"
+180	0	in_location
+183	0	60
+192	0	"Lantern"
+196	0	shadow_hint_shown
+202	0	"Return to Granary Hill to use the Lantern."
+205	0	"You arrive at Granary Hill."
+209	0	"Foreman"
+215	0	"Now that you have a Lantern, search the storage pits."
+220	0	true
+224	0	"ShadowRat"
+225	0	"The foreman reported strange noises near Granary Hill."
+236	0	250
+246	0	"Antidote"
+246	1	"The granary is safe again."
+251	0	"A ShadowRat is defeated."

@@ -1,0 +1,49 @@
+quest "WaterForTheOrchard" {
+  requires level_at_least(1)
+
+  objectives: collect "Bucket" count 1,
+              go_to "VillageWell,                 # LEXICAL ERROR: unterminated string
+              collect "Water" count 1,
+              go_to "Orchard",
+              talk_to "OrchardKeeper",            # SYNTAX ERROR: trailing comma before next section
+
+  rewards: xp, gold 40, item "ApplePie" count     # SYNTAX/LEXICAL ERRORS: xp missing number; count missing number
+
+  on_accept:
+    print "The Orchard Keeper needs water from the Village Well."
+  end
+
+  on_complete:
+    print "The orchard trees are saved!"
+  end
+}
+
+when pickup "Bucket" :
+  print "You got a Bucket. Head to the Village Well."
+end
+
+when enter "VillageWell" :
+  if has_item("Bucket") then                      # SYNTAX ERROR: 'then' is not part of the IF grammar (expects ":")
+    print "Fill the Bucket with water."
+    give item "Water" count 1
+  else
+    print "You need a Bucket to carry water."
+  end
+end
+
+when enter "Orchard" :
+  if has_item("Water") :
+    print "Deliver the water to the Orchard Keeper."
+  else
+    print "You should fetch water from the Village Well first."
+  end
+# MISSING 'end' HERE FOR THE when enter "Orchard" BLOCK  <-- SYNTAX ERROR
+
+when talk "OrchardKeeper" :
+  set 1tries = 3                                  # LEXICAL ERROR: identifier cannot start with a digit
+  if has_item("Water") :
+    print "OrchardKeeper: Thank you! The trees will live."
+  else
+    print "OrchardKeeper: Please bring water quickly!"
+  end
+end

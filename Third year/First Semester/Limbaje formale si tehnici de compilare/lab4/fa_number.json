@@ -1,0 +1,30 @@
+{
+  "states": ["q0", "q1"],
+  "alphabet": ["0","1","2","3","4","5","6","7","8","9"],
+  "start_state": "q0",
+  "final_states": ["q1"],
+  "transitions": [
+    { "from": "q0", "symbol": "0", "to": "q1" },
+    { "from": "q0", "symbol": "1", "to": "q1" },
+    { "from": "q0", "symbol": "2", "to": "q1" },
+    { "from": "q0", "symbol": "3", "to": "q1" },
+    { "from": "q0", "symbol": "4", "to": "q1" },
+    { "from": "q0", "symbol": "5", "to": "q1" },
+    { "from": "q0", "symbol": "6", "to": "q1" },
+    { "from": "q0", "symbol": "7", "to": "q1" },
+    { "from": "q0", "symbol": "8", "to": "q1" },
+    { "from": "q0", "symbol": "9", "to": "q1" },
+
+    { "from": "q1", "symbol": "0", "to": "q1" },
+    { "from": "q1", "symbol": "1", "to": "q1" },
+    { "from": "q1", "symbol": "2", "to": "q1" },
+    { "from": "q1", "symbol": "3", "to": "q1" },
+    { "from": "q1", "symbol": "4", "to": "q1" },
+    { "from": "q1", "symbol": "5", "to": "q1" },
+    { "from": "q1", "symbol": "6", "to": "q1" },
+    { "from": "q1", "symbol": "7", "to": "q1" },
+    { "from": "q1", "symbol": "8", "to": "q1" },
+    { "from": "q1", "symbol": "9", "to": "q1" }
+  ]
+}
+

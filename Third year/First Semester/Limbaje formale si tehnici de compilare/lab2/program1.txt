@@ -1,0 +1,44 @@
+quest "ShadowsInTheGranary" {
+  requires level_at_least(2) and not completed("ShadowsInTheGranary")
+
+  objectives: go_to "GranaryHill",
+              talk_to "Foreman",
+              collect "Lantern" count 1,
+              defeat "ShadowRat" count 3
+
+  rewards: xp 250, gold 60, item "Antidote" count 1
+
+  on_accept:
+    print "The foreman reported strange noises near Granary Hill."
+    set shadow_hint_shown = false
+  end
+
+  on_complete:
+    print "The granary is safe again."
+    give xp 50
+  end
+}
+
+
+when enter "GranaryHill" :
+  print "You arrive at Granary Hill."
+end
+
+when talk "Foreman" :
+  print "Foreman: Bring a Lantern and clear out those ShadowRats!"
+end
+
+when pickup "Lantern" :
+  if in_location("GranaryHill") and shadow_hint_shown == false :
+    print "Now that you have a Lantern, search the storage pits."
+    set shadow_hint_shown = true
+  end
+end
+
+when kill "ShadowRat" :
+  print "A ShadowRat is defeated."
+end
+
+if has_item("Lantern") and not in_location("GranaryHill") :
+  print "Return to Granary Hill to use the Lantern."
+end

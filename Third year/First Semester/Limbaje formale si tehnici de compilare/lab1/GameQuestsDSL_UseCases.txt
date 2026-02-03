@@ -1,0 +1,238 @@
+Game Quests DSL — Documentation & Use Cases
+
+Intro
+-----------
+Game Quests DSL is a small domain-specific programming language designed to describe and control quests in games. 
+It defines quest requirements, objectives, rewards, and reactions to player events.
+
+Core Design
+-----------
+- Quest blocks with sections for `requires`, `objectives`, `rewards`.
+- Built-in objective verbs (`go_to`, `talk_to`, `collect`, `defeat`, `interact`, `custom`).
+- Event hooks with `when ... : ... end` to react to gameplay: entering locations, talking to NPCs,
+  picking up items, defeating enemies, timers, or quest state changes.
+- A tiny scripting layer: `set`, `give`, `take`, `spawn`, `unlock`, `print`, `if`.
+- Simple loops: while <condition> : ... end and for <id> in <start>.. <end> : ... end.
+- Conditions allow checks like `has_item("Key")`, `completed("Quest")`, `level_at_least(5)`.
+
+Use Cases by Statement
+----------------------
+
+1) quest "Name" { ... }
+   Why: Encapsulates an entire quest as a cohesive unit: prerequisites, objectives, rewards,
+   and lifecycle scripts.
+
+   Example:
+   quest "RescueTheSmith" {
+     requires level_at_least(5) and completed("FindTheKey")
+
+     objectives: go_to "OldMine",
+                 talk_to "Guard" when has_item("Pass"),
+                 collect "IronOre" count 5,
+                 defeat "Goblin" count 3
+
+     rewards: xp 500, gold 200, item "SteelSword" count 1, unlock "SmithShop"
+
+     on_accept:
+       print "Quest accepted: Rescue the town smith."
+     end
+
+     on_complete:
+       print "Quest complete! The smith returns to town."
+       unlock "DiscountsAtSmith"
+     end
+   }
+
+2) requires <condition>
+   Why: Gate the quest so players only see or start it when eligible (progression control).
+
+   Example:
+   requires level_at_least(5) and not completed("Tutorial")
+
+3) objectives: <objective_list>
+   Why: Define player tasks explicitly with a standard vocabulary; progress is trackable.
+
+   Examples (each verb demonstrates a needed task type):
+   - go_to "OldMine"                        (navigational goal)
+   - talk_to "Guard" when has_item("Pass")  (dialog gated by inventory)
+   - collect "Herb" count 10                (gathering loop)
+   - defeat "Wolf" count 3                  (combat loop)
+   - interact "AncientLever"                (world interaction)
+   - custom "Solve the rune puzzle"         (designer-defined special case)
+
+4) rewards: <reward_list>
+   Why: Grant outcomes on completion; directly motivates player behavior.
+
+   Example:
+   rewards: xp 300, gold 100, item "HealingPotion" count 2, flag story_unlocked = true
+
+5) on_accept: <block>, on_update: <block>, on_complete: <block>
+   Why: Lifecycle scripts enable side effects when a quest is accepted, progresses, or completes.
+
+   Example:
+   on_accept:
+     spawn "EscortNPC" at "TownGate"
+     print "Meet your escort at the gate."
+   end
+
+   on_update:
+     if has_item("KeyOfMine") :
+       print "You found the key—head deeper into the mine."
+     end
+   end
+
+   on_complete:
+     give xp 500
+     take item "DebtNote" count 1
+     unlock "SmithShop"
+   end
+
+6) npc "Name" { ... }, item "Name" { ... }, location "Name" ;
+   Why: Lightweight declarations for content used by quests; clarify references and defaults.
+
+   Example:
+   npc "Guard" { faction: "TownWatch", says: "Halt! Show your pass." }
+   item "IronOre" { stackable: true }
+   location "OldMine" ;
+
+7) dialog "Name" { line: "..." ... }
+   Why: Optional structure to collect lines for reuse or testing.
+
+   Example:
+   dialog "GuardGreeting" {
+     line: "Halt! Show your pass."
+     line: "Proceed."
+   }
+
+8) set <id> = <expr>
+   Why: Track flags, counters, or state variables that drive quest logic and conditions.
+
+   Example:
+   set rescued_smith = false
+
+9) give xp/gold/item, take item/gold
+   Why: Award or remove resources during quest flow (mid-quest or on complete).
+
+   Examples:
+   give xp 50
+   give item "HealingPotion" count 1
+   take item "CursedAmulet" count 1
+
+10) spawn <entity> at <location>, unlock <feature>
+    Why: World and UI changes: spawn allies/enemies, unlock areas/shops/fast-travel.
+
+    Examples:
+    spawn "GoblinAmbush" at "MineEntrance"
+    unlock "SmithShop"
+
+11) print <expr>
+    Why: Debugging and user feedback within examples, tutorials, or test runs.
+
+    Example:
+    print "Objective updated: Find the hidden lever."
+
+12) if <condition>: ... end
+    Why: Conditional branching for dynamic quest behavior.
+
+    Example:
+    if has_item("MineKey") and in_location("OldMine") :
+      print "The key fits. The door opens."
+      unlock "DeepMineDoor"
+    end
+
+13) when <event> [if <condition>] : ... end
+    Why: React to gameplay without boilerplate; typical quest triggers.
+
+    Examples:
+    when enter "OldMine" :
+      print "It smells of sulfur."
+    end
+
+    when talk "Guard" if has_item("Pass") :
+      print "You may pass."
+      unlock "MineEntrance"
+    end
+
+    when pickup "IronOre" :
+      print "You collect the ore."
+    end
+
+    when kill "Goblin" :
+      print "A goblin falls."
+    end
+
+    when quest_state "RescueTheSmith" "completed" :
+      print "The smith is back at work."
+    end
+
+14) while <condition> : ... end
+Why: Repeat a block while a condition holds (e.g., countdown attempts, retry logic, staged hints).
+
+Example:
+
+set tries = 3
+while tries > 0 :
+  print "Trying to open the gate..."
+  set tries = tries - 1
+end
+
+
+15) for <id> in <start> .. <end> : ... end
+Why: Iterate a fixed number of times (waves, steps, markers). Range is inclusive, and bounds can be expressions.
+
+Examples:
+
+for i in 1..3 :
+  print "Wave incoming..."
+end
+
+set start = 2
+set finish = 4
+for k in start..finish :
+  print "Step:" 
+  print k
+end
+
+Conditions & Helpers
+--------------------
+- Logical: and, or, not
+- Comparison: ==, !=, <, <=, >, >=
+- Built-in predicates:
+  - has_item("KeyName")
+  - completed("QuestName")
+  - in_location("LocationName")
+  - level_at_least(5)
+  - flag_set(flag_name)
+
+End-to-End Example
+------------------
+npc "Guard" { faction: "TownWatch", says: "Halt! Show your pass." }
+item "Pass" { stackable: false }
+location "OldMine" ;
+
+quest "EnterTheMine" {
+  requires level_at_least(3)
+
+  objectives: talk_to "Guard" when has_item("Pass"),
+              go_to "OldMine"
+
+  rewards: xp 200, gold 50, item "HealingPotion" count 1
+
+  on_accept:
+    print "Find a pass to enter the mine."
+  end
+
+  on_complete:
+    print "You have entered the mine safely."
+    unlock "DeepMineDoor"
+  end
+}
+
+when talk "Guard" if has_item("Pass") :
+  print "Guard: You may proceed."
+  unlock "MineEntrance"
+end
+
+if in_location("OldMine") and not completed("EnterTheMine") :
+  print "New objective: Explore deeper."
+end

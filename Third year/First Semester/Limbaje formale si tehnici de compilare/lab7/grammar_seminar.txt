@@ -1,0 +1,6 @@
+# Simple conflict-free LR(0) grammar for Requirement 1
+# Start symbol: S
+S -> A B
+A -> a
+B -> b
+

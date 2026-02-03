@@ -1,0 +1,136 @@
+Prompt 1 — Lexical Categories
+
+Input:
+“List the five lexical categories (Keywords, Operators, Separators, Identifiers, Constants) in my BNF and give examples for each”
+
+Output:
+
+Keywords: quest, requires, objectives, rewards, on_accept, on_complete,
+          set, give, print, if, end, when, enter, talk, pickup, kill
+Operators: =, and, or, not, ==, !=, <, <=, >, >=
+Separators: {, }, (, ), ,, :, ;
+Identifiers: rescued_smith, QuestFlag
+Constants: "OldMine", 200, true, false
+→ All five categories explicitly defined.
+
+--------------------------------------
+
+Prompt 2 — Grammar Completeness
+
+Input:
+“Check whether every nonterminal in my BNF is defined and reachable from <program>”
+
+Output:
+
+All nonterminals reachable:
+<program> → <statement_list> → <statement> …
+No undefined symbols.
+Grammar is complete and connected.
+
+--------------------------------------
+
+Prompt 3 — Program Validation
+
+Input:
+“Validate these two programs against the grammar (program1.txt and program2_broken.txt).
+Program 1: “Shadows in the Granary” (valid)
+Program 2: “Water for the Orchard (with errors)”
+
+Output:
+
+Program 1 (“Shadows in the Granary”): VALID
+- Statements are in the declared forms (quest, when, if, print, set, give).
+- Quest body conforms to quest "Name" { <requires_opt> <objectives_section> <rewards_section> <hooks_opt> }.
+- Objectives and rewards use only allowed verbs/forms.
+
+Program 2 (“Water for the Orchard (with errors)”): INVALID
+Detected issues:
+
+1) Lexical error: unterminated string
+   - In objectives: go_to "VillageWell,   → missing closing quote (")
+   - Violates <string> ::= '"' <string_characters> '"'
+
+2) Syntax error: trailing comma in objectives list
+   - After: talk_to "OrchardKeeper",
+   - <objective_list_tail> requires "," <objective> … but next token is 'rewards:'
+   - Violates comma-separated list shape
+
+3) Syntax error in rewards
+   - 'xp' missing <number> → must match 'xp <number>'
+   - item "ApplePie" 'count' missing <number> → must match 'item <string> count <number>'
+
+4) IF statement uses 'then'
+   - Grammar requires: if <condition> ":" <block> end
+   - Found 'then' → token not in grammar
+
+5) Missing 'end' for when enter "Orchard"
+   - Handler block not closed → violates <when_stmt> ::= "when" <event> ... ":" <block> "end"
+
+6) Lexical error: invalid identifier
+   - set 1tries = 3 → identifiers must start with <letter>
+   - Violates <identifier> ::= <letter> <ident_rest>
+
+Conclusion:
+Program 1 parses successfully.
+Program 2 fails due to the listed lexical/syntax violations.
+
+Conclusion: BNF is syntactically sound and complete; all tokens and constructs parse correctly.
+
+--------------------------------------
+
+Prompt 4 — Ambiguity Check
+
+Input:
+“Can any rule in this grammar be parsed in two different ways? Check for ambiguity”
+
+Output:
+
+No ambiguity detected.
+Each keyword introduces a unique syntactic form ("quest", "when", "if", etc.).
+Curly braces and 'end' delimiters remove overlap between blocks.
+
+--------------------------------------
+
+Prompt 5 — Operator Precedence
+
+Input:
+“Does the grammar enforce precedence for not, and, or?”
+
+Output:
+
+Precedence not hard-coded; parentheses supported.
+No syntactic ambiguity because 'and/or/not' positions are explicit.
+
+Conclusion: Grammar is unambiguous, structurally consistent, and safely handles section ordering and boolean operators.
+
+--------------------------------------
+
+Prompt 6 — Comprehensive Recursion Check
+
+Input:
+“Analyze all recursive patterns in my BNF (statement lists, objective lists, reward lists, etc.).
+Confirm that recursion expands in the correct direction (not reversed), terminates properly using ε, and produces elements in left-to-right order.”
+
+Output:
+
+All recursive patterns are forward (left-recursive):
+
+1) <statement_list> ::= <statement> <statement_list> | ε  
+   → Generates statements in the same order as written.
+   Backward recursion would be <statement_list> ::= <statement_list> <statement>,
+   which you did not use.
+
+2) <objective_list> and <reward_list> follow:
+   <objective> <objective_list_tail>
+   <objective_list_tail> ::= "," <objective> <objective_list_tail> | ε
+   → Produces comma-separated items a,b,c in correct sequence.
+
+3) Each recursive pair includes an ε base case,
+   ensuring termination and preventing infinite recursion.
+
+4) No rules rely on right-recursion that would reverse order
+   or require look-ahead parsing.
+
+Conclusion:
+All recursion expands left-to-right, terminates safely,
+and maintains the natural reading order of statements and list elements.
