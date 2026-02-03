@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/todaysDiaryFragment">
+
+    <fragment
+        android:id="@+id/todaysDiaryFragment"
+        android:name="com.fitlog.app.ui.diary.TodaysDiaryFragment"
+        android:label="@string/todays_diary"
+        tools:layout="@layout/fragment_todays_diary">
+        <action
+            android:id="@+id/action_todaysDiary_to_logFood"
+            app:destination="@id/logFoodFragment" />
+        <action
+            android:id="@+id/action_todaysDiaryFragment_to_confirmRemoveLoggedFoodDialogFragment"
+            app:destination="@id/confirmRemoveLoggedFoodDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createFoodFragment"
+        android:name="com.fitlog.app.ui.createfood.CreateFoodFragment"
+        android:label="Create Food" />
+    <fragment
+        android:id="@+id/editFoodFragment"
+        android:name="com.fitlog.app.ui.editfood.EditFoodFragment"
+        android:label="Edit Food">
+        <argument
+            android:name="foodId"
+            app:argType="string" />
+    </fragment>
+    <dialog
+        android:id="@+id/confirmDeleteFoodDialogFragment"
+        android:name="com.fitlog.app.ui.dialogs.ConfirmDeleteFoodDialogFragment"
+        android:label="ConfirmDeleteFoodDialogFragment">
+        <argument
+            android:name="foodId"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/confirmRemoveLoggedFoodDialogFragment"
+        android:name="com.fitlog.app.ui.dialogs.ConfirmRemoveLoggedFoodDialogFragment"
+        android:label="ConfirmRemoveLoggedFoodDialogFragment">
+        <argument
+            android:name="loggedFoodId"
+            app:argType="string" />
+    </dialog>
+    <fragment
+        android:id="@+id/logFoodFragment"
+        android:name="com.fitlog.app.ui.logfood.LogFoodFragment"
+        android:label="Add Food"
+        tools:layout="@layout/fragment_log_food">
+        <action
+            android:id="@+id/action_logFoodFragment_to_editFoodFragment"
+            app:destination="@id/editFoodFragment" />
+        <action
+            android:id="@+id/action_logFoodFragment_to_confirmDeleteFoodDialogFragment"
+            app:destination="@id/confirmDeleteFoodDialogFragment" />
+        <action
+            android:id="@+id/action_logFoodFragment_to_createFoodFragment"
+            app:destination="@id/createFoodFragment" />
+    </fragment>
+
+</navigation>

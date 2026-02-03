@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary and secondary colors -->
+    <color name="primary">#2962FF</color>
+    <color name="primary_variant">#0039CB</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="secondary">#00E676</color>
+    <color name="secondary_variant">#00B248</color>
+    <color name="on_secondary">#000000</color>
+
+    <!-- Nutrient colors -->
+    <color name="protein">#00C853</color>
+    <color name="carbs">#FFAB00</color>
+    <color name="fat">#DD2C00</color>
+    <color name="calories">#2962FF</color>
+
+
+    <!-- Other UI colors -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#212121</color>
+    <color name="button_cancel_background">#E0E0E0</color>
+</resources>
